@@ -33,6 +33,7 @@
                                 array('label' => 'Listed IN', 'url' => base_url() . '/admin/listed'),
                                 array('label' => 'Property', 'url' => base_url() . '/admin/property'),
                             )),
+                        array('label' => 'Top Destination', 'url' => base_url() . '/admin/topDestination', 'visible' => (!Yii::app()->user->isGuest && $isAdmin)),
                         array('label' => 'Users', 'url' => base_url() . '/admin/users', 'visible' => (!Yii::app()->user->isGuest && $isAdmin)),
                         array('label' => 'Packages', 'url' => base_url() . '/admin/package', 'visible' => (!Yii::app()->user->isGuest && $isAdmin)),
                         array('label' => 'Menu Management', 'url' => base_url() . '/admin/menu', 'visible' => (!Yii::app()->user->isGuest && $isAdmin)),

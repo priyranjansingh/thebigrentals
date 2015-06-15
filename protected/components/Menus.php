@@ -8,8 +8,8 @@ class Menus{
 	public function __construct($id = '0')
 	{
 		$this->cat_id = $id;
-		$q = mysql_connect('localhost', 'dealrkzy_br', 'thebigrentals123');
-		mysql_select_db('dealrkzy_br', $q);
+		$q = mysql_connect('localhost', 'root', '');
+		mysql_select_db('bigrentals', $q);
 	}
 	
 	public function getCats()

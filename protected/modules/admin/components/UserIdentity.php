@@ -44,7 +44,7 @@ class UserIdentity extends CUserIdentity {
             $this->errorCode = self::ERROR_STATUS_BAN;
         else {
             $this->_id = $user->id;
-            $this->username = $user->username;
+            $this->username = $user->email;
             $this->errorCode = self::ERROR_NONE;
             $role = $user->role_id;
             $role_model = Roles::model()->findByPk($role);

@@ -57,7 +57,7 @@
 
     
     <!-- MAIN CONTENT -->
-        <section class="slice no-padding bb">
+    <section class="slice no-padding bb">
         <div class="wp-section">
             <div class="container-fluid no-padding">
                 <div class="row">
@@ -69,6 +69,8 @@
             </div>
         </div>
     </section>
+
+    <?php include('top_destination.php'); ?>
 
     <?php echo $content; ?>
     <?php require_once('footer.php'); ?>

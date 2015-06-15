@@ -1,0 +1,27 @@
+CREATE TABLE IF NOT EXISTS `top_destination` (
+  `id` char(36) COLLATE utf8_unicode_ci NOT NULL,
+  `place` varchar(255) COLLATE utf8_unicode_ci NOT NULL,
+  `image` varchar(512) COLLATE utf8_unicode_ci NOT NULL,
+  `url` varchar(512) COLLATE utf8_unicode_ci NOT NULL,
+  `created_date` datetime NOT NULL,
+  `modified_date` datetime NOT NULL,
+  `created_by` char(36) COLLATE utf8_unicode_ci NOT NULL,
+  `modified_by` char(36) COLLATE utf8_unicode_ci NOT NULL,
+  `status` tinyint(1) NOT NULL DEFAULT '1',
+  `deleted` tinyint(1) NOT NULL DEFAULT '0',
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+
+--
+-- Dumping data for table `top_destination`
+--
+
+INSERT INTO `top_destination` (`id`, `place`, `image`, `url`, `created_date`, `modified_date`, `created_by`, `modified_by`, `status`, `deleted`) VALUES
+('1bfd36e3-d041-8e6b-a5bf-557f2fe516ad', 'Bangkok', '682028934.jpg', 'http://dealrush.in/thebigrentals', '2015-06-15 22:04:23', '2015-06-15 22:04:23', 'aef53301-4dd6-8eaf-1a91-54de51715b8f', 'aef53301-4dd6-8eaf-1a91-54de51715b8f', 1, 0),
+('3e2d59a2-ba7e-c4ba-8aac-557f2d8c1aec', 'Singapore', '925014975.jpg', 'http://dealrush.in/thebigrentals', '2015-06-15 21:53:26', '2015-06-15 21:53:26', 'aef53301-4dd6-8eaf-1a91-54de51715b8f', 'aef53301-4dd6-8eaf-1a91-54de51715b8f', 1, 0),
+('4b0bbb54-445b-e917-5cdb-557f2f020035', 'Goa', '380048142.jpg', 'http://dealrush.in/thebigrentals', '2015-06-15 22:03:21', '2015-06-15 22:03:21', 'aef53301-4dd6-8eaf-1a91-54de51715b8f', 'aef53301-4dd6-8eaf-1a91-54de51715b8f', 1, 0),
+('7e7b526b-b2d7-fe08-ff1d-557f302a626f', 'Sydney', '172210314.jpg', 'http://dealrush.in/thebigrentals', '2015-06-15 22:05:36', '2015-06-15 22:05:36', 'aef53301-4dd6-8eaf-1a91-54de51715b8f', 'aef53301-4dd6-8eaf-1a91-54de51715b8f', 1, 0),
+('89428db6-b725-67fc-f84b-557f2f8ba96d', 'Bali', '1164459825.jpg', 'http://dealrush.in/thebigrentals', '2015-06-15 22:05:18', '2015-06-15 22:05:18', 'aef53301-4dd6-8eaf-1a91-54de51715b8f', 'aef53301-4dd6-8eaf-1a91-54de51715b8f', 1, 0),
+('89cdefeb-585e-a017-af60-557f2f665765', 'Dubai', '491218965.jpg', 'http://dealrush.in/thebigrentals', '2015-06-15 22:04:03', '2015-06-15 22:04:03', 'aef53301-4dd6-8eaf-1a91-54de51715b8f', 'aef53301-4dd6-8eaf-1a91-54de51715b8f', 1, 0),
+('c78c6367-d63b-1dcf-a7c8-557f2f616541', 'Hong-Kong', '1092694180.jpg', 'http://dealrush.in/thebigrentals', '2015-06-15 22:04:41', '2015-06-15 22:04:41', 'aef53301-4dd6-8eaf-1a91-54de51715b8f', 'aef53301-4dd6-8eaf-1a91-54de51715b8f', 1, 0),
+('ccf22b17-2040-f977-222b-557f2fecd600', 'Phuket', '941590767.jpg', 'http://dealrush.in/thebigrentals', '2015-06-15 22:03:40', '2015-06-15 22:03:40', 'aef53301-4dd6-8eaf-1a91-54de51715b8f', 'aef53301-4dd6-8eaf-1a91-54de51715b8f', 1, 0);

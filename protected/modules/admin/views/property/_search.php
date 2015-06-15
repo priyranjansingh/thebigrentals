@@ -12,11 +12,6 @@
 )); ?>
 
 	<div class="row">
-		<?php echo $form->label($model,'id'); ?>
-		<?php echo $form->textField($model,'id',array('size'=>36,'maxlength'=>36)); ?>
-	</div>
-
-	<div class="row">
 		<?php echo $form->label($model,'title'); ?>
 		<?php echo $form->textArea($model,'title',array('rows'=>6, 'cols'=>50)); ?>
 	</div>
