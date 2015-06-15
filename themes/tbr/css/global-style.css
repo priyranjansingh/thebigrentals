@@ -12065,6 +12065,7 @@ textarea.form-control {
   filter: none;
   background-image: url(../images/icons/icon-location-blue.png);
   background-repeat: no-repeat;
+  border: none;
 }
 
 .form-control-icon.input-lg, .input-group-lg>.form-control-icon.form-control, 
@@ -12149,7 +12150,7 @@ textarea.form-control {
   width: 350px;
   height: 30px;
   padding: 8px 12px;
-  font-size: 24px;
+  font-size: 16px;
   line-height: 30px;
   border: 2px solid #ccc;
   -webkit-border-radius: 8px;
@@ -12179,7 +12180,7 @@ span.twitter-typeahead{
 }
 
 .tt-menu {
-  width: 422px;
+  width: 350px;
   margin: 12px 0;
   padding: 8px 0;
   background-color: #fff;
@@ -12195,7 +12196,7 @@ span.twitter-typeahead{
 
 .tt-suggestion {
   padding: 3px 20px;
-  font-size: 18px;
+  font-size: 16px;
   line-height: 24px;
 }
 

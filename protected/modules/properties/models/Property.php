@@ -263,7 +263,7 @@ class Property extends BaseModel {
         return $result;   
     }
 
-    public function searchProperties($query,$ch_in,$ch_out,$guest){
+    public function searchProperties($query,$ch_in,$ch_out,$guest,$page){
         $arr = explode(", ",$query);
         $city = $arr[0];
         $state = $arr[1];
@@ -276,7 +276,7 @@ class Property extends BaseModel {
             $c_result = BaseModel::executeSimpleQuery($c_sql);
             $ret['count'] = $c_result[0]['p_count'];
             if($c_result[0]['p_count'] > 0){
-                $sql = "SELECT p.id,p.title,p.description,p.slug,p.bedrooms,p.bathrooms,p.garages,pc.month_price,pg.image FROM `property` p LEFT JOIN property_price pc ON p.id = pc.property_id LEFT JOIN property_gallery pg ON p.id = pg.property WHERE p.city = '$city' AND p.state = '$state' AND p.country = '$country' AND p.bedrooms >= $rooms AND pg.type = 'm' AND pc.start_date < CURDATE() AND pc.end_date > CURDATE() ORDER BY p.created_date DESC LIMIT 20";
+                $sql = "SELECT p.id,p.title,p.description,p.slug,p.bedrooms,p.bathrooms,p.garages,pc.month_price,pg.image FROM `property` p LEFT JOIN property_price pc ON p.id = pc.property_id LEFT JOIN property_gallery pg ON p.id = pg.property WHERE p.city = '$city' AND p.state = '$state' AND p.country = '$country' AND p.bedrooms >= $rooms AND pg.type = 'm' AND pc.start_date < CURDATE() AND pc.end_date > CURDATE() ORDER BY p.created_date DESC LIMIT 20 OFFSET $page";
                 $result = BaseModel::executeSimpleQuery($sql);
                 $ret['list'] = $result;
             }

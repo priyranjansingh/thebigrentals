@@ -164,13 +164,20 @@ class DefaultController extends Controller {
     }
 
     public function actionSearch(){
-        $query = $_POST['query'];
-        $ch_in = $_POST['ch_in'];
-        $ch_out = $_POST['ch_out'];
-        $guest = $_POST['guest'];
-
-        $list = Property::model()->searchProperties($query,$ch_in,$ch_out,$guest);
-        pre($list);
+        if(!empty($_POST)){
+            $query = $_POST['query'];
+            $ch_in = $_POST['ch_in'];
+            $ch_out = $_POST['ch_out'];
+            $guest = $_POST['guest'];
+            $page = 0;
+            $properties = Property::model()->searchProperties($query,$ch_in,$ch_out,$guest,$page);
+            $this->layout = '//layouts/login_main';
+            $this->render('search', array('properties' => $properties['list']));
+        } else {
+            $this->redirect(base_url());
+        }
+        
+        // pre($properties);
 
     }   
 
