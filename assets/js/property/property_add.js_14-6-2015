@@ -1,0 +1,264 @@
+$(document).ready(function() {
+    $("#submit-property").click(function() {
+       
+        var property_title = $("#Property_title").val();
+        var property_description = $("#Property_description").val();
+        var property_category = $("#Property_category_id").val();
+        var property_availability_from = $("#Property_date_availability_from").val();
+        var property_availability_to = $("#Property_date_availability_to").val();
+        var address_line_1 = $("#Property_address_line_1").val();
+        var city = $("#Property_city").val();
+        var state = $("#Property_state").val();
+        var country = $("#Property_country").val();
+        var zip = $("#Property_zip").val();
+        var rooms = $("#Property_rooms").val();
+        var bedrooms = $("#Property_bedrooms").val();
+        var bathrooms = $("#Property_bathrooms").val();
+        var price_season_obj = $('select[name="Property[Price][season][]"]');
+        var price_currency_obj = $('select[name="Property[Price][currency][]"]');
+        var price_start_date_obj = $('input[name="Property[Price][start_date][]"]');
+        var price_end_date_obj = $('input[name="Property[Price][end_date][]"]');
+        var price_night_obj = $('input[name="Property[Price][night_price][]"]');
+        var price_week_obj = $('input[name="Property[Price][week_price][]"]');
+        var price_month_obj = $('input[name="Property[Price][month_price][]"]');
+        var title_flag,description_flag,category_flag,availability_from_flag,availability_to_flag,address_line_1_flag,city_flag;
+        var state_flag,country_flag,zip_flag,rooms_flag,bedrooms_flag,bathrooms_flag,amenities_flag,season_flag,currency_flag,start_date_flag;
+        var end_date_flag,night_flag,week_flag,month_flag;
+
+
+
+        if (property_title == '')
+        {
+            $("#Property_title_em").show();
+            title_flag = false;
+        }
+        else
+        {
+            $("#Property_title_em").hide();
+             title_flag = true;
+        }
+        if (property_description == '')
+        {
+            $("#Property_description_em").show();
+            description_flag = false;
+        }
+        else
+        {
+            $("#Property_description_em").hide();
+             description_flag = true;
+        }
+        
+        if (property_category == '')
+        {
+            $("#Property_category_id_em").show();
+            category_flag = false;
+        }
+        else
+        {
+            $("#Property_category_id_em").hide();
+             category_flag = true;
+        }
+
+        if (property_availability_from == '')
+        {
+            $("#Property_date_availability_from_em").show();
+             availability_from_flag = false;
+        }
+        else
+        {
+            $("#Property_date_availability_from_em").hide();
+            availability_from_flag = true;
+        }
+
+        if (property_availability_to == '')
+        {
+            $("#Property_date_availability_to_em").show();
+            availability_to_flag = false;
+        }
+        else
+        {
+            $("#Property_date_availability_to_em").hide();
+             availability_to_flag = true;
+        }
+       
+        if (address_line_1 == '')
+        {
+            $("#Property_address_line_1_em").show();
+            address_line_1_flag = false;
+        }
+        else
+        {
+            $("#Property_address_line_1_em").hide();
+            address_line_1_flag = true;
+        }
+        if (city == '')
+        {
+            $("#Property_city_em").show();
+            city_flag = false;
+        }
+        else
+        {
+            $("#Property_city_em").hide();
+             city_flag = true;
+        }
+        if (state == '')
+        {
+            $("#Property_state_em").show();
+             state_flag = false;
+        }
+        else
+        {
+            $("#Property_state_em").hide();
+            state_flag = true;
+        }
+        if (country == '')
+        {
+            $("#Property_country_em").show();
+            country_flag = false;
+        }
+        else
+        {
+            $("#Property_country_em").hide();
+             country_flag = true;
+        }
+        if (zip == '')
+        {
+            $("#Property_zip_em").show();
+            zip_flag = false;
+        }
+        else
+        {
+            $("#Property_zip_em").hide();
+            zip_flag = true;
+        }
+        if (rooms == '')
+        {
+            $("#Property_rooms_em").show();
+             rooms_flag = false;
+        }
+        else
+        {
+            $("#Property_rooms_em").hide();
+            rooms_flag = true;
+        }
+        if (bedrooms == '')
+        {
+            $("#Property_bedrooms_em").show();
+            bedrooms_flag = false;
+        }
+        else
+        {
+            $("#Property_bedrooms_em").hide();
+            bedrooms_flag = true;
+        }
+        if (bathrooms == '')
+        {
+            $("#Property_bathrooms_em").show();
+             bathrooms_flag = false;
+        }
+        else
+        {
+            $("#Property_bathrooms_em").hide();
+             bathrooms_flag = true;
+        }
+        if ($("input[type=checkbox]:checked").length === 0) {
+            $("#amenities_em").show();
+            amenities_flag = false;
+        }
+        else
+        {
+            $("#amenities_em").hide();
+             amenities_flag = true;
+        }
+
+        season_flag = true;
+        price_season_obj.each(function() {
+            
+            if ($(this).val() == '')
+            {
+                $(this).next("div").show();
+                season_flag = false;
+            }
+            else
+            {
+                $(this).next("div").hide();
+            }
+        });
+        currency_flag = true;
+        price_currency_obj.each(function() {
+            if ($(this).val() == '')
+            {
+                $(this).next("div").show();
+                currency_flag = false;
+            }
+            else
+            {
+                $(this).next("div").hide();
+            }
+        });
+        start_date_flag = true;
+        price_start_date_obj.each(function() {
+            if ($(this).val() == '')
+            {
+                $(this).closest("td").children("div").show();
+                start_date_flag = false;
+            }
+            else
+            {
+                 $(this).closest("td").children("div").hide();
+            }
+        });
+        end_date_flag = true;
+        price_end_date_obj.each(function() {
+            if ($(this).val() == '')
+            {
+                $(this).closest("td").children("div").show();
+                end_date_flag = false;
+            }
+            else
+            {
+                $(this).closest("td").children("div").hide();
+            }
+        });
+        night_flag = true;
+        price_night_obj.each(function() {
+            if ($(this).val() == '')
+            {
+                $(this).next("div").show();
+                night_flag = false;
+            }
+            else
+            {
+                $(this).next("div").hide();
+            }
+        });
+        week_flag = true;
+        price_week_obj.each(function() {
+            if ($(this).val() == '')
+            {
+                $(this).next("div").show();
+                week_flag = false;
+            }
+            else
+            {
+                $(this).next("div").hide();
+            }
+        });
+        month_flag = true;
+        price_month_obj.each(function() {
+            if ($(this).val() == '')
+            {
+                $(this).next("div").show();
+                month_flag = false;
+            }
+            else
+            {
+                $(this).next("div").hide();
+            }
+        });
+         $(".add-property-form").submit();
+     
+     
+    });
+
+});

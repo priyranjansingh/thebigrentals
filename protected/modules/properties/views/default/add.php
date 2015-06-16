@@ -1,3 +1,4 @@
+
 <script>
 // This example adds a search box to a map, using the Google Place Autocomplete
 // feature. People can enter geographical searches. The search box will return a
@@ -149,9 +150,17 @@ function initialize() {
 google.maps.event.addDomListener(window, 'load', initialize);
 
 $(document).ready(function(){
+$('#Property_date_availability_from').Zebra_DatePicker();
+$('#Property_date_availability_to').Zebra_DatePicker();
+$('input[name="Property[Price][start_date][]"]').Zebra_DatePicker();
+$('input[name="Property[Price][end_date][]"]').Zebra_DatePicker();
      $("body").on('click','.add_more',function(){
-          var content = $("#first").html();
-        $("#property_price_table").append("<tr>"+content+"</tr>");
+          var content = $("#first").clone();
+          content.find("td:last").remove();
+          content.find("div.errorMessage").hide();
+        $("#property_price_table").append("<tr>"+content.html()+"<td><a class='add_more' href='javascript:void(0);'><i class='fa fa-plus'></i></a> | <a class='delete' href='javascript:void(0);'><i class='fa fa-minus'></i></a></td></tr>");
+        $('input[name="Property[Price][start_date][]"]').Zebra_DatePicker();
+        $('input[name="Property[Price][end_date][]"]').Zebra_DatePicker();
      });
      $("body").on('click','.delete',function(){
         $(this).parents("tr").remove();
@@ -176,7 +185,7 @@ $(document).ready(function(){
                             $furl = "http://tbrs3.s3.amazonaws.com/" . $fname;
                             ?>
                             <img src="<?php echo $furl; ?>" alt="">
-<?php endif; ?>
+                      <?php endif; ?>
                     </div>
                     <ul class="categories mt-20">
                         <li><a href="<?php echo base_url() . '/user/myaccount' ?>">Personal informations</a></li>
@@ -196,12 +205,7 @@ $(document).ready(function(){
                                 
                                 <?php
                                   $form = $this->beginWidget('CActiveForm', array(
-                                      'id' => 'profile-form',
-                                      // Please note: When you enable ajax validation, make sure the corresponding
-                                      // controller action is handling ajax validation correctly.
-                                      // There is a call to performAjaxValidation() commented in generated controller code.
-                                      // See class documentation of CActiveForm for details on this.
-                                      'enableAjaxValidation' => false,
+                                      'id' => 'property-form',
                                       'htmlOptions' => array(
                                           'autcomplete' => "off",
                                           'class' => "add-property-form",
@@ -217,30 +221,27 @@ $(document).ready(function(){
                                 <div class="row">
                                   <div class="col-md-4 col-sm-4">
                                     <?php echo $form->textField($model, 'title',array('class' => 'form-control','placeholder' => 'Property Name')); ?>
-                                    <?php echo $form->error($model, 'title'); ?>
+                                   <div class="errorMessage" id="Property_title_em" style="display: none;">Property name cannot be blank.</div>    
                                   </div>
                                   <div class="col-md-8 col-sm-8 submit-description">
                                     <?php echo $form->textArea($model, 'description', array('col' => 10, 'row' => 1,'class' => 'form-control margin-0','placeholder' => 'Property Description')); ?>
-                                    <?php echo $form->error($model, 'description'); ?>
+                                    <div class="errorMessage" id="Property_description_em" style="display: none;">Property description cannot be blank.</div>  
                                   </div>
                                 </div>
                                 <div class="row">
                                   <div class="col-md-4 col-sm-4">
                                     <?php $all_category = CHtml::listData($categories, 'id', 'name'); ?>
                                     <?php echo $form->dropDownList($model,'category_id',$all_category,array('class' => 'form-control selectpicker',"empty" => "Property Type", )); ?>
-                                    <?php echo $form->error($model,'category_id'); ?>
+                                   <div class="errorMessage" id="Property_category_id_em" style="display: none;">Property category cannot be blank.</div>  
+                                       
                                   </div>
-                                  <div class="col-md-8 col-sm-8">
-                                    <?php
-                                      $this->widget('ext.EDateRangePicker.EDateRangePicker', array(
-                                          'id' => 'date_availability',
-                                          'name' => 'Property[date_availability]',
-                                          'value' => '',
-                                          'options' => array('arrows' => true),
-                                          'htmlOptions' => array('class' => 'inputClass'),
-                                      ));
-                                      ?>
-                                      <?php echo $form->error($model, 'date_availability'); ?>
+                                  <div class="col-md-4 col-sm-4">
+                                       <?php echo $form->textField($model, 'date_availability_from',array('class' => 'form-control','placeholder' => 'Available From')); ?> 
+                                      <div class="errorMessage" id="Property_date_availability_from_em" style="display: none;">Property Availability From cannot be blank.</div>  
+                                  </div>
+                                  <div class="col-md-4 col-sm-4">
+                                       <?php echo $form->textField($model, 'date_availability_to',array('class' => 'form-control','placeholder' => 'Available To')); ?> 
+                                        <div class="errorMessage" id="Property_date_availability_to_em" style="display: none;">Property Availability To cannot be blank.</div>   
                                   </div>
                                 </div>
                                 <div class="row">
@@ -257,6 +258,7 @@ $(document).ready(function(){
                                     <?php echo $form->hiddenField($model,'longitude',array('size'=>60,'maxlength'=>100)); ?>
                                     <?php echo $form->textField($model,'address_line_1',array('class' => 'form-control','placeholder' => 'Address Line 1')); ?>
                                     <?php echo $form->error($model,'address_line_1'); ?>
+                                  <div class="errorMessage" id="Property_address_line_1_em" style="display: none;">Address Line 1  cannot be blank.</div>   
                                   </div>
                                   <div class="col-md-4 col-sm-4">
                                     <?php echo $form->textField($model,'address_line_2',array('class' => 'form-control','placeholder' => 'Address Line 2')); ?>
@@ -264,21 +266,21 @@ $(document).ready(function(){
                                   </div>
                                   <div class="col-md-4 col-sm-4">
                                     <?php echo $form->textField($model,'city',array('class' => 'form-control','placeholder' => 'City')); ?>
-                                    <?php echo $form->error($model,'city'); ?>
+                                    <div class="errorMessage" id="Property_city_em" style="display: none;">City cannot be blank.</div>   
                                   </div>
                                 </div>
                                 <div class="row">
                                   <div class="col-md-4 col-sm-4">
                                     <?php echo $form->textField($model,'state',array('class' => 'form-control','placeholder' => 'State')); ?>
-                                    <?php echo $form->error($model,'state'); ?>
+                                   <div class="errorMessage" id="Property_state_em" style="display: none;">State cannot be blank.</div>   
                                   </div>
                                   <div class="col-md-4 col-sm-4">
                                     <?php echo $form->textField($model,'country',array('class' => 'form-control','placeholder' => 'Country')); ?>
-                                    <?php echo $form->error($model,'country'); ?>
+                                  <div class="errorMessage" id="Property_country_em" style="display: none;">Country cannot be blank.</div>   
                                   </div>
                                   <div class="col-md-4 col-sm-4">
                                     <?php echo $form->textField($model,'zip',array('class' => 'form-control','placeholder' => 'Zip Code')); ?>
-                                    <?php echo $form->error($model,'zip'); ?>
+                                   <div class="errorMessage" id="Property_zip_em" style="display: none;">Zip cannot be blank.</div>   
                                   </div>
                                 </div>
                             </div>
@@ -289,15 +291,15 @@ $(document).ready(function(){
                                 <div class="row">
                                     <div class="col-md-4 col-sm-4">
                                       <?php echo $form->textField($model,'rooms',array('class' => 'form-control','placeholder' => 'Number Of Rooms')); ?>
-                                      <?php echo $form->error($model,'rooms'); ?>
+                                     <div class="errorMessage" id="Property_rooms_em" style="display: none;">Rooms cannot be blank.</div>  
                                     </div>
                                     <div class="col-md-4 col-sm-4 submit-property-type">
                                       <?php echo $form->textField($model, 'bedrooms',array('class' => 'form-control','placeholder' => 'Number Of Bedrooms')); ?>
-                                      <?php echo $form->error($model, 'bedrooms'); ?>
+                                      <div class="errorMessage" id="Property_bedrooms_em" style="display: none;">Bedrooms cannot be blank.</div>  
                                     </div>
                                     <div class="col-md-4 col-sm-4 submit-contract-type">
                                       <?php echo $form->textField($model, 'bathrooms',array('class' => 'form-control','placeholder' => 'Number Of Bathrooms')); ?>
-                                      <?php echo $form->error($model, 'bathrooms'); ?>
+                                       <div class="errorMessage" id="Property_bathrooms_em" style="display: none;">Bathrooms cannot be blank.</div>  
                                     </div>
                                 </div>
                                 <div class="row">
@@ -325,6 +327,8 @@ $(document).ready(function(){
                                   <?php endforeach; ?>
                                 </div>
                             </div>
+                            <div class="errorMessage" id="amenities_em" style="display:none;">Select At least One Amenity.</div>  
+
                               <div class="block-heading" id="details">
                                 <h4><span class="heading-icon"><i class="fa fa-caret-right icon-design"></i><i class="fa fa-home"></i></span>Property Price</h4>
                               </div>
@@ -346,37 +350,44 @@ $(document).ready(function(){
                                         <tbody>
                                             <tr id="first">
                                                 <td>
-                                                     <select name="Property[Price][season][]" class="form-control selectpicker">
+                                                     <select  name="Property[Price][season][]" class="form-control selectpicker">
                                                             <option value="">Season</option>
                                                             <?php foreach(getParam('season') as $k => $v): ?>
                                                                     <option value="<?php echo $k; ?>"><?php echo $v; ?></option>
                                                             <?php endforeach; ?>
-                                                    </select>
+                                                     </select>
+                                                     <div class="errorMessage"  style="display: none;">Season cannot be blank.</div> 
                                                 </td>
                                                 <td>
-                                                   <select name="Property[Price][currency][]" class="form-control selectpicker">
+                                                   <select  name="Property[Price][currency][]" class="form-control selectpicker">
                                                             <?php foreach($currency as $c): ?>
                                                                     <option value="<?php echo $c->id; ?>"><?php echo $c->symbol; ?> (<?php echo $c->currency; ?>)</option>
                                                             <?php endforeach; ?>
                                                     </select>
+                                                    <div class="errorMessage"  style="display: none;">Currency cannot be blank.</div> 
                                                 </td>
                                                 <td>
-                                                    <input type="text" name="Property[Price][start_date][]" class="form-control" />
+                                                    <input id="price_start_date_1" type="text" name="Property[Price][start_date][]" class="form-control" />
+                                                    <div class="errorMessage"  style="display: none;">Start Date cannot be blank.</div> 
                                                 </td>
                                                 <td>
-                                                    <input type="text" name="Property[Price][end_date][]" class="form-control" />
+                                                    <input  type="text" name="Property[Price][end_date][]" class="form-control" />
+                                                    <div class="errorMessage"  style="display: none;">End Date cannot be blank.</div> 
                                                 </td>
                                                 <td>
                                                     <input type="text" name="Property[Price][night_price][]" class="form-control" />
+                                                    <div class="errorMessage"  style="display: none;">Night Price cannot be blank.</div> 
                                                 </td>
                                                 <td>
                                                     <input type="text" name="Property[Price][week_price][]" class="form-control" />
+                                                    <div class="errorMessage"  style="display: none;">Week Price cannot be blank.</div> 
                                                 </td>
                                                 <td>
                                                   <input type="text" name="Property[Price][month_price][]" class="form-control" />
+                                                  <div class="errorMessage"  style="display: none;">Month Price cannot be blank.</div> 
                                                 </td>
                                                 <td>
-                                                  <a class="add_more" href="javascript:void(0);"><i class="fa fa-plus"></i></a> | <a class="delete" href="javascript:void(0);"><i class="fa fa-minus"></i></a>
+                                                  <a class="add_more" href="javascript:void(0);"><i class="fa fa-plus"></i></a> 
                                                 </td>
                                             </tr>
                                         </tbody>
@@ -398,3 +409,4 @@ $(document).ready(function(){
         </div>
     </div>
 </section>
+    <script src="<?php echo base_url();  ?>/assets/js/property/property_add.js"></script>

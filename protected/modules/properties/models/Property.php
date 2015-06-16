@@ -60,25 +60,8 @@ class Property extends BaseModel {
      * @return array validation rules for model attributes.
      */
     public function rules() {
-        // NOTE: you should only define rules for those attributes that
-        // will receive user inputs.
-//        return array(
-//            array('title,amenities,address_line_1, address_line_2, main_image, description, country,category_id, state, city, zip, latitude, longitude, size, size_unit, lot_size, lot_size_unit, rooms, bedrooms, bathrooms, year_built, date_availability, listed_in, property_status', 'required'),
-//            array('enable_google_street_view, rooms, bedrooms, bathrooms, year_built, garages, property_status, status, deleted', 'numerical', 'integerOnly' => true),
-//            array('size, lot_size, garage_size', 'numerical'),
-//            array('id, listed_in, created_by, modified_by,category_id', 'length', 'max' => 36),
-//            array('country, state, city, zip, latitude, longitude, size_unit, lot_size_unit, external_constructions', 'length', 'max' => 100),
-//            array('garaze_size_unit', 'length', 'max' => 10),
-//            array('video_from', 'length', 'max' => 512),
-//            array('basement, roofing', 'length', 'max' => 50),
-//            array('date_availability, embed_video_id,address_line_1,address_line_2', 'length', 'max' => 256),
-//            // The following rule is used by search().
-//            // @todo Please remove those attributes that should not be searched.
-//            array('id, title,main_image,gallery_image, slug, description, country, state, city, zip, latitude, longitude, enable_google_street_view, size, size_unit, lot_size, lot_size_unit, rooms, bedrooms, bathrooms, year_built, garages, garage_size, garaze_size_unit, basement, external_constructions, roofing, date_availability, listed_in, property_status, status, deleted, created_date, created_by, modified_date, modified_by, video_from, embed_video_id', 'safe', 'on' => 'search'),
-//        );
-        
         return array(
-            array('title, description, country,category_id, state, city, zip, latitude, longitude, rooms, bedrooms, bathrooms', 'required'),
+            array('title, description, country,category_id, state, city, zip, latitude, longitude, rooms, bedrooms, bathrooms,date_availability_from,date_availabilty_to', 'required'),
             array('enable_google_street_view, year_built, garages, property_status, status, deleted', 'numerical', 'integerOnly' => true),
             array('size, lot_size, garage_size', 'numerical'),
             array('id, listed_in, created_by, modified_by,category_id', 'length', 'max' => 36),
@@ -86,10 +69,10 @@ class Property extends BaseModel {
             array('garaze_size_unit,bedrooms, bathrooms, rooms', 'length', 'max' => 10),
             array('video_from', 'length', 'max' => 512),
             array('basement, roofing', 'length', 'max' => 50),
-            array('date_availability, embed_video_id,address_line_1,address_line_2', 'length', 'max' => 256),
+            array('embed_video_id,address_line_1,address_line_2', 'length', 'max' => 256),
             // The following rule is used by search().
             // @todo Please remove those attributes that should not be searched.
-            array('id, title,main_image,gallery_image, slug, description, country, state, city, zip, latitude, longitude, enable_google_street_view, size, size_unit, lot_size, lot_size_unit, rooms, bedrooms, bathrooms, year_built, garages, garage_size, garaze_size_unit, basement, external_constructions, roofing, date_availability, listed_in, property_status, status, deleted, created_date, created_by, modified_date, modified_by, video_from, embed_video_id', 'safe', 'on' => 'search'),
+            array('id, title,main_image,gallery_image, slug, description, country, state, city, zip, latitude, longitude, enable_google_street_view, size, size_unit, lot_size, lot_size_unit, rooms, bedrooms, bathrooms, year_built, garages, garage_size, garaze_size_unit, basement, external_constructions, roofing, date_availability_from,date_availability_to, listed_in, property_status, status, deleted, created_date, created_by, modified_date, modified_by, video_from, embed_video_id', 'safe', 'on' => 'search'),
         );
     }
 
@@ -123,10 +106,12 @@ class Property extends BaseModel {
     public function attributeLabels() {
         return array(
             'id' => 'ID',
-            'title' => 'Title',
+            'title' => 'Property Name',
             'slug' => 'Slug',
-            'category_id' => 'Category',
-            'description' => 'Description',
+            'category_id' => 'Property Type',
+            'description' => 'Property Description',
+            'date_availability_from' => 'Available From', 
+            'date_availability_to' => 'Available To', 
             'country' => 'Country',
             'state' => 'State',
             'city' => 'City',
@@ -210,7 +195,8 @@ class Property extends BaseModel {
         $criteria->compare('basement', $this->basement, true);
         $criteria->compare('external_constructions', $this->external_constructions, true);
         $criteria->compare('roofing', $this->roofing, true);
-        $criteria->compare('date_availability', $this->date_availability, true);
+        $criteria->compare('date_availability_from', $this->date_availability_from, true);
+        $criteria->compare('date_availability_to', $this->date_availability_to, true);
         $criteria->compare('listed_in', $this->listed_in);
         $criteria->compare('property_status', $this->property_status);
         $criteria->compare('status', $this->status);
@@ -250,8 +236,8 @@ class Property extends BaseModel {
         }
         return false;
     }
-
-    public function getTop50List(){
+    
+     public function getTop50List(){
         $sql = "SELECT DISTINCT city,state,country FROM property ORDER BY city ASC LIMIT 0,50";
         $result = BaseModel::executeSimpleQuery($sql);
         return $result;
@@ -263,7 +249,7 @@ class Property extends BaseModel {
         return $result;   
     }
 
-    public function searchProperties($query,$ch_in,$ch_out,$guest,$page){
+    public function searchProperties($query,$ch_in,$ch_out,$guest){
         $arr = explode(", ",$query);
         $city = $arr[0];
         $state = $arr[1];
@@ -276,7 +262,7 @@ class Property extends BaseModel {
             $c_result = BaseModel::executeSimpleQuery($c_sql);
             $ret['count'] = $c_result[0]['p_count'];
             if($c_result[0]['p_count'] > 0){
-                $sql = "SELECT p.id,p.title,p.description,p.slug,p.bedrooms,p.bathrooms,p.garages,pc.month_price,pg.image FROM `property` p LEFT JOIN property_price pc ON p.id = pc.property_id LEFT JOIN property_gallery pg ON p.id = pg.property WHERE p.city = '$city' AND p.state = '$state' AND p.country = '$country' AND p.bedrooms >= $rooms AND pg.type = 'm' AND pc.start_date < CURDATE() AND pc.end_date > CURDATE() ORDER BY p.created_date DESC LIMIT 20 OFFSET $page";
+                $sql = "SELECT p.id,p.title,p.description,p.slug,p.bedrooms,p.bathrooms,p.garages,pc.month_price,pg.image FROM `property` p LEFT JOIN property_price pc ON p.id = pc.property_id LEFT JOIN property_gallery pg ON p.id = pg.property WHERE p.city = '$city' AND p.state = '$state' AND p.country = '$country' AND p.bedrooms >= $rooms AND pg.type = 'm' AND pc.start_date < CURDATE() AND pc.end_date > CURDATE() ORDER BY p.created_date DESC LIMIT 20";
                 $result = BaseModel::executeSimpleQuery($sql);
                 $ret['list'] = $result;
             }
@@ -285,5 +271,6 @@ class Property extends BaseModel {
         return $ret;
 
     }
+    
 
 }

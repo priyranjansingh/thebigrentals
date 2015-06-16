@@ -32,7 +32,7 @@ class DefaultController extends Controller {
         }
     }
 
-    public function actionAdd() {
+     public function actionAdd() {
         $this->layout = '//layouts/login_main';
         $front_user = isFrontUserLoggedIn();
         if (!$front_user) {
@@ -45,6 +45,7 @@ class DefaultController extends Controller {
             }
         }
         $model = new Property;
+        //pre($model,true);
         $listed = BaseModel::getAll('Listed');
         $categories = BaseModel::getAll('Category');
         $amenities = BaseModel::getAll('AmenitiesFeatures');
