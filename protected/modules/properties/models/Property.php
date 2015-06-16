@@ -61,7 +61,7 @@ class Property extends BaseModel {
      */
     public function rules() {
         return array(
-            array('title, description, country,category_id, state, city, zip, latitude, longitude, rooms, bedrooms, bathrooms,date_availability_from,date_availabilty_to', 'required'),
+            array('title, description, country,category_id, state, city, zip, latitude, longitude, rooms, bedrooms, bathrooms,date_availability_from,date_availability_to', 'required'),
             array('enable_google_street_view, year_built, garages, property_status, status, deleted', 'numerical', 'integerOnly' => true),
             array('size, lot_size, garage_size', 'numerical'),
             array('id, listed_in, created_by, modified_by,category_id', 'length', 'max' => 36),

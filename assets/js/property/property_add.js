@@ -288,7 +288,7 @@ $(document).ready(function() {
 				return false;
 			}
 		});
-		alert(final_check);
+		//alert(final_check);
 		if(final_check){
 			return true;
 		} else {

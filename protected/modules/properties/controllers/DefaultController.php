@@ -45,7 +45,7 @@ class DefaultController extends Controller {
             }
         }
         $model = new Property;
-        //pre($model,true);
+        //pre($model->attributes,true);
         $listed = BaseModel::getAll('Listed');
         $categories = BaseModel::getAll('Category');
         $amenities = BaseModel::getAll('AmenitiesFeatures');
@@ -57,6 +57,8 @@ class DefaultController extends Controller {
             $property_price = $_POST['Property']['Price'];
              
             $model->attributes = $_POST['Property'];
+            //pre($_POST['Property']);
+            //pre($model->attributes,true);
             
             $model->main_image = 'abcd';
             
