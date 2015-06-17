@@ -8,7 +8,7 @@
 			$state = $output['state'];
 			$country = $output['country'];
 			
-			$primary_condition = "p.is_featured = 'Y' AND p.city LIKE '%$city%' AND p.state LIKE '%$state%' AND p.country LIKE '%$country%'";
+			$primary_condition = "p.is_featured = 'Y' AND p.city LIKE '%$city%' AND p.state LIKE '%$state%' AND p.country LIKE '%$country%' AND pg.type='m'";
 			$secondary_condition = "p.is_featured = 'Y' AND p.state LIKE '%$state%' AND p.country LIKE '%$country%'";
 			$ternary_condition = "p.is_featured = 'Y' AND p.country LIKE '%$country%'";
 			$worst_condition = "p.is_featured = 'Y'";
