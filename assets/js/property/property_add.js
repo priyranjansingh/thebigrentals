@@ -5,6 +5,8 @@ $(document).ready(function() {
                 property_category = $.trim($("#Property_category_id").val()),
                 property_availability_from = $("#Property_date_availability_from").val(),
                 property_availability_to = $("#Property_date_availability_to").val(),
+                latitude = $.trim($("#Property_latitude").val()),
+                longitude = $.trim($("#Property_longitude").val()),
                 address_line_1 = $.trim($("#Property_address_line_1").val()),
                 city = $.trim($("#Property_city").val()),
                 state = $.trim($("#Property_state").val()),
@@ -78,7 +80,16 @@ $(document).ready(function() {
             $("#Property_date_availability_to_em").hide();
             error['availability_to_flag'] = true;
         }
-
+        if (latitude == '')
+        {
+            $("#Property_map_em").show();
+            error['map_flag'] = false;
+        }
+        else
+        {
+            $("#Property_map_em").hide();
+            error['map_flag'] = true;
+        }
         if (address_line_1 == '')
         {
             $("#Property_address_line_1_em").show();

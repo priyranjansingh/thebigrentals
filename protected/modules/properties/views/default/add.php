@@ -250,13 +250,14 @@ $('input[name="Property[Price][end_date][]"]').Zebra_DatePicker();
                                         <input id="pac-input" class="controls" type="text" placeholder="Search Box">
                                         <div class="span12" id="map-canvas"></div>
                                       </div>
+                                         <div class="errorMessage" id="Property_map_em" style="display: none;">Please select a location on the map.</div>  
                                     </div>
                                 </div>
                                 <div class="row pad-top-10">
                                   <div class="col-md-4 col-sm-4">
                                     <?php echo $form->hiddenField($model,'latitude',array('size'=>60,'maxlength'=>100)); ?>
                                     <?php echo $form->hiddenField($model,'longitude',array('size'=>60,'maxlength'=>100)); ?>
-                                    <?php echo $form->textField($model,'address_line_1',array('class' => 'form-control','placeholder' => 'Address Line 1')); ?>
+                                    <?php echo $form->textField($model,'address_line_1',array('class' => 'form-control','placeholder' => 'Address Line 1','readonly'=>'true')); ?>
                                     <?php echo $form->error($model,'address_line_1'); ?>
                                   <div class="errorMessage" id="Property_address_line_1_em" style="display: none;">Address Line 1  cannot be blank.</div>   
                                   </div>
@@ -265,21 +266,21 @@ $('input[name="Property[Price][end_date][]"]').Zebra_DatePicker();
                                     <?php echo $form->error($model,'address_line_2'); ?>
                                   </div>
                                   <div class="col-md-4 col-sm-4">
-                                    <?php echo $form->textField($model,'city',array('class' => 'form-control','placeholder' => 'City')); ?>
+                                    <?php echo $form->textField($model,'city',array('class' => 'form-control','placeholder' => 'City','readonly'=>'true')); ?>
                                     <div class="errorMessage" id="Property_city_em" style="display: none;">City cannot be blank.</div>   
                                   </div>
                                 </div>
                                 <div class="row">
                                   <div class="col-md-4 col-sm-4">
-                                    <?php echo $form->textField($model,'state',array('class' => 'form-control','placeholder' => 'State')); ?>
+                                    <?php echo $form->textField($model,'state',array('class' => 'form-control','placeholder' => 'State' ,'readonly'=>'true')); ?>
                                    <div class="errorMessage" id="Property_state_em" style="display: none;">State cannot be blank.</div>   
                                   </div>
                                   <div class="col-md-4 col-sm-4">
-                                    <?php echo $form->textField($model,'country',array('class' => 'form-control','placeholder' => 'Country')); ?>
+                                    <?php echo $form->textField($model,'country',array('class' => 'form-control','placeholder' => 'Country' ,'readonly'=>'true')); ?>
                                   <div class="errorMessage" id="Property_country_em" style="display: none;">Country cannot be blank.</div>   
                                   </div>
                                   <div class="col-md-4 col-sm-4">
-                                    <?php echo $form->textField($model,'zip',array('class' => 'form-control','placeholder' => 'Zip Code')); ?>
+                                    <?php echo $form->textField($model,'zip',array('class' => 'form-control','placeholder' => 'Zip Code' ,'readonly'=>'true')); ?>
                                    <div class="errorMessage" id="Property_zip_em" style="display: none;">Zip cannot be blank.</div>   
                                   </div>
                                 </div>
