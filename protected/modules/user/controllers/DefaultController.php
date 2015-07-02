@@ -1,4 +1,5 @@
 <?php
+Yii::import("application.modules.admin.models.*", true);
 class DefaultController extends Controller {
 
     public $layout = '//layouts/login_main';

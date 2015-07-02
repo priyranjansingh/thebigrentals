@@ -85,7 +85,7 @@ var base_url = "<?php echo base_url(); ?>";
 <script src="<?php echo $baseUrl; ?>/js/jquery.hoverup.js"></script>
 <script src="<?php echo $baseUrl; ?>/js/jquery.hoverdir.js"></script>
 <script src="<?php echo $baseUrl; ?>/js/jquery.stellar.js"></script>
-<script src="<?php echo $baseUrl; ?>/js/gmaps/google-maps-default.js"></script>
+<!--<script src="<?php echo $baseUrl; ?>/js/gmaps/google-maps-default.js"></script>-->
 
 <!-- Boomerang mobile nav - Optional  -->
 <script src="<?php echo $baseUrl; ?>/assets/responsive-mobile-nav/js/jquery.dlmenu.js"></script>
@@ -132,4 +132,5 @@ var base_url = "<?php echo base_url(); ?>";
 <script type="text/javascript" src="<?php echo $baseUrl; ?>/js/wp.ga.js"></script>-->
 <script src="<?php echo $baseUrl; ?>/js/typeahead.bundle.js"></script>
 <script src="<?php echo $baseUrl; ?>/js/zebra_datepicker.js"></script>
+<script src="https://maps.googleapis.com/maps/api/js?v=3.exp&signed_in=true&libraries=places"></script>
 <script src="<?php echo $baseUrl; ?>/js/search.js"></script>

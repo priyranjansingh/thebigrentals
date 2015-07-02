@@ -50,23 +50,23 @@
             <form id="search_form" accept-charset="UTF-8" action="<?php echo base_url(); ?>/properties/search" method="POST">
                 <div class="col-sm-12 col-md-4">
                     <div>
-                        <input name="query" id="search-location" class="form-control input-lg form-control-icon icon-location typeahead" type="text" placeholder="Where are you going?" value="" autocomplete="off">
+                        <input name="query" id="search-location" onFocus="geolocate()" class="form-control input-lg form-control-icon icon-location typeahead" type="text" placeholder="Where are you going?" value="" autocomplete="off">
                     </div>
+                    <div class="errorMessage" id="search-location_em" style="display:none;">Destination cannot be blank.</div>
                 </div>
-                <div class="errorMessage" id="search-location_em" style="display:none;">Destination cannot be blank.</div>  
                 <div class="col-xs-6 col-sm-3 col-md-2">
-                  <div>
-                    <input name="ch_in" id="search-checkin" class="form-control input-lg form-control-icon icon-calendar" type="text" placeholder="Check In" autocomplete="off">
-                  </div>
+                    <div>
+                        <input name="ch_in" id="search-checkin" class="form-control input-lg form-control-icon icon-calendar" type="text" placeholder="Check In" autocomplete="off">
+                    </div>
+                    <div class="errorMessage" id="search-checkin_em" style="display:none;">Check In time cannot be blank.</div>
                 </div>
-                <div class="errorMessage" id="search-checkin_em" style="display:none;">Check In time cannot be blank.</div>  
                 <div class="col-xs-6 col-sm-3 col-md-2">
-                  <div>
-                    <input name="ch_out" id="search-checkout" class="form-control input-lg form-control-icon icon-calendar" type="text" placeholder="Check Out" autocomplete="off">
-                  </div>
+                    <div>
+                        <input name="ch_out" id="search-checkout" class="form-control input-lg form-control-icon icon-calendar" type="text" placeholder="Check Out" autocomplete="off">
+                    </div>
+                    <div class="errorMessage" id="search-checkout_em" style="display:none;">Check Out time cannot be blank.</div>  
+                    <div class="errorMessage" id="compare_em" style="display:none;">Checkin time can not be greater than checkout time .</div>  
                 </div>
-                 <div class="errorMessage" id="search-checkout_em" style="display:none;">Check Out time cannot be blank.</div>  
-                 <div class="errorMessage" id="compare_em" style="display:none;">Checkin time can not be greater than checkout time .</div>  
                 <div class="col-xs-6 col-sm-3 col-md-2">
                     <div class="form-group form-group-lg field_select">
                         <select class="form-control select_styled base no-padding" id="guest" name="guest">
@@ -83,8 +83,8 @@
                             <option value="10">10</option>
                         </select>      
                     </div>
+                    <div class="errorMessage" id="guest_em" style="display:none;">Number of guest cannot be blank.</div>
                 </div>
-                 <div class="errorMessage" id="guest_em" style="display:none;">Number of guest cannot be blank.</div>  
                 <div class="col-xs-6 col-sm-3 col-md-2">
                     <button id="search-button" class="btn btn-primary btn-lg btn-block tclick" data-tkey="Search" data-tloc="Search">Search</button>
                 </div>
