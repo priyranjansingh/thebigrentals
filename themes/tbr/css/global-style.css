@@ -11509,6 +11509,10 @@ body.vjs-full-window {
 .errorMessage
 {
     color: red;
+    background: transparent !important;
+    font-weight: bold;
+    font-size: 16px;
+    text-align: left;
 }
 .success_msg
 {
