@@ -174,13 +174,13 @@ class DefaultController extends Controller {
             $guest = $_POST['guest'];
             $page = 0;
             $properties = Property::model()->searchProperties($query,$ch_in,$ch_out,$guest,$page);
+            //pre($properties,true);
             $this->layout = '//layouts/login_main';
             $this->render('search', array('properties' => $properties['list']));
         } else {
             $this->redirect(base_url());
         }
-        
-        // pre($properties);
+      
 
     }   
 
