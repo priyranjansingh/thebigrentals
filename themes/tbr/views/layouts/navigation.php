@@ -2,7 +2,6 @@
 <?php
 $cats = new Menus();
 $menus = $cats->buildTree();
-//pre($menus,true);
 ?>
 <header class="header-standard-2">     
     <!-- MAIN NAV -->
@@ -90,7 +89,11 @@ $menus = $cats->buildTree();
                         </li>
 <?php } else { ?>
                         <li class="dropdown">
-                            <a href="" class="dropdown-toggle" data-toggle="dropdown"><?php echo Yii::app()->session['user_name']; ?></a>
+                            
+                            <a href="" class="dropdown-toggle" data-toggle="dropdown">
+                                <img src ="<?php echo Yii::app()->params['s3_base_url'].Yii::app()->session['user_image']; ?>" height="20" width="20" >
+                                <?php echo Yii::app()->session['first_name']; ?>
+                            </a>
                             <ul class="dropdown-menu">
                                 <li><a href="<?php echo base_url() . "/user/myaccount"; ?>">My Account</a></li>                            
                                 <li><a href="<?php echo base_url() . "/user/logout"; ?>">Logout</a></li>                            

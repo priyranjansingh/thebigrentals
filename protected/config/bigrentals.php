@@ -15,9 +15,10 @@ $params = array(
     'video_from' => array('0' => 'You Tube', '1' => 'Vimeo'),
     'time_period_unit' => array('y' => 'Year', 'm' => 'Month', 'd' => 'Day'),
     'title_position' => array('Mr.' => 'Mr.', 'Mrs.' => 'Mrs.','Miss' => 'Miss','Dr.' => 'Dr.'),
-    'access_key_id' => 'AKIAJDP3IMQ4CABUIC4A',
-    'secret_access_key' =>'cwdPMsI3YqyCNhxZmZ9a+KzXmAV9vmwx4FMDZ+3E',
+    'access_key_id' => '',
+    'secret_access_key' =>'',
     'register_msg' => 'You have successfully registered your self with us. We have sent you an email to activate your account.',
-    'activation_msg' => 'You have successfully activated your account'
+    'activation_msg' => 'You have successfully activated your account',
+    's3_base_url' => 'http://tbrs3.s3.amazonaws.com/',
 );
 ?>

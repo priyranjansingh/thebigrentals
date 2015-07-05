@@ -40,6 +40,8 @@ class UserIdentity extends CUserIdentity {
         else {
             Yii::app()->session['user_id'] = $user->id;
             Yii::app()->session['user_name'] = $user->email;
+            Yii::app()->session['first_name'] = $user->first_name;
+            Yii::app()->session['user_image'] = $user->user_image;
         }
         return !$this->errorCode;
     }
