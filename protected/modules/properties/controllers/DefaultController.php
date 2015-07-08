@@ -58,7 +58,12 @@ class DefaultController extends Controller {
              
             $model->attributes = $_POST['Property'];
             //pre($_POST['Property']);
-            //pre($model->attributes,true);
+            
+            if(empty($model->is_featured))
+            {
+                $model->is_featured = 'N';
+            }    
+            //pre($model->attributes,true);    
             
             $model->main_image = 'abcd';
             
@@ -162,9 +167,27 @@ class DefaultController extends Controller {
              deleteFromS3($property_gallery->image);
              deleteFromS3("thumb_".$property_gallery->image);
              $property_gallery->delete();
-              echo "success"; 
+             echo "success"; 
         }    
     }
+    // function for checking whether user will be allowed to add more featured property or not
+    public function actionCheckFeatured()
+    {
+        $front_user = isFrontUserLoggedIn();
+        if (!$front_user) {
+            $this->redirect(base_url() . '/user/login');
+        } else {
+            $front_user_id = frontUserId();
+            $membership_model = Membership::model()->find(array('condition' => 'user_id = "'.$front_user_id.'" '));
+            if ($membership_model->remaining_featured_listing > 0) {
+               echo "Y";
+            }
+            else 
+            {
+                echo "N";
+            }    
+        } 
+    }        
 
     public function actionSearch(){
         if(!empty($_POST)){

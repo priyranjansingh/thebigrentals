@@ -18314,3 +18314,504 @@ Stack trace:
 REQUEST_URI=/thebigrentals/index.php/properties/uploadPropertyImage
 in C:\xampp\htdocs\thebigrentals\protected\modules\properties\controllers\DefaultController.php (141)
 in C:\xampp\htdocs\thebigrentals\index.php (13)
+2015/07/05 09:35:32 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "images/default/property/e5ac1ba9-06c4-88c4-4a0b-5538056ca88f/1056830194.jpg".' in C:\xampp\htdocs\thebigrentals\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\thebigrentals\framework\web\CWebApplication.php(141): CWebApplication->runController('images/default/...')
+#1 C:\xampp\htdocs\thebigrentals\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\thebigrentals\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/thebigrentals/images/property/e5ac1ba9-06c4-88c4-4a0b-5538056ca88f/1056830194.jpg
+HTTP_REFERER=http://localhost/thebigrentals/
+---
+2015/07/05 09:35:32 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "images/default/property/2b90e3ec-6b62-4ca2-98ad-5572d3d8f755/1170306983.jpg".' in C:\xampp\htdocs\thebigrentals\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\thebigrentals\framework\web\CWebApplication.php(141): CWebApplication->runController('images/default/...')
+#1 C:\xampp\htdocs\thebigrentals\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\thebigrentals\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/thebigrentals/images/property/2b90e3ec-6b62-4ca2-98ad-5572d3d8f755/1170306983.jpg
+HTTP_REFERER=http://localhost/thebigrentals/
+---
+2015/07/05 09:35:32 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "images/default/property/b2f89abe-d902-907e-c666-55733b703a84/37409691.jpg".' in C:\xampp\htdocs\thebigrentals\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\thebigrentals\framework\web\CWebApplication.php(141): CWebApplication->runController('images/default/...')
+#1 C:\xampp\htdocs\thebigrentals\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\thebigrentals\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/thebigrentals/images/property/b2f89abe-d902-907e-c666-55733b703a84/37409691.jpg
+HTTP_REFERER=http://localhost/thebigrentals/
+---
+2015/07/05 09:35:32 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "images/default/property/a7f8b65b-bd2e-09db-494a-5538c7d7ad4c/109952098.".' in C:\xampp\htdocs\thebigrentals\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\thebigrentals\framework\web\CWebApplication.php(141): CWebApplication->runController('images/default/...')
+#1 C:\xampp\htdocs\thebigrentals\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\thebigrentals\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/thebigrentals/images/property/a7f8b65b-bd2e-09db-494a-5538c7d7ad4c/109952098.
+HTTP_REFERER=http://localhost/thebigrentals/
+---
+2015/07/05 09:35:57 [error] [php] Undefined index: list (C:\xampp\htdocs\thebigrentals\protected\modules\properties\controllers\DefaultController.php:179)
+Stack trace:
+#0 C:\xampp\htdocs\thebigrentals\framework\web\CController.php(286): DefaultController->runAction()
+#1 C:\xampp\htdocs\thebigrentals\framework\web\CController.php(265): DefaultController->runActionWithFilters()
+#2 C:\xampp\htdocs\thebigrentals\framework\web\CWebApplication.php(282): DefaultController->run()
+#3 C:\xampp\htdocs\thebigrentals\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#4 C:\xampp\htdocs\thebigrentals\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#5 C:\xampp\htdocs\thebigrentals\index.php(13): CWebApplication->run()
+REQUEST_URI=/thebigrentals/properties/search
+in C:\xampp\htdocs\thebigrentals\protected\modules\properties\controllers\DefaultController.php (179)
+in C:\xampp\htdocs\thebigrentals\index.php (13)
+2015/07/06 19:59:15 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "images/default/property/e5ac1ba9-06c4-88c4-4a0b-5538056ca88f/1056830194.jpg".' in C:\xampp\htdocs\thebigrentals\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\thebigrentals\framework\web\CWebApplication.php(141): CWebApplication->runController('images/default/...')
+#1 C:\xampp\htdocs\thebigrentals\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\thebigrentals\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/thebigrentals/images/property/e5ac1ba9-06c4-88c4-4a0b-5538056ca88f/1056830194.jpg
+HTTP_REFERER=http://localhost/thebigrentals/
+---
+2015/07/06 19:59:15 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "images/default/property/2b90e3ec-6b62-4ca2-98ad-5572d3d8f755/1170306983.jpg".' in C:\xampp\htdocs\thebigrentals\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\thebigrentals\framework\web\CWebApplication.php(141): CWebApplication->runController('images/default/...')
+#1 C:\xampp\htdocs\thebigrentals\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\thebigrentals\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/thebigrentals/images/property/2b90e3ec-6b62-4ca2-98ad-5572d3d8f755/1170306983.jpg
+HTTP_REFERER=http://localhost/thebigrentals/
+---
+2015/07/06 19:59:15 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "images/default/property/b2f89abe-d902-907e-c666-55733b703a84/37409691.jpg".' in C:\xampp\htdocs\thebigrentals\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\thebigrentals\framework\web\CWebApplication.php(141): CWebApplication->runController('images/default/...')
+#1 C:\xampp\htdocs\thebigrentals\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\thebigrentals\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/thebigrentals/images/property/b2f89abe-d902-907e-c666-55733b703a84/37409691.jpg
+HTTP_REFERER=http://localhost/thebigrentals/
+---
+2015/07/06 19:59:15 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "images/default/property/a7f8b65b-bd2e-09db-494a-5538c7d7ad4c/109952098.".' in C:\xampp\htdocs\thebigrentals\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\thebigrentals\framework\web\CWebApplication.php(141): CWebApplication->runController('images/default/...')
+#1 C:\xampp\htdocs\thebigrentals\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\thebigrentals\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/thebigrentals/images/property/a7f8b65b-bd2e-09db-494a-5538c7d7ad4c/109952098.
+HTTP_REFERER=http://localhost/thebigrentals/
+---
+2015/07/06 19:59:51 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "images".' in C:\xampp\htdocs\thebigrentals\framework\web\CController.php:483
+Stack trace:
+#0 C:\xampp\htdocs\thebigrentals\framework\web\CController.php(270): CController->missingAction('images')
+#1 C:\xampp\htdocs\thebigrentals\framework\web\CWebApplication.php(282): CController->run('images')
+#2 C:\xampp\htdocs\thebigrentals\framework\web\CWebApplication.php(141): CWebApplication->runController('user/default/im...')
+#3 C:\xampp\htdocs\thebigrentals\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#4 C:\xampp\htdocs\thebigrentals\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/thebigrentals/index.php/user/images/prv/product-1.jpg
+HTTP_REFERER=http://localhost/thebigrentals/index.php/user/myaccount
+---
+2015/07/06 19:59:51 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "images".' in C:\xampp\htdocs\thebigrentals\framework\web\CController.php:483
+Stack trace:
+#0 C:\xampp\htdocs\thebigrentals\framework\web\CController.php(270): CController->missingAction('images')
+#1 C:\xampp\htdocs\thebigrentals\framework\web\CWebApplication.php(282): CController->run('images')
+#2 C:\xampp\htdocs\thebigrentals\framework\web\CWebApplication.php(141): CWebApplication->runController('user/default/im...')
+#3 C:\xampp\htdocs\thebigrentals\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#4 C:\xampp\htdocs\thebigrentals\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/thebigrentals/index.php/user/images/prv/product-3.jpg
+HTTP_REFERER=http://localhost/thebigrentals/index.php/user/myaccount
+---
+2015/07/06 19:59:51 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "images".' in C:\xampp\htdocs\thebigrentals\framework\web\CController.php:483
+Stack trace:
+#0 C:\xampp\htdocs\thebigrentals\framework\web\CController.php(270): CController->missingAction('images')
+#1 C:\xampp\htdocs\thebigrentals\framework\web\CWebApplication.php(282): CController->run('images')
+#2 C:\xampp\htdocs\thebigrentals\framework\web\CWebApplication.php(141): CWebApplication->runController('user/default/im...')
+#3 C:\xampp\htdocs\thebigrentals\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#4 C:\xampp\htdocs\thebigrentals\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/thebigrentals/index.php/user/images/prv/product-2.jpg
+HTTP_REFERER=http://localhost/thebigrentals/index.php/user/myaccount
+---
+2015/07/08 02:59:14 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "images/default/property/2b90e3ec-6b62-4ca2-98ad-5572d3d8f755/1170306983.jpg".' in C:\xampp\htdocs\thebigrentals\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\thebigrentals\framework\web\CWebApplication.php(141): CWebApplication->runController('images/default/...')
+#1 C:\xampp\htdocs\thebigrentals\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\thebigrentals\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/thebigrentals/images/property/2b90e3ec-6b62-4ca2-98ad-5572d3d8f755/1170306983.jpg
+HTTP_REFERER=http://localhost/thebigrentals/
+---
+2015/07/08 02:59:14 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "images/default/property/a7f8b65b-bd2e-09db-494a-5538c7d7ad4c/109952098.".' in C:\xampp\htdocs\thebigrentals\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\thebigrentals\framework\web\CWebApplication.php(141): CWebApplication->runController('images/default/...')
+#1 C:\xampp\htdocs\thebigrentals\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\thebigrentals\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/thebigrentals/images/property/a7f8b65b-bd2e-09db-494a-5538c7d7ad4c/109952098.
+HTTP_REFERER=http://localhost/thebigrentals/
+---
+2015/07/08 02:59:14 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "images/default/property/e5ac1ba9-06c4-88c4-4a0b-5538056ca88f/1056830194.jpg".' in C:\xampp\htdocs\thebigrentals\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\thebigrentals\framework\web\CWebApplication.php(141): CWebApplication->runController('images/default/...')
+#1 C:\xampp\htdocs\thebigrentals\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\thebigrentals\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/thebigrentals/images/property/e5ac1ba9-06c4-88c4-4a0b-5538056ca88f/1056830194.jpg
+HTTP_REFERER=http://localhost/thebigrentals/
+---
+2015/07/08 02:59:14 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "images/default/property/b2f89abe-d902-907e-c666-55733b703a84/37409691.jpg".' in C:\xampp\htdocs\thebigrentals\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\thebigrentals\framework\web\CWebApplication.php(141): CWebApplication->runController('images/default/...')
+#1 C:\xampp\htdocs\thebigrentals\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\thebigrentals\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/thebigrentals/images/property/b2f89abe-d902-907e-c666-55733b703a84/37409691.jpg
+HTTP_REFERER=http://localhost/thebigrentals/
+---
+2015/07/08 03:00:01 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "images".' in C:\xampp\htdocs\thebigrentals\framework\web\CController.php:483
+Stack trace:
+#0 C:\xampp\htdocs\thebigrentals\framework\web\CController.php(270): CController->missingAction('images')
+#1 C:\xampp\htdocs\thebigrentals\framework\web\CWebApplication.php(282): CController->run('images')
+#2 C:\xampp\htdocs\thebigrentals\framework\web\CWebApplication.php(141): CWebApplication->runController('user/default/im...')
+#3 C:\xampp\htdocs\thebigrentals\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#4 C:\xampp\htdocs\thebigrentals\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/thebigrentals/index.php/user/images/prv/product-1.jpg
+HTTP_REFERER=http://localhost/thebigrentals/index.php/user/myaccount
+---
+2015/07/08 03:00:01 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "images".' in C:\xampp\htdocs\thebigrentals\framework\web\CController.php:483
+Stack trace:
+#0 C:\xampp\htdocs\thebigrentals\framework\web\CController.php(270): CController->missingAction('images')
+#1 C:\xampp\htdocs\thebigrentals\framework\web\CWebApplication.php(282): CController->run('images')
+#2 C:\xampp\htdocs\thebigrentals\framework\web\CWebApplication.php(141): CWebApplication->runController('user/default/im...')
+#3 C:\xampp\htdocs\thebigrentals\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#4 C:\xampp\htdocs\thebigrentals\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/thebigrentals/index.php/user/images/prv/product-3.jpg
+HTTP_REFERER=http://localhost/thebigrentals/index.php/user/myaccount
+---
+2015/07/08 03:00:01 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "images".' in C:\xampp\htdocs\thebigrentals\framework\web\CController.php:483
+Stack trace:
+#0 C:\xampp\htdocs\thebigrentals\framework\web\CController.php(270): CController->missingAction('images')
+#1 C:\xampp\htdocs\thebigrentals\framework\web\CWebApplication.php(282): CController->run('images')
+#2 C:\xampp\htdocs\thebigrentals\framework\web\CWebApplication.php(141): CWebApplication->runController('user/default/im...')
+#3 C:\xampp\htdocs\thebigrentals\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#4 C:\xampp\htdocs\thebigrentals\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/thebigrentals/index.php/user/images/prv/product-2.jpg
+HTTP_REFERER=http://localhost/thebigrentals/index.php/user/myaccount
+---
+2015/07/08 03:04:28 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "images".' in C:\xampp\htdocs\thebigrentals\framework\web\CController.php:483
+Stack trace:
+#0 C:\xampp\htdocs\thebigrentals\framework\web\CController.php(270): CController->missingAction('images')
+#1 C:\xampp\htdocs\thebigrentals\framework\web\CWebApplication.php(282): CController->run('images')
+#2 C:\xampp\htdocs\thebigrentals\framework\web\CWebApplication.php(141): CWebApplication->runController('user/default/im...')
+#3 C:\xampp\htdocs\thebigrentals\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#4 C:\xampp\htdocs\thebigrentals\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/thebigrentals/index.php/user/images/prv/product-1.jpg
+HTTP_REFERER=http://localhost/thebigrentals/index.php/user/myaccount
+---
+2015/07/08 03:04:28 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "images".' in C:\xampp\htdocs\thebigrentals\framework\web\CController.php:483
+Stack trace:
+#0 C:\xampp\htdocs\thebigrentals\framework\web\CController.php(270): CController->missingAction('images')
+#1 C:\xampp\htdocs\thebigrentals\framework\web\CWebApplication.php(282): CController->run('images')
+#2 C:\xampp\htdocs\thebigrentals\framework\web\CWebApplication.php(141): CWebApplication->runController('user/default/im...')
+#3 C:\xampp\htdocs\thebigrentals\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#4 C:\xampp\htdocs\thebigrentals\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/thebigrentals/index.php/user/images/prv/product-2.jpg
+HTTP_REFERER=http://localhost/thebigrentals/index.php/user/myaccount
+---
+2015/07/08 03:04:28 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "images".' in C:\xampp\htdocs\thebigrentals\framework\web\CController.php:483
+Stack trace:
+#0 C:\xampp\htdocs\thebigrentals\framework\web\CController.php(270): CController->missingAction('images')
+#1 C:\xampp\htdocs\thebigrentals\framework\web\CWebApplication.php(282): CController->run('images')
+#2 C:\xampp\htdocs\thebigrentals\framework\web\CWebApplication.php(141): CWebApplication->runController('user/default/im...')
+#3 C:\xampp\htdocs\thebigrentals\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#4 C:\xampp\htdocs\thebigrentals\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/thebigrentals/index.php/user/images/prv/product-3.jpg
+HTTP_REFERER=http://localhost/thebigrentals/index.php/user/myaccount
+---
+2015/07/08 03:04:30 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "themes/default/tbr/css/upload1.css".' in C:\xampp\htdocs\thebigrentals\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\thebigrentals\framework\web\CWebApplication.php(141): CWebApplication->runController('themes/default/...')
+#1 C:\xampp\htdocs\thebigrentals\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\thebigrentals\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/thebigrentals/themes/tbr/css/upload1.css
+HTTP_REFERER=http://localhost/thebigrentals/user/editprofile
+---
+2015/07/08 03:18:11 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "images/default/property/e5ac1ba9-06c4-88c4-4a0b-5538056ca88f/1056830194.jpg".' in C:\xampp\htdocs\thebigrentals\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\thebigrentals\framework\web\CWebApplication.php(141): CWebApplication->runController('images/default/...')
+#1 C:\xampp\htdocs\thebigrentals\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\thebigrentals\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/thebigrentals/images/property/e5ac1ba9-06c4-88c4-4a0b-5538056ca88f/1056830194.jpg
+HTTP_REFERER=http://localhost/thebigrentals/
+---
+2015/07/08 03:18:11 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "images/default/property/2b90e3ec-6b62-4ca2-98ad-5572d3d8f755/1170306983.jpg".' in C:\xampp\htdocs\thebigrentals\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\thebigrentals\framework\web\CWebApplication.php(141): CWebApplication->runController('images/default/...')
+#1 C:\xampp\htdocs\thebigrentals\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\thebigrentals\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/thebigrentals/images/property/2b90e3ec-6b62-4ca2-98ad-5572d3d8f755/1170306983.jpg
+HTTP_REFERER=http://localhost/thebigrentals/
+---
+2015/07/08 03:18:11 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "images/default/property/a7f8b65b-bd2e-09db-494a-5538c7d7ad4c/109952098.".' in C:\xampp\htdocs\thebigrentals\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\thebigrentals\framework\web\CWebApplication.php(141): CWebApplication->runController('images/default/...')
+#1 C:\xampp\htdocs\thebigrentals\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\thebigrentals\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/thebigrentals/images/property/a7f8b65b-bd2e-09db-494a-5538c7d7ad4c/109952098.
+HTTP_REFERER=http://localhost/thebigrentals/
+---
+2015/07/08 03:18:11 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "images/default/property/b2f89abe-d902-907e-c666-55733b703a84/37409691.jpg".' in C:\xampp\htdocs\thebigrentals\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\thebigrentals\framework\web\CWebApplication.php(141): CWebApplication->runController('images/default/...')
+#1 C:\xampp\htdocs\thebigrentals\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\thebigrentals\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/thebigrentals/images/property/b2f89abe-d902-907e-c666-55733b703a84/37409691.jpg
+HTTP_REFERER=http://localhost/thebigrentals/
+---
+2015/07/08 03:18:15 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "images".' in C:\xampp\htdocs\thebigrentals\framework\web\CController.php:483
+Stack trace:
+#0 C:\xampp\htdocs\thebigrentals\framework\web\CController.php(270): CController->missingAction('images')
+#1 C:\xampp\htdocs\thebigrentals\framework\web\CWebApplication.php(282): CController->run('images')
+#2 C:\xampp\htdocs\thebigrentals\framework\web\CWebApplication.php(141): CWebApplication->runController('user/default/im...')
+#3 C:\xampp\htdocs\thebigrentals\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#4 C:\xampp\htdocs\thebigrentals\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/thebigrentals/user/images/prv/product-2.jpg
+HTTP_REFERER=http://localhost/thebigrentals/user/myaccount
+---
+2015/07/08 03:18:15 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "images".' in C:\xampp\htdocs\thebigrentals\framework\web\CController.php:483
+Stack trace:
+#0 C:\xampp\htdocs\thebigrentals\framework\web\CController.php(270): CController->missingAction('images')
+#1 C:\xampp\htdocs\thebigrentals\framework\web\CWebApplication.php(282): CController->run('images')
+#2 C:\xampp\htdocs\thebigrentals\framework\web\CWebApplication.php(141): CWebApplication->runController('user/default/im...')
+#3 C:\xampp\htdocs\thebigrentals\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#4 C:\xampp\htdocs\thebigrentals\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/thebigrentals/user/images/prv/product-3.jpg
+HTTP_REFERER=http://localhost/thebigrentals/user/myaccount
+---
+2015/07/08 03:18:15 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "images".' in C:\xampp\htdocs\thebigrentals\framework\web\CController.php:483
+Stack trace:
+#0 C:\xampp\htdocs\thebigrentals\framework\web\CController.php(270): CController->missingAction('images')
+#1 C:\xampp\htdocs\thebigrentals\framework\web\CWebApplication.php(282): CController->run('images')
+#2 C:\xampp\htdocs\thebigrentals\framework\web\CWebApplication.php(141): CWebApplication->runController('user/default/im...')
+#3 C:\xampp\htdocs\thebigrentals\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#4 C:\xampp\htdocs\thebigrentals\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/thebigrentals/user/images/prv/product-1.jpg
+HTTP_REFERER=http://localhost/thebigrentals/user/myaccount
+---
+2015/07/08 03:18:15 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "images".' in C:\xampp\htdocs\thebigrentals\framework\web\CController.php:483
+Stack trace:
+#0 C:\xampp\htdocs\thebigrentals\framework\web\CController.php(270): CController->missingAction('images')
+#1 C:\xampp\htdocs\thebigrentals\framework\web\CWebApplication.php(282): CController->run('images')
+#2 C:\xampp\htdocs\thebigrentals\framework\web\CWebApplication.php(141): CWebApplication->runController('user/default/im...')
+#3 C:\xampp\htdocs\thebigrentals\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#4 C:\xampp\htdocs\thebigrentals\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/thebigrentals/user/images/prv/product-2.jpg
+HTTP_REFERER=http://localhost/thebigrentals/user/myaccount
+---
+2015/07/08 04:50:57 [warning] [application] Failed to set unsafe attribute "is_featured" of "Property".
+in C:\xampp\htdocs\thebigrentals\protected\modules\properties\controllers\DefaultController.php (59)
+in C:\xampp\htdocs\thebigrentals\index.php (13)
+2015/07/08 04:50:57 [warning] [application] Failed to set unsafe attribute "amenities" of "Property".
+in C:\xampp\htdocs\thebigrentals\protected\modules\properties\controllers\DefaultController.php (59)
+in C:\xampp\htdocs\thebigrentals\index.php (13)
+2015/07/08 04:50:57 [warning] [application] Failed to set unsafe attribute "Price" of "Property".
+in C:\xampp\htdocs\thebigrentals\protected\modules\properties\controllers\DefaultController.php (59)
+in C:\xampp\htdocs\thebigrentals\index.php (13)
+2015/07/08 04:51:01 [error] [php] Undefined index: example (C:\xampp\htdocs\thebigrentals\protected\modules\properties\controllers\DefaultController.php:141)
+Stack trace:
+#0 C:\xampp\htdocs\thebigrentals\framework\web\CController.php(286): DefaultController->runAction()
+#1 C:\xampp\htdocs\thebigrentals\framework\web\CController.php(265): DefaultController->runActionWithFilters()
+#2 C:\xampp\htdocs\thebigrentals\framework\web\CWebApplication.php(282): DefaultController->run()
+#3 C:\xampp\htdocs\thebigrentals\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#4 C:\xampp\htdocs\thebigrentals\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#5 C:\xampp\htdocs\thebigrentals\index.php(13): CWebApplication->run()
+REQUEST_URI=/thebigrentals/index.php/properties/uploadPropertyImage
+in C:\xampp\htdocs\thebigrentals\protected\modules\properties\controllers\DefaultController.php (141)
+in C:\xampp\htdocs\thebigrentals\index.php (13)
+2015/07/08 04:53:18 [warning] [application] Failed to set unsafe attribute "is_featured" of "Property".
+in C:\xampp\htdocs\thebigrentals\protected\modules\properties\controllers\DefaultController.php (59)
+in C:\xampp\htdocs\thebigrentals\index.php (13)
+2015/07/08 04:53:18 [warning] [application] Failed to set unsafe attribute "amenities" of "Property".
+in C:\xampp\htdocs\thebigrentals\protected\modules\properties\controllers\DefaultController.php (59)
+in C:\xampp\htdocs\thebigrentals\index.php (13)
+2015/07/08 04:53:18 [warning] [application] Failed to set unsafe attribute "Price" of "Property".
+in C:\xampp\htdocs\thebigrentals\protected\modules\properties\controllers\DefaultController.php (59)
+in C:\xampp\htdocs\thebigrentals\index.php (13)
+2015/07/08 04:57:23 [warning] [application] Failed to set unsafe attribute "amenities" of "Property".
+in C:\xampp\htdocs\thebigrentals\protected\modules\properties\controllers\DefaultController.php (59)
+in C:\xampp\htdocs\thebigrentals\index.php (13)
+2015/07/08 04:57:23 [warning] [application] Failed to set unsafe attribute "Price" of "Property".
+in C:\xampp\htdocs\thebigrentals\protected\modules\properties\controllers\DefaultController.php (59)
+in C:\xampp\htdocs\thebigrentals\index.php (13)
+2015/07/08 05:02:15 [warning] [application] Failed to set unsafe attribute "amenities" of "Property".
+in C:\xampp\htdocs\thebigrentals\protected\modules\properties\controllers\DefaultController.php (59)
+in C:\xampp\htdocs\thebigrentals\index.php (13)
+2015/07/08 05:02:15 [warning] [application] Failed to set unsafe attribute "Price" of "Property".
+in C:\xampp\htdocs\thebigrentals\protected\modules\properties\controllers\DefaultController.php (59)
+in C:\xampp\htdocs\thebigrentals\index.php (13)
+2015/07/08 05:02:30 [warning] [application] Failed to set unsafe attribute "is_featured" of "Property".
+in C:\xampp\htdocs\thebigrentals\protected\modules\properties\controllers\DefaultController.php (59)
+in C:\xampp\htdocs\thebigrentals\index.php (13)
+2015/07/08 05:02:30 [warning] [application] Failed to set unsafe attribute "amenities" of "Property".
+in C:\xampp\htdocs\thebigrentals\protected\modules\properties\controllers\DefaultController.php (59)
+in C:\xampp\htdocs\thebigrentals\index.php (13)
+2015/07/08 05:02:30 [warning] [application] Failed to set unsafe attribute "Price" of "Property".
+in C:\xampp\htdocs\thebigrentals\protected\modules\properties\controllers\DefaultController.php (59)
+in C:\xampp\htdocs\thebigrentals\index.php (13)
+2015/07/08 05:02:58 [warning] [application] Failed to set unsafe attribute "amenities" of "Property".
+in C:\xampp\htdocs\thebigrentals\protected\modules\properties\controllers\DefaultController.php (59)
+in C:\xampp\htdocs\thebigrentals\index.php (13)
+2015/07/08 05:02:58 [warning] [application] Failed to set unsafe attribute "Price" of "Property".
+in C:\xampp\htdocs\thebigrentals\protected\modules\properties\controllers\DefaultController.php (59)
+in C:\xampp\htdocs\thebigrentals\index.php (13)
+2015/07/08 05:02:59 [error] [php] Undefined index: example (C:\xampp\htdocs\thebigrentals\protected\modules\properties\controllers\DefaultController.php:141)
+Stack trace:
+#0 C:\xampp\htdocs\thebigrentals\framework\web\CController.php(286): DefaultController->runAction()
+#1 C:\xampp\htdocs\thebigrentals\framework\web\CController.php(265): DefaultController->runActionWithFilters()
+#2 C:\xampp\htdocs\thebigrentals\framework\web\CWebApplication.php(282): DefaultController->run()
+#3 C:\xampp\htdocs\thebigrentals\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#4 C:\xampp\htdocs\thebigrentals\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#5 C:\xampp\htdocs\thebigrentals\index.php(13): CWebApplication->run()
+REQUEST_URI=/thebigrentals/index.php/properties/uploadPropertyImage
+in C:\xampp\htdocs\thebigrentals\protected\modules\properties\controllers\DefaultController.php (141)
+in C:\xampp\htdocs\thebigrentals\index.php (13)
+2015/07/08 05:03:13 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "images/default/property/e5ac1ba9-06c4-88c4-4a0b-5538056ca88f/1056830194.jpg".' in C:\xampp\htdocs\thebigrentals\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\thebigrentals\framework\web\CWebApplication.php(141): CWebApplication->runController('images/default/...')
+#1 C:\xampp\htdocs\thebigrentals\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\thebigrentals\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/thebigrentals/images/property/e5ac1ba9-06c4-88c4-4a0b-5538056ca88f/1056830194.jpg
+HTTP_REFERER=http://localhost/thebigrentals/
+---
+2015/07/08 05:03:13 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "images/default/property/a7f8b65b-bd2e-09db-494a-5538c7d7ad4c/109952098.".' in C:\xampp\htdocs\thebigrentals\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\thebigrentals\framework\web\CWebApplication.php(141): CWebApplication->runController('images/default/...')
+#1 C:\xampp\htdocs\thebigrentals\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\thebigrentals\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/thebigrentals/images/property/a7f8b65b-bd2e-09db-494a-5538c7d7ad4c/109952098.
+HTTP_REFERER=http://localhost/thebigrentals/
+---
+2015/07/08 05:03:13 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "images/default/property/2b90e3ec-6b62-4ca2-98ad-5572d3d8f755/1170306983.jpg".' in C:\xampp\htdocs\thebigrentals\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\thebigrentals\framework\web\CWebApplication.php(141): CWebApplication->runController('images/default/...')
+#1 C:\xampp\htdocs\thebigrentals\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\thebigrentals\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/thebigrentals/images/property/2b90e3ec-6b62-4ca2-98ad-5572d3d8f755/1170306983.jpg
+HTTP_REFERER=http://localhost/thebigrentals/
+---
+2015/07/08 05:03:13 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "images/default/property/b2f89abe-d902-907e-c666-55733b703a84/37409691.jpg".' in C:\xampp\htdocs\thebigrentals\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\thebigrentals\framework\web\CWebApplication.php(141): CWebApplication->runController('images/default/...')
+#1 C:\xampp\htdocs\thebigrentals\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\thebigrentals\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/thebigrentals/images/property/b2f89abe-d902-907e-c666-55733b703a84/37409691.jpg
+HTTP_REFERER=http://localhost/thebigrentals/
+---
+2015/07/08 05:03:14 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "images".' in C:\xampp\htdocs\thebigrentals\framework\web\CController.php:483
+Stack trace:
+#0 C:\xampp\htdocs\thebigrentals\framework\web\CController.php(270): CController->missingAction('images')
+#1 C:\xampp\htdocs\thebigrentals\framework\web\CWebApplication.php(282): CController->run('images')
+#2 C:\xampp\htdocs\thebigrentals\framework\web\CWebApplication.php(141): CWebApplication->runController('user/default/im...')
+#3 C:\xampp\htdocs\thebigrentals\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#4 C:\xampp\htdocs\thebigrentals\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/thebigrentals/user/images/prv/product-1.jpg
+HTTP_REFERER=http://localhost/thebigrentals/user/myaccount
+---
+2015/07/08 05:03:14 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "images".' in C:\xampp\htdocs\thebigrentals\framework\web\CController.php:483
+Stack trace:
+#0 C:\xampp\htdocs\thebigrentals\framework\web\CController.php(270): CController->missingAction('images')
+#1 C:\xampp\htdocs\thebigrentals\framework\web\CWebApplication.php(282): CController->run('images')
+#2 C:\xampp\htdocs\thebigrentals\framework\web\CWebApplication.php(141): CWebApplication->runController('user/default/im...')
+#3 C:\xampp\htdocs\thebigrentals\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#4 C:\xampp\htdocs\thebigrentals\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/thebigrentals/user/images/prv/product-2.jpg
+HTTP_REFERER=http://localhost/thebigrentals/user/myaccount
+---
+2015/07/08 05:03:14 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "images".' in C:\xampp\htdocs\thebigrentals\framework\web\CController.php:483
+Stack trace:
+#0 C:\xampp\htdocs\thebigrentals\framework\web\CController.php(270): CController->missingAction('images')
+#1 C:\xampp\htdocs\thebigrentals\framework\web\CWebApplication.php(282): CController->run('images')
+#2 C:\xampp\htdocs\thebigrentals\framework\web\CWebApplication.php(141): CWebApplication->runController('user/default/im...')
+#3 C:\xampp\htdocs\thebigrentals\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#4 C:\xampp\htdocs\thebigrentals\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/thebigrentals/user/images/prv/product-3.jpg
+HTTP_REFERER=http://localhost/thebigrentals/user/myaccount
+---
+2015/07/08 05:04:11 [warning] [application] Failed to set unsafe attribute "amenities" of "Property".
+in C:\xampp\htdocs\thebigrentals\protected\modules\properties\controllers\DefaultController.php (59)
+in C:\xampp\htdocs\thebigrentals\index.php (13)
+2015/07/08 05:04:11 [warning] [application] Failed to set unsafe attribute "Price" of "Property".
+in C:\xampp\htdocs\thebigrentals\protected\modules\properties\controllers\DefaultController.php (59)
+in C:\xampp\htdocs\thebigrentals\index.php (13)
+2015/07/08 05:04:12 [error] [php] Undefined index: example (C:\xampp\htdocs\thebigrentals\protected\modules\properties\controllers\DefaultController.php:141)
+Stack trace:
+#0 C:\xampp\htdocs\thebigrentals\framework\web\CController.php(286): DefaultController->runAction()
+#1 C:\xampp\htdocs\thebigrentals\framework\web\CController.php(265): DefaultController->runActionWithFilters()
+#2 C:\xampp\htdocs\thebigrentals\framework\web\CWebApplication.php(282): DefaultController->run()
+#3 C:\xampp\htdocs\thebigrentals\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#4 C:\xampp\htdocs\thebigrentals\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#5 C:\xampp\htdocs\thebigrentals\index.php(13): CWebApplication->run()
+REQUEST_URI=/thebigrentals/index.php/properties/uploadPropertyImage
+in C:\xampp\htdocs\thebigrentals\protected\modules\properties\controllers\DefaultController.php (141)
+in C:\xampp\htdocs\thebigrentals\index.php (13)
+2015/07/08 05:06:14 [warning] [application] Failed to set unsafe attribute "amenities" of "Property".
+in C:\xampp\htdocs\thebigrentals\protected\modules\properties\controllers\DefaultController.php (59)
+in C:\xampp\htdocs\thebigrentals\index.php (13)
+2015/07/08 05:06:14 [warning] [application] Failed to set unsafe attribute "Price" of "Property".
+in C:\xampp\htdocs\thebigrentals\protected\modules\properties\controllers\DefaultController.php (59)
+in C:\xampp\htdocs\thebigrentals\index.php (13)
+2015/07/08 05:09:52 [warning] [application] Failed to set unsafe attribute "amenities" of "Property".
+in C:\xampp\htdocs\thebigrentals\protected\modules\properties\controllers\DefaultController.php (59)
+in C:\xampp\htdocs\thebigrentals\index.php (13)
+2015/07/08 05:09:52 [warning] [application] Failed to set unsafe attribute "Price" of "Property".
+in C:\xampp\htdocs\thebigrentals\protected\modules\properties\controllers\DefaultController.php (59)
+in C:\xampp\htdocs\thebigrentals\index.php (13)
+2015/07/08 05:10:02 [warning] [application] Failed to set unsafe attribute "amenities" of "Property".
+in C:\xampp\htdocs\thebigrentals\protected\modules\properties\controllers\DefaultController.php (59)
+in C:\xampp\htdocs\thebigrentals\index.php (13)
+2015/07/08 05:10:02 [warning] [application] Failed to set unsafe attribute "Price" of "Property".
+in C:\xampp\htdocs\thebigrentals\protected\modules\properties\controllers\DefaultController.php (59)
+in C:\xampp\htdocs\thebigrentals\index.php (13)
+2015/07/08 05:13:28 [warning] [application] Failed to set unsafe attribute "amenities" of "Property".
+in C:\xampp\htdocs\thebigrentals\protected\modules\properties\controllers\DefaultController.php (59)
+in C:\xampp\htdocs\thebigrentals\index.php (13)
+2015/07/08 05:13:28 [warning] [application] Failed to set unsafe attribute "Price" of "Property".
+in C:\xampp\htdocs\thebigrentals\protected\modules\properties\controllers\DefaultController.php (59)
+in C:\xampp\htdocs\thebigrentals\index.php (13)
+2015/07/08 05:13:49 [warning] [application] Failed to set unsafe attribute "amenities" of "Property".
+in C:\xampp\htdocs\thebigrentals\protected\modules\properties\controllers\DefaultController.php (59)
+in C:\xampp\htdocs\thebigrentals\index.php (13)
+2015/07/08 05:13:49 [warning] [application] Failed to set unsafe attribute "Price" of "Property".
+in C:\xampp\htdocs\thebigrentals\protected\modules\properties\controllers\DefaultController.php (59)
+in C:\xampp\htdocs\thebigrentals\index.php (13)
+2015/07/08 05:13:50 [error] [php] Undefined index: example (C:\xampp\htdocs\thebigrentals\protected\modules\properties\controllers\DefaultController.php:146)
+Stack trace:
+#0 C:\xampp\htdocs\thebigrentals\framework\web\CController.php(286): DefaultController->runAction()
+#1 C:\xampp\htdocs\thebigrentals\framework\web\CController.php(265): DefaultController->runActionWithFilters()
+#2 C:\xampp\htdocs\thebigrentals\framework\web\CWebApplication.php(282): DefaultController->run()
+#3 C:\xampp\htdocs\thebigrentals\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#4 C:\xampp\htdocs\thebigrentals\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#5 C:\xampp\htdocs\thebigrentals\index.php(13): CWebApplication->run()
+REQUEST_URI=/thebigrentals/index.php/properties/uploadPropertyImage
+in C:\xampp\htdocs\thebigrentals\protected\modules\properties\controllers\DefaultController.php (146)
+in C:\xampp\htdocs\thebigrentals\index.php (13)

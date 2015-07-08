@@ -285,6 +285,31 @@ $(document).ready(function() {
         $("form#property-form").trigger("submit");
     });
     });
+    
+    $("#Property_is_featured").click(function(){
+       if($("#Property_is_featured").is(":checked"))
+       {
+       $.ajax({
+                url: base_url+"/properties/checkfeatured",
+                type: 'POST',
+                success: function(data) {
+                   if(data == 'N')
+                   {
+                       $("#Property_is_featured_em").show();
+                   }
+                   else if(data == 'Y')
+                   {
+                       $("#Property_is_featured_em").hide();
+                   }    
+                },
+               
+            });
+        }
+        else
+        {
+             $("#Property_is_featured_em").hide();
+        }    
+    });
 
 
 });

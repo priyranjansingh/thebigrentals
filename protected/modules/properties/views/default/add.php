@@ -228,6 +228,14 @@ $('input[name="Property[Price][end_date][]"]').Zebra_DatePicker();
                                     <div class="errorMessage" id="Property_description_em" style="display: none;">Property description cannot be blank.</div>  
                                   </div>
                                 </div>
+                                 <div class="row">
+                                  <div style="margin-bottom:20px;font-size:15px;font-weight:bold;" class="col-md-12 col-sm-12">
+                                   Do you want to make this property a featured property ? 
+                                     <?php echo $form->checkBox($model, 'is_featured',array('value' => 'Y')); ?>  
+                                  <div class="errorMessage" id="Property_is_featured_em" style="display: none;">Sorry, you don't have sufficient featured listing.</div>  
+                                  </div>
+                                   
+                                </div>
                                 <div class="row">
                                   <div class="col-md-4 col-sm-4">
                                     <?php $all_category = CHtml::listData($categories, 'id', 'name'); ?>
