@@ -89,8 +89,8 @@
                             </div>
 
                             <div class="tab-pane fade in <?php if(!empty($msg)): ?>active<?php endif; ?>" id="tab-2">
-                                <div class="tab-body" style="padding-bottom: 0;">
-                                    <h3 class="title title-lg">My Subscriptions</h3>
+                                <div style="float:left;width:350px;" class="tab-body" style="padding-bottom: 0;">
+                                    <h3 class="title title-lg">You Subscribed for</h3>
                                     <h4><?php if(!empty($msg)): echo $msg; endif; ?></h4>
                                     <?php if (!empty($model->package_id)): ?>
                                         <p class="mb-20">You have active subscription package of <?php echo Package::model()->findByPk($model->package_id)->package_name; ?> Package.</p>
@@ -162,6 +162,51 @@
                                             </div>
                                         </div>
                                     </section>
+                                        
+                                </div>
+                                <div style="float:left;width:350px;" class="tab-body" style="padding-bottom: 0;">
+                                    <h3 class="title title-lg">You are left with</h3>
+                                    <h4><?php if(!empty($msg)): echo $msg; endif; ?></h4>
+                                    <?php if (!empty($model->package_id)): ?>
+                                        <p class="mb-20">You have active subscription package of <?php echo Package::model()->findByPk($model->package_id)->package_name; ?> Package.</p>
+                                    <?php else : ?>
+                                        <p class="mb-20">You don't have any active subscription please choose from below packages</p>
+                                    <?php endif; ?>
+                                    <section class="slice bg-white">
+                                        <div class="wp-section pricing-plans">
+                                            <div class="container">
+                                                            <div class="col-md-3">
+                                                                <div class="wp-block default">
+                                                                    <div class="plan-header base">
+                                                                        <h2 class="plan-title"><?php echo $membership_model->package->package_name; ?></h2>
+                                                                        <h3 class="price-tag"><span>$</span><?php echo $membership_model->package->amount; ?></h3>
+                                                                        <?php if ($membership_model->package->time_period_unit == 'y'): ?>
+                                                                            <small class="plan-info">Subscription for <?php echo $membership_model->package->time_period; ?> complete year.</small>
+                                                                        <?php elseif ($membership_model->package->time_period_unit == 'm'): ?>
+                                                                            <small class="plan-info">Subscription for <?php echo $membership_model->package->time_period; ?> complete month.</small>
+                                                                        <?php elseif ($membership_model->package->time_period_unit == 'd'): ?>
+                                                                            <small class="plan-info">Subscription for <?php echo $membership_model->package->time_period; ?> complete day(s).</small>
+                                                                        <?php endif; ?>
+                                                                    </div>
+                                                                    <ul>
+                                                                        <li><i class="fa fa-cloud-download"></i> <?php echo $membership_model->remaining_listing; ?> Properties Listing</li>
+                                                                        <li><i class="fa fa-book"></i> Unlimited access</li>
+                                                                        <li><i class="fa fa-coffee"></i> <?php echo $membership_model->remaining_featured_listing; ?> Featured Property Listing</li>
+                                                                        <li><i class="fa fa-envelope"></i> E-mail support</li>
+                                                                        <li><i class="fa fa-cloud-download"></i>Expires on <b><?php echo date("d-m-Y",strtotime($model->next_payment_date)); ?></b> </li>
+                                                                    </ul>          
+                                                                    <p class="plan-select text-center">
+                                                                        <a href="#" class="btn btn-base btn-icon btn-check" hidefocus="true">
+                                                                            <span>Selected</span>
+                                                                        </a>
+                                                                    </p>
+                                                                </div>
+                                                            </div>
+                                                        
+                                            </div>
+                                        </div>
+                                    </section>
+                                        
                                 </div>
                             </div>
 

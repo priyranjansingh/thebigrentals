@@ -156,11 +156,13 @@ class DefaultController extends Controller {
             $this->layout = '//layouts/inner_layout';
             $id = frontUserId();
             $model = Profile::model()->findByPk($id);
+            $membership_model = Membership::model()->find(array('condition' => 'user_id = "'.$model->id.'" '));
             $currencies = Currency::model()->findAll();
             $packages = Package::model()->findAll();
             $this->paymentMsg = "";
             $this->render('myaccount', array(
                 'model' => $model,
+                'membership_model' => $membership_model,
                 'currencies' => $currencies,
                 'packages' => $packages,
                 'msg' => $msg
