@@ -23,14 +23,18 @@
                     <div class="row">
                         <div class="col-md-7">
                             <div class="product-gallery">
-                                <div class="primary-image">
-                                    <?php  
+                                 <?php  
                                     if(!empty($property->embed_video_id))
-                                    {    
-                                        echo $property->embed_video_id;
-                                    }   
-                                    ?>
+                                    {  
+                                  ?>      
+                                <div class="primary-image">
+                                     
+                                     <?php    echo $property->embed_video_id; ?>
+                                
                                 </div>
+                                <?php 
+                                    }   
+                                ?>
                                 <div class="primary-image">
                                     <?php
                                     foreach ($gallery as $g):
