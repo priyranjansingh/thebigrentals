@@ -1,5 +1,6 @@
 <?php
 Yii::import("application.modules.admin.models.*", true);
+Yii::import("application.modules.properties.models.*", true);
 class DefaultController extends Controller {
 
     public $layout = '//layouts/login_main';
@@ -157,12 +158,14 @@ class DefaultController extends Controller {
             $id = frontUserId();
             $model = Profile::model()->findByPk($id);
             $membership_model = Membership::model()->find(array('condition' => 'user_id = "'.$model->id.'" '));
+            $property_model = Property::model()->findAll(array('condition' => 'created_by = "'.$id.'" '));
             $currencies = Currency::model()->findAll();
             $packages = Package::model()->findAll();
             $this->paymentMsg = "";
             $this->render('myaccount', array(
                 'model' => $model,
                 'membership_model' => $membership_model,
+                'property_model' => $property_model,
                 'currencies' => $currencies,
                 'packages' => $packages,
                 'msg' => $msg

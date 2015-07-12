@@ -420,6 +420,14 @@ function deleteFromS3($file) {
     Yii::app()->s3->deleteObject("tbrs3", $file);
 }
 
+// function for getting the information of an object on server
+
+function get_object_info($file)
+{
+     Yii::app()->s3->setAuth(Yii::app()->params['access_key_id'], Yii::app()->params['secret_access_key']);
+     return Yii::app()->s3->getObjectInfo("tbrs3", $file);
+}
+
 function callGateway($orderId, $package, $user, $post) {
     $twoCheckout = new Twocheckout;
     $twoCheckout->privateKey('E5FC384C-50A5-443B-B51E-4077F76927AC');
@@ -918,6 +926,19 @@ function ip_info($ip = NULL, $purpose = "location", $deep_detect = TRUE) {
     }
     return $output;
 }
+
+function getSubStr($str)
+{
+    $final_string = $str;
+    $len = strlen($final_string);
+    if($len > 80)
+    {
+        $final_string = substr($str, 0, 80)."...";
+    }
+    return $final_string;
+}
+
+
 
 
 ?>
