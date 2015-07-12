@@ -54,7 +54,7 @@
                                         if ($g->type != "m"):
                                             ?>
                                             <a href="<?php echo base_url(); ?>/images/property/<?php echo $property->id; ?>/<?php echo $g->image; ?>" class="theater" rel="group" hidefocus="true">
-                                                <img src="<?php echo base_url(); ?>/images/property/<?php echo $property->id; ?>/<?php echo $g->image; ?>" class="img-responsive" alt="">
+                                                <img src="<?php echo Yii::app()->params['s3_base_url']. $g->image; ?>" class="img-responsive" alt="">
                                             </a>
                                             <?php
                                         endif;
