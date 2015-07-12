@@ -24,12 +24,20 @@
                         <div class="col-md-7">
                             <div class="product-gallery">
                                 <div class="primary-image">
+                                    <?php  
+                                    if(!empty($property->embed_video_id))
+                                    {    
+                                        echo $property->embed_video_id;
+                                    }   
+                                    ?>
+                                </div>
+                                <div class="primary-image">
                                     <?php
                                     foreach ($gallery as $g):
                                         if ($g->type == "m"):
                                             ?>
                                             <a href="<?php echo base_url(); ?>/images/property/<?php echo $property->id; ?>/<?php echo $g->image; ?>" class="theater" rel="group" hidefocus="true">
-                                                <img src="<?php echo base_url(); ?>/images/property/<?php echo $property->id; ?>/<?php echo $g->image; ?>" class="img-responsive" alt="">
+                                                <img src="<?php echo Yii::app()->params['s3_base_url'].$g->image; ?>" class="img-responsive" alt="">
                                             </a>
                                             <?php
                                         endif;
