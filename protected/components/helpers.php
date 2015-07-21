@@ -938,6 +938,18 @@ function getSubStr($str)
     return $final_string;
 }
 
+function checkAmenity($amenity_id,$property_amenities_model)
+{
+    
+   foreach($property_amenities_model  as $model)
+   {
+       if($model->amenity_id == $amenity_id)
+       {
+           return "checked";
+       }    
+   }    
+}
+
 
 
 
