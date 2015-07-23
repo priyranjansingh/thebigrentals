@@ -479,18 +479,18 @@ function mailsend($to, $from, $subject, $message) {
     return $mail->Send();
 }
 
-function getMenu()
-{
-    Yii::import("application.modules.admin.models.Menu", true);
-    $parent_menus = Menu::model()->findAll(array('condition'=>'parent_id = "0" and status = "1" '));
-    foreach($parent_menus as $val)
-    {
-        pre($val->name);
-    }    
-     pre($parent_menus,true);
-   
-    return array('stores' => $stores_examples, 'examples' => $examples);
-}
+//function getMenu()
+//{
+//    Yii::import("application.modules.admin.models.Menu", true);
+//    $parent_menus = Menu::model()->findAll(array('condition'=>'parent_id = "0" and status = "1" '));
+//    foreach($parent_menus as $val)
+//    {
+//        pre($val->name);
+//    }    
+//     pre($parent_menus,true);
+//   
+//    return array('stores' => $stores_examples, 'examples' => $examples);
+//}
 
 function getVerifyEmail($link){
     $email = '<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
@@ -949,8 +949,5 @@ function checkAmenity($amenity_id,$property_amenities_model)
        }    
    }    
 }
-
-
-
 
 ?>

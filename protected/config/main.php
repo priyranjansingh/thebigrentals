@@ -57,6 +57,7 @@ return array(
 		// uncomment the following to enable URLs in path-format
 		
 		'urlManager'=>array(
+                        'showScriptName'=>false,
 			'urlFormat'=>'path',
 			'rules'=>array(
 				 '<module:(admin)>/<controller:\w+>/<action:\w+>/<id:(.*?)>' => '<module>/<controller>/<action>/<id>',

@@ -23605,3 +23605,766 @@ Stack trace:
 REQUEST_URI=/thebigrentals/properties/images/prv/estate/item-1.jpg
 HTTP_REFERER=http://localhost/thebigrentals/properties/view?property=test-p
 ---
+2015/07/22 01:15:05 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "images/default/property/d766210d-85e5-6ac3-97b7-5598d134d8a5/752023983.jpg".' in C:\xampp\htdocs\thebigrentals\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\thebigrentals\framework\web\CWebApplication.php(141): CWebApplication->runController('images/default/...')
+#1 C:\xampp\htdocs\thebigrentals\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\thebigrentals\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/thebigrentals/images/property/d766210d-85e5-6ac3-97b7-5598d134d8a5/752023983.jpg
+HTTP_REFERER=http://localhost/thebigrentals/
+---
+2015/07/22 01:15:07 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "images/default/property/2b90e3ec-6b62-4ca2-98ad-5572d3d8f755/988218963.jpg".' in C:\xampp\htdocs\thebigrentals\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\thebigrentals\framework\web\CWebApplication.php(141): CWebApplication->runController('images/default/...')
+#1 C:\xampp\htdocs\thebigrentals\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\thebigrentals\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/thebigrentals/images/property/2b90e3ec-6b62-4ca2-98ad-5572d3d8f755/988218963.jpg
+HTTP_REFERER=http://localhost/thebigrentals/
+---
+2015/07/22 01:15:07 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "images/default/property/b2f89abe-d902-907e-c666-55733b703a84/361646452.jpg".' in C:\xampp\htdocs\thebigrentals\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\thebigrentals\framework\web\CWebApplication.php(141): CWebApplication->runController('images/default/...')
+#1 C:\xampp\htdocs\thebigrentals\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\thebigrentals\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/thebigrentals/images/property/b2f89abe-d902-907e-c666-55733b703a84/361646452.jpg
+HTTP_REFERER=http://localhost/thebigrentals/
+---
+2015/07/22 01:26:03 [error] [php] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead (C:\xampp\htdocs\thebigrentals\protected\components\Menus.php:11)
+Stack trace:
+#0 C:\xampp\htdocs\thebigrentals\themes\tbr\views\layouts\login_main.php(125): require_once()
+#1 C:\xampp\htdocs\thebigrentals\framework\web\CBaseController.php(126): require()
+#2 C:\xampp\htdocs\thebigrentals\framework\web\CBaseController.php(95): DefaultController->renderInternal()
+#3 C:\xampp\htdocs\thebigrentals\framework\web\CController.php(784): DefaultController->renderFile()
+#4 C:\xampp\htdocs\thebigrentals\protected\modules\properties\controllers\DefaultController.php(192): DefaultController->render()
+#5 unknown(0): DefaultController->actionEdit()
+#6 C:\xampp\htdocs\thebigrentals\framework\web\actions\CAction.php(109): ReflectionMethod->invokeArgs()
+#7 C:\xampp\htdocs\thebigrentals\framework\web\actions\CInlineAction.php(47): CInlineAction->runWithParamsInternal()
+#8 C:\xampp\htdocs\thebigrentals\framework\web\CController.php(308): CInlineAction->runWithParams()
+#9 C:\xampp\htdocs\thebigrentals\framework\web\CController.php(286): DefaultController->runAction()
+#10 C:\xampp\htdocs\thebigrentals\framework\web\CController.php(265): DefaultController->runActionWithFilters()
+#11 C:\xampp\htdocs\thebigrentals\framework\web\CWebApplication.php(282): DefaultController->run()
+#12 C:\xampp\htdocs\thebigrentals\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#13 C:\xampp\htdocs\thebigrentals\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#14 C:\xampp\htdocs\thebigrentals\index.php(13): CWebApplication->run()
+REQUEST_URI=/thebigrentals/properties/edit?property=erer
+in C:\xampp\htdocs\thebigrentals\protected\components\Menus.php (11)
+in C:\xampp\htdocs\thebigrentals\themes\tbr\views\layouts\navigation.php (3)
+in C:\xampp\htdocs\thebigrentals\themes\tbr\views\layouts\login_main.php (125)
+2015/07/22 10:48:04 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "images/default/property/d766210d-85e5-6ac3-97b7-5598d134d8a5/752023983.jpg".' in C:\xampp\htdocs\thebigrentals\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\thebigrentals\framework\web\CWebApplication.php(141): CWebApplication->runController('images/default/...')
+#1 C:\xampp\htdocs\thebigrentals\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\thebigrentals\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/thebigrentals/images/property/d766210d-85e5-6ac3-97b7-5598d134d8a5/752023983.jpg
+HTTP_REFERER=http://localhost/thebigrentals/
+---
+2015/07/22 10:48:05 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "images/default/property/b2f89abe-d902-907e-c666-55733b703a84/361646452.jpg".' in C:\xampp\htdocs\thebigrentals\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\thebigrentals\framework\web\CWebApplication.php(141): CWebApplication->runController('images/default/...')
+#1 C:\xampp\htdocs\thebigrentals\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\thebigrentals\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/thebigrentals/images/property/b2f89abe-d902-907e-c666-55733b703a84/361646452.jpg
+HTTP_REFERER=http://localhost/thebigrentals/
+---
+2015/07/22 10:48:05 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "images/default/property/2b90e3ec-6b62-4ca2-98ad-5572d3d8f755/988218963.jpg".' in C:\xampp\htdocs\thebigrentals\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\thebigrentals\framework\web\CWebApplication.php(141): CWebApplication->runController('images/default/...')
+#1 C:\xampp\htdocs\thebigrentals\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\thebigrentals\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/thebigrentals/images/property/2b90e3ec-6b62-4ca2-98ad-5572d3d8f755/988218963.jpg
+HTTP_REFERER=http://localhost/thebigrentals/
+---
+2015/07/22 10:48:05 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "images/default/property/d766210d-85e5-6ac3-97b7-5598d134d8a5/752023983.jpg".' in C:\xampp\htdocs\thebigrentals\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\thebigrentals\framework\web\CWebApplication.php(141): CWebApplication->runController('images/default/...')
+#1 C:\xampp\htdocs\thebigrentals\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\thebigrentals\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/thebigrentals/images/property/d766210d-85e5-6ac3-97b7-5598d134d8a5/752023983.jpg
+HTTP_REFERER=http://localhost/thebigrentals/
+---
+2015/07/22 10:48:05 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "images/default/property/2b90e3ec-6b62-4ca2-98ad-5572d3d8f755/988218963.jpg".' in C:\xampp\htdocs\thebigrentals\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\thebigrentals\framework\web\CWebApplication.php(141): CWebApplication->runController('images/default/...')
+#1 C:\xampp\htdocs\thebigrentals\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\thebigrentals\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/thebigrentals/images/property/2b90e3ec-6b62-4ca2-98ad-5572d3d8f755/988218963.jpg
+HTTP_REFERER=http://localhost/thebigrentals/
+---
+2015/07/22 10:48:05 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "images/default/property/b2f89abe-d902-907e-c666-55733b703a84/361646452.jpg".' in C:\xampp\htdocs\thebigrentals\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\thebigrentals\framework\web\CWebApplication.php(141): CWebApplication->runController('images/default/...')
+#1 C:\xampp\htdocs\thebigrentals\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\thebigrentals\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/thebigrentals/images/property/b2f89abe-d902-907e-c666-55733b703a84/361646452.jpg
+HTTP_REFERER=http://localhost/thebigrentals/
+---
+2015/07/22 12:26:37 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "images/default/property/d766210d-85e5-6ac3-97b7-5598d134d8a5/752023983.jpg".' in C:\xampp\htdocs\thebigrentals\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\thebigrentals\framework\web\CWebApplication.php(141): CWebApplication->runController('images/default/...')
+#1 C:\xampp\htdocs\thebigrentals\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\thebigrentals\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/thebigrentals/images/property/d766210d-85e5-6ac3-97b7-5598d134d8a5/752023983.jpg
+HTTP_REFERER=http://localhost/thebigrentals/
+---
+2015/07/22 12:26:38 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "images/default/property/b2f89abe-d902-907e-c666-55733b703a84/361646452.jpg".' in C:\xampp\htdocs\thebigrentals\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\thebigrentals\framework\web\CWebApplication.php(141): CWebApplication->runController('images/default/...')
+#1 C:\xampp\htdocs\thebigrentals\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\thebigrentals\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/thebigrentals/images/property/b2f89abe-d902-907e-c666-55733b703a84/361646452.jpg
+HTTP_REFERER=http://localhost/thebigrentals/
+---
+2015/07/22 12:26:38 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "images/default/property/2b90e3ec-6b62-4ca2-98ad-5572d3d8f755/988218963.jpg".' in C:\xampp\htdocs\thebigrentals\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\thebigrentals\framework\web\CWebApplication.php(141): CWebApplication->runController('images/default/...')
+#1 C:\xampp\htdocs\thebigrentals\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\thebigrentals\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/thebigrentals/images/property/2b90e3ec-6b62-4ca2-98ad-5572d3d8f755/988218963.jpg
+HTTP_REFERER=http://localhost/thebigrentals/
+---
+2015/07/22 19:18:34 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "images/default/property/d766210d-85e5-6ac3-97b7-5598d134d8a5/752023983.jpg".' in C:\xampp\htdocs\thebigrentals\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\thebigrentals\framework\web\CWebApplication.php(141): CWebApplication->runController('images/default/...')
+#1 C:\xampp\htdocs\thebigrentals\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\thebigrentals\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/thebigrentals/images/property/d766210d-85e5-6ac3-97b7-5598d134d8a5/752023983.jpg
+HTTP_REFERER=http://localhost/thebigrentals/
+---
+2015/07/22 19:18:35 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "images/default/property/b2f89abe-d902-907e-c666-55733b703a84/361646452.jpg".' in C:\xampp\htdocs\thebigrentals\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\thebigrentals\framework\web\CWebApplication.php(141): CWebApplication->runController('images/default/...')
+#1 C:\xampp\htdocs\thebigrentals\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\thebigrentals\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/thebigrentals/images/property/b2f89abe-d902-907e-c666-55733b703a84/361646452.jpg
+HTTP_REFERER=http://localhost/thebigrentals/
+---
+2015/07/22 19:18:35 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "images/default/property/2b90e3ec-6b62-4ca2-98ad-5572d3d8f755/988218963.jpg".' in C:\xampp\htdocs\thebigrentals\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\thebigrentals\framework\web\CWebApplication.php(141): CWebApplication->runController('images/default/...')
+#1 C:\xampp\htdocs\thebigrentals\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\thebigrentals\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/thebigrentals/images/property/2b90e3ec-6b62-4ca2-98ad-5572d3d8f755/988218963.jpg
+HTTP_REFERER=http://localhost/thebigrentals/
+---
+2015/07/22 19:18:35 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "images/default/property/d766210d-85e5-6ac3-97b7-5598d134d8a5/752023983.jpg".' in C:\xampp\htdocs\thebigrentals\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\thebigrentals\framework\web\CWebApplication.php(141): CWebApplication->runController('images/default/...')
+#1 C:\xampp\htdocs\thebigrentals\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\thebigrentals\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/thebigrentals/images/property/d766210d-85e5-6ac3-97b7-5598d134d8a5/752023983.jpg
+HTTP_REFERER=http://localhost/thebigrentals/
+---
+2015/07/22 19:32:41 [error] [php] mysql_fetch_array() expects parameter 1 to be resource, boolean given (C:\xampp\htdocs\thebigrentals\protected\components\helpers.php:972)
+Stack trace:
+#0 C:\xampp\htdocs\thebigrentals\themes\tbr\views\layouts\navigation.php(6): getMenu()
+#1 C:\xampp\htdocs\thebigrentals\themes\tbr\views\layouts\main.php(55): require_once()
+#2 C:\xampp\htdocs\thebigrentals\framework\web\CBaseController.php(126): require()
+#3 C:\xampp\htdocs\thebigrentals\framework\web\CBaseController.php(95): DefaultController->renderInternal()
+#4 C:\xampp\htdocs\thebigrentals\framework\web\widgets\CContentDecorator.php(76): DefaultController->renderFile()
+#5 C:\xampp\htdocs\thebigrentals\framework\web\widgets\CContentDecorator.php(54): CContentDecorator->decorate()
+#6 C:\xampp\htdocs\thebigrentals\framework\web\widgets\COutputProcessor.php(44): CContentDecorator->processOutput()
+#7 C:\xampp\htdocs\thebigrentals\framework\web\CBaseController.php(214): CContentDecorator->run()
+#8 C:\xampp\htdocs\thebigrentals\framework\web\CBaseController.php(308): DefaultController->endWidget()
+#9 C:\xampp\htdocs\thebigrentals\themes\tbr\views\layouts\column1.php(4): DefaultController->endContent()
+#10 C:\xampp\htdocs\thebigrentals\framework\web\CBaseController.php(126): require()
+#11 C:\xampp\htdocs\thebigrentals\framework\web\CBaseController.php(95): DefaultController->renderInternal()
+#12 C:\xampp\htdocs\thebigrentals\framework\web\CController.php(784): DefaultController->renderFile()
+#13 C:\xampp\htdocs\thebigrentals\protected\modules\properties\controllers\DefaultController.php(10): DefaultController->render()
+#14 C:\xampp\htdocs\thebigrentals\framework\web\actions\CInlineAction.php(49): DefaultController->actionIndex()
+#15 C:\xampp\htdocs\thebigrentals\framework\web\CController.php(308): CInlineAction->runWithParams()
+#16 C:\xampp\htdocs\thebigrentals\framework\web\CController.php(286): DefaultController->runAction()
+#17 C:\xampp\htdocs\thebigrentals\framework\web\CController.php(265): DefaultController->runActionWithFilters()
+#18 C:\xampp\htdocs\thebigrentals\framework\web\CWebApplication.php(282): DefaultController->run()
+#19 C:\xampp\htdocs\thebigrentals\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#20 C:\xampp\htdocs\thebigrentals\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#21 C:\xampp\htdocs\thebigrentals\index.php(13): CWebApplication->run()
+REQUEST_URI=/thebigrentals/
+in C:\xampp\htdocs\thebigrentals\protected\components\helpers.php (972)
+in C:\xampp\htdocs\thebigrentals\protected\components\helpers.php (959)
+in C:\xampp\htdocs\thebigrentals\themes\tbr\views\layouts\navigation.php (6)
+2015/07/22 19:34:07 [error] [php] Undefined index: cat_id (C:\xampp\htdocs\thebigrentals\protected\components\helpers.php:973)
+Stack trace:
+#0 C:\xampp\htdocs\thebigrentals\themes\tbr\views\layouts\main.php(55): require_once()
+#1 C:\xampp\htdocs\thebigrentals\framework\web\CBaseController.php(126): require()
+#2 C:\xampp\htdocs\thebigrentals\framework\web\CBaseController.php(95): DefaultController->renderInternal()
+#3 C:\xampp\htdocs\thebigrentals\framework\web\widgets\CContentDecorator.php(76): DefaultController->renderFile()
+#4 C:\xampp\htdocs\thebigrentals\framework\web\widgets\CContentDecorator.php(54): CContentDecorator->decorate()
+#5 C:\xampp\htdocs\thebigrentals\framework\web\widgets\COutputProcessor.php(44): CContentDecorator->processOutput()
+#6 C:\xampp\htdocs\thebigrentals\framework\web\CBaseController.php(214): CContentDecorator->run()
+#7 C:\xampp\htdocs\thebigrentals\framework\web\CBaseController.php(308): DefaultController->endWidget()
+#8 C:\xampp\htdocs\thebigrentals\themes\tbr\views\layouts\column1.php(4): DefaultController->endContent()
+#9 C:\xampp\htdocs\thebigrentals\framework\web\CBaseController.php(126): require()
+#10 C:\xampp\htdocs\thebigrentals\framework\web\CBaseController.php(95): DefaultController->renderInternal()
+#11 C:\xampp\htdocs\thebigrentals\framework\web\CController.php(784): DefaultController->renderFile()
+#12 C:\xampp\htdocs\thebigrentals\protected\modules\properties\controllers\DefaultController.php(10): DefaultController->render()
+#13 C:\xampp\htdocs\thebigrentals\framework\web\actions\CInlineAction.php(49): DefaultController->actionIndex()
+#14 C:\xampp\htdocs\thebigrentals\framework\web\CController.php(308): CInlineAction->runWithParams()
+#15 C:\xampp\htdocs\thebigrentals\framework\web\CController.php(286): DefaultController->runAction()
+#16 C:\xampp\htdocs\thebigrentals\framework\web\CController.php(265): DefaultController->runActionWithFilters()
+#17 C:\xampp\htdocs\thebigrentals\framework\web\CWebApplication.php(282): DefaultController->run()
+#18 C:\xampp\htdocs\thebigrentals\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#19 C:\xampp\htdocs\thebigrentals\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#20 C:\xampp\htdocs\thebigrentals\index.php(13): CWebApplication->run()
+REQUEST_URI=/thebigrentals/
+in C:\xampp\htdocs\thebigrentals\protected\components\helpers.php (973)
+in C:\xampp\htdocs\thebigrentals\protected\components\helpers.php (959)
+in C:\xampp\htdocs\thebigrentals\themes\tbr\views\layouts\navigation.php (6)
+2015/07/22 19:35:08 [error] [php] Undefined index: final_array (C:\xampp\htdocs\thebigrentals\protected\components\helpers.php:981)
+Stack trace:
+#0 C:\xampp\htdocs\thebigrentals\themes\tbr\views\layouts\main.php(55): require_once()
+#1 C:\xampp\htdocs\thebigrentals\framework\web\CBaseController.php(126): require()
+#2 C:\xampp\htdocs\thebigrentals\framework\web\CBaseController.php(95): DefaultController->renderInternal()
+#3 C:\xampp\htdocs\thebigrentals\framework\web\widgets\CContentDecorator.php(76): DefaultController->renderFile()
+#4 C:\xampp\htdocs\thebigrentals\framework\web\widgets\CContentDecorator.php(54): CContentDecorator->decorate()
+#5 C:\xampp\htdocs\thebigrentals\framework\web\widgets\COutputProcessor.php(44): CContentDecorator->processOutput()
+#6 C:\xampp\htdocs\thebigrentals\framework\web\CBaseController.php(214): CContentDecorator->run()
+#7 C:\xampp\htdocs\thebigrentals\framework\web\CBaseController.php(308): DefaultController->endWidget()
+#8 C:\xampp\htdocs\thebigrentals\themes\tbr\views\layouts\column1.php(4): DefaultController->endContent()
+#9 C:\xampp\htdocs\thebigrentals\framework\web\CBaseController.php(126): require()
+#10 C:\xampp\htdocs\thebigrentals\framework\web\CBaseController.php(95): DefaultController->renderInternal()
+#11 C:\xampp\htdocs\thebigrentals\framework\web\CController.php(784): DefaultController->renderFile()
+#12 C:\xampp\htdocs\thebigrentals\protected\modules\properties\controllers\DefaultController.php(10): DefaultController->render()
+#13 C:\xampp\htdocs\thebigrentals\framework\web\actions\CInlineAction.php(49): DefaultController->actionIndex()
+#14 C:\xampp\htdocs\thebigrentals\framework\web\CController.php(308): CInlineAction->runWithParams()
+#15 C:\xampp\htdocs\thebigrentals\framework\web\CController.php(286): DefaultController->runAction()
+#16 C:\xampp\htdocs\thebigrentals\framework\web\CController.php(265): DefaultController->runActionWithFilters()
+#17 C:\xampp\htdocs\thebigrentals\framework\web\CWebApplication.php(282): DefaultController->run()
+#18 C:\xampp\htdocs\thebigrentals\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#19 C:\xampp\htdocs\thebigrentals\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#20 C:\xampp\htdocs\thebigrentals\index.php(13): CWebApplication->run()
+REQUEST_URI=/thebigrentals/
+in C:\xampp\htdocs\thebigrentals\protected\components\helpers.php (981)
+in C:\xampp\htdocs\thebigrentals\protected\components\helpers.php (961)
+in C:\xampp\htdocs\thebigrentals\themes\tbr\views\layouts\navigation.php (6)
+2015/07/22 19:46:01 [error] [php] Undefined index: final_array (C:\xampp\htdocs\thebigrentals\protected\components\helpers.php:982)
+Stack trace:
+#0 C:\xampp\htdocs\thebigrentals\themes\tbr\views\layouts\main.php(55): require_once()
+#1 C:\xampp\htdocs\thebigrentals\framework\web\CBaseController.php(126): require()
+#2 C:\xampp\htdocs\thebigrentals\framework\web\CBaseController.php(95): DefaultController->renderInternal()
+#3 C:\xampp\htdocs\thebigrentals\framework\web\widgets\CContentDecorator.php(76): DefaultController->renderFile()
+#4 C:\xampp\htdocs\thebigrentals\framework\web\widgets\CContentDecorator.php(54): CContentDecorator->decorate()
+#5 C:\xampp\htdocs\thebigrentals\framework\web\widgets\COutputProcessor.php(44): CContentDecorator->processOutput()
+#6 C:\xampp\htdocs\thebigrentals\framework\web\CBaseController.php(214): CContentDecorator->run()
+#7 C:\xampp\htdocs\thebigrentals\framework\web\CBaseController.php(308): DefaultController->endWidget()
+#8 C:\xampp\htdocs\thebigrentals\themes\tbr\views\layouts\column1.php(4): DefaultController->endContent()
+#9 C:\xampp\htdocs\thebigrentals\framework\web\CBaseController.php(126): require()
+#10 C:\xampp\htdocs\thebigrentals\framework\web\CBaseController.php(95): DefaultController->renderInternal()
+#11 C:\xampp\htdocs\thebigrentals\framework\web\CController.php(784): DefaultController->renderFile()
+#12 C:\xampp\htdocs\thebigrentals\protected\modules\properties\controllers\DefaultController.php(10): DefaultController->render()
+#13 C:\xampp\htdocs\thebigrentals\framework\web\actions\CInlineAction.php(49): DefaultController->actionIndex()
+#14 C:\xampp\htdocs\thebigrentals\framework\web\CController.php(308): CInlineAction->runWithParams()
+#15 C:\xampp\htdocs\thebigrentals\framework\web\CController.php(286): DefaultController->runAction()
+#16 C:\xampp\htdocs\thebigrentals\framework\web\CController.php(265): DefaultController->runActionWithFilters()
+#17 C:\xampp\htdocs\thebigrentals\framework\web\CWebApplication.php(282): DefaultController->run()
+#18 C:\xampp\htdocs\thebigrentals\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#19 C:\xampp\htdocs\thebigrentals\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#20 C:\xampp\htdocs\thebigrentals\index.php(13): CWebApplication->run()
+REQUEST_URI=/thebigrentals/
+in C:\xampp\htdocs\thebigrentals\protected\components\helpers.php (982)
+in C:\xampp\htdocs\thebigrentals\protected\components\helpers.php (961)
+in C:\xampp\htdocs\thebigrentals\themes\tbr\views\layouts\navigation.php (6)
+2015/07/22 19:46:29 [error] [php] Undefined index: final_array (C:\xampp\htdocs\thebigrentals\protected\components\helpers.php:982)
+Stack trace:
+#0 C:\xampp\htdocs\thebigrentals\themes\tbr\views\layouts\main.php(55): require_once()
+#1 C:\xampp\htdocs\thebigrentals\framework\web\CBaseController.php(126): require()
+#2 C:\xampp\htdocs\thebigrentals\framework\web\CBaseController.php(95): DefaultController->renderInternal()
+#3 C:\xampp\htdocs\thebigrentals\framework\web\widgets\CContentDecorator.php(76): DefaultController->renderFile()
+#4 C:\xampp\htdocs\thebigrentals\framework\web\widgets\CContentDecorator.php(54): CContentDecorator->decorate()
+#5 C:\xampp\htdocs\thebigrentals\framework\web\widgets\COutputProcessor.php(44): CContentDecorator->processOutput()
+#6 C:\xampp\htdocs\thebigrentals\framework\web\CBaseController.php(214): CContentDecorator->run()
+#7 C:\xampp\htdocs\thebigrentals\framework\web\CBaseController.php(308): DefaultController->endWidget()
+#8 C:\xampp\htdocs\thebigrentals\themes\tbr\views\layouts\column1.php(4): DefaultController->endContent()
+#9 C:\xampp\htdocs\thebigrentals\framework\web\CBaseController.php(126): require()
+#10 C:\xampp\htdocs\thebigrentals\framework\web\CBaseController.php(95): DefaultController->renderInternal()
+#11 C:\xampp\htdocs\thebigrentals\framework\web\CController.php(784): DefaultController->renderFile()
+#12 C:\xampp\htdocs\thebigrentals\protected\modules\properties\controllers\DefaultController.php(10): DefaultController->render()
+#13 C:\xampp\htdocs\thebigrentals\framework\web\actions\CInlineAction.php(49): DefaultController->actionIndex()
+#14 C:\xampp\htdocs\thebigrentals\framework\web\CController.php(308): CInlineAction->runWithParams()
+#15 C:\xampp\htdocs\thebigrentals\framework\web\CController.php(286): DefaultController->runAction()
+#16 C:\xampp\htdocs\thebigrentals\framework\web\CController.php(265): DefaultController->runActionWithFilters()
+#17 C:\xampp\htdocs\thebigrentals\framework\web\CWebApplication.php(282): DefaultController->run()
+#18 C:\xampp\htdocs\thebigrentals\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#19 C:\xampp\htdocs\thebigrentals\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#20 C:\xampp\htdocs\thebigrentals\index.php(13): CWebApplication->run()
+REQUEST_URI=/thebigrentals/
+in C:\xampp\htdocs\thebigrentals\protected\components\helpers.php (982)
+in C:\xampp\htdocs\thebigrentals\protected\components\helpers.php (961)
+in C:\xampp\htdocs\thebigrentals\themes\tbr\views\layouts\navigation.php (6)
+2015/07/22 20:27:12 [error] [php] mysql_fetch_array() expects parameter 1 to be resource, boolean given (C:\xampp\htdocs\thebigrentals\protected\components\Menus1.php:22)
+Stack trace:
+#0 C:\xampp\htdocs\thebigrentals\themes\tbr\views\layouts\navigation.php(6): Menus1->__construct()
+#1 C:\xampp\htdocs\thebigrentals\themes\tbr\views\layouts\main.php(55): require_once()
+#2 C:\xampp\htdocs\thebigrentals\framework\web\CBaseController.php(126): require()
+#3 C:\xampp\htdocs\thebigrentals\framework\web\CBaseController.php(95): DefaultController->renderInternal()
+#4 C:\xampp\htdocs\thebigrentals\framework\web\widgets\CContentDecorator.php(76): DefaultController->renderFile()
+#5 C:\xampp\htdocs\thebigrentals\framework\web\widgets\CContentDecorator.php(54): CContentDecorator->decorate()
+#6 C:\xampp\htdocs\thebigrentals\framework\web\widgets\COutputProcessor.php(44): CContentDecorator->processOutput()
+#7 C:\xampp\htdocs\thebigrentals\framework\web\CBaseController.php(214): CContentDecorator->run()
+#8 C:\xampp\htdocs\thebigrentals\framework\web\CBaseController.php(308): DefaultController->endWidget()
+#9 C:\xampp\htdocs\thebigrentals\themes\tbr\views\layouts\column1.php(4): DefaultController->endContent()
+#10 C:\xampp\htdocs\thebigrentals\framework\web\CBaseController.php(126): require()
+#11 C:\xampp\htdocs\thebigrentals\framework\web\CBaseController.php(95): DefaultController->renderInternal()
+#12 C:\xampp\htdocs\thebigrentals\framework\web\CController.php(784): DefaultController->renderFile()
+#13 C:\xampp\htdocs\thebigrentals\protected\modules\properties\controllers\DefaultController.php(10): DefaultController->render()
+#14 C:\xampp\htdocs\thebigrentals\framework\web\actions\CInlineAction.php(49): DefaultController->actionIndex()
+#15 C:\xampp\htdocs\thebigrentals\framework\web\CController.php(308): CInlineAction->runWithParams()
+#16 C:\xampp\htdocs\thebigrentals\framework\web\CController.php(286): DefaultController->runAction()
+#17 C:\xampp\htdocs\thebigrentals\framework\web\CController.php(265): DefaultController->runActionWithFilters()
+#18 C:\xampp\htdocs\thebigrentals\framework\web\CWebApplication.php(282): DefaultController->run()
+#19 C:\xampp\htdocs\thebigrentals\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#20 C:\xampp\htdocs\thebigrentals\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#21 C:\xampp\htdocs\thebigrentals\index.php(13): CWebApplication->run()
+REQUEST_URI=/thebigrentals/
+in C:\xampp\htdocs\thebigrentals\protected\components\Menus1.php (22)
+in C:\xampp\htdocs\thebigrentals\protected\components\Menus1.php (11)
+in C:\xampp\htdocs\thebigrentals\themes\tbr\views\layouts\navigation.php (6)
+2015/07/22 20:28:06 [error] [php] mysql_fetch_array() expects parameter 1 to be resource, boolean given (C:\xampp\htdocs\thebigrentals\protected\components\Menus1.php:23)
+Stack trace:
+#0 C:\xampp\htdocs\thebigrentals\themes\tbr\views\layouts\navigation.php(6): Menus1->__construct()
+#1 C:\xampp\htdocs\thebigrentals\themes\tbr\views\layouts\main.php(55): require_once()
+#2 C:\xampp\htdocs\thebigrentals\framework\web\CBaseController.php(126): require()
+#3 C:\xampp\htdocs\thebigrentals\framework\web\CBaseController.php(95): DefaultController->renderInternal()
+#4 C:\xampp\htdocs\thebigrentals\framework\web\widgets\CContentDecorator.php(76): DefaultController->renderFile()
+#5 C:\xampp\htdocs\thebigrentals\framework\web\widgets\CContentDecorator.php(54): CContentDecorator->decorate()
+#6 C:\xampp\htdocs\thebigrentals\framework\web\widgets\COutputProcessor.php(44): CContentDecorator->processOutput()
+#7 C:\xampp\htdocs\thebigrentals\framework\web\CBaseController.php(214): CContentDecorator->run()
+#8 C:\xampp\htdocs\thebigrentals\framework\web\CBaseController.php(308): DefaultController->endWidget()
+#9 C:\xampp\htdocs\thebigrentals\themes\tbr\views\layouts\column1.php(4): DefaultController->endContent()
+#10 C:\xampp\htdocs\thebigrentals\framework\web\CBaseController.php(126): require()
+#11 C:\xampp\htdocs\thebigrentals\framework\web\CBaseController.php(95): DefaultController->renderInternal()
+#12 C:\xampp\htdocs\thebigrentals\framework\web\CController.php(784): DefaultController->renderFile()
+#13 C:\xampp\htdocs\thebigrentals\protected\modules\properties\controllers\DefaultController.php(10): DefaultController->render()
+#14 C:\xampp\htdocs\thebigrentals\framework\web\actions\CInlineAction.php(49): DefaultController->actionIndex()
+#15 C:\xampp\htdocs\thebigrentals\framework\web\CController.php(308): CInlineAction->runWithParams()
+#16 C:\xampp\htdocs\thebigrentals\framework\web\CController.php(286): DefaultController->runAction()
+#17 C:\xampp\htdocs\thebigrentals\framework\web\CController.php(265): DefaultController->runActionWithFilters()
+#18 C:\xampp\htdocs\thebigrentals\framework\web\CWebApplication.php(282): DefaultController->run()
+#19 C:\xampp\htdocs\thebigrentals\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#20 C:\xampp\htdocs\thebigrentals\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#21 C:\xampp\htdocs\thebigrentals\index.php(13): CWebApplication->run()
+REQUEST_URI=/thebigrentals/
+in C:\xampp\htdocs\thebigrentals\protected\components\Menus1.php (23)
+in C:\xampp\htdocs\thebigrentals\protected\components\Menus1.php (11)
+in C:\xampp\htdocs\thebigrentals\themes\tbr\views\layouts\navigation.php (6)
+2015/07/22 20:28:40 [error] [php] mysql_fetch_array() expects parameter 1 to be resource, boolean given (C:\xampp\htdocs\thebigrentals\protected\components\Menus1.php:23)
+Stack trace:
+#0 C:\xampp\htdocs\thebigrentals\themes\tbr\views\layouts\navigation.php(6): Menus1->__construct()
+#1 C:\xampp\htdocs\thebigrentals\themes\tbr\views\layouts\main.php(55): require_once()
+#2 C:\xampp\htdocs\thebigrentals\framework\web\CBaseController.php(126): require()
+#3 C:\xampp\htdocs\thebigrentals\framework\web\CBaseController.php(95): DefaultController->renderInternal()
+#4 C:\xampp\htdocs\thebigrentals\framework\web\widgets\CContentDecorator.php(76): DefaultController->renderFile()
+#5 C:\xampp\htdocs\thebigrentals\framework\web\widgets\CContentDecorator.php(54): CContentDecorator->decorate()
+#6 C:\xampp\htdocs\thebigrentals\framework\web\widgets\COutputProcessor.php(44): CContentDecorator->processOutput()
+#7 C:\xampp\htdocs\thebigrentals\framework\web\CBaseController.php(214): CContentDecorator->run()
+#8 C:\xampp\htdocs\thebigrentals\framework\web\CBaseController.php(308): DefaultController->endWidget()
+#9 C:\xampp\htdocs\thebigrentals\themes\tbr\views\layouts\column1.php(4): DefaultController->endContent()
+#10 C:\xampp\htdocs\thebigrentals\framework\web\CBaseController.php(126): require()
+#11 C:\xampp\htdocs\thebigrentals\framework\web\CBaseController.php(95): DefaultController->renderInternal()
+#12 C:\xampp\htdocs\thebigrentals\framework\web\CController.php(784): DefaultController->renderFile()
+#13 C:\xampp\htdocs\thebigrentals\protected\modules\properties\controllers\DefaultController.php(10): DefaultController->render()
+#14 C:\xampp\htdocs\thebigrentals\framework\web\actions\CInlineAction.php(49): DefaultController->actionIndex()
+#15 C:\xampp\htdocs\thebigrentals\framework\web\CController.php(308): CInlineAction->runWithParams()
+#16 C:\xampp\htdocs\thebigrentals\framework\web\CController.php(286): DefaultController->runAction()
+#17 C:\xampp\htdocs\thebigrentals\framework\web\CController.php(265): DefaultController->runActionWithFilters()
+#18 C:\xampp\htdocs\thebigrentals\framework\web\CWebApplication.php(282): DefaultController->run()
+#19 C:\xampp\htdocs\thebigrentals\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#20 C:\xampp\htdocs\thebigrentals\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#21 C:\xampp\htdocs\thebigrentals\index.php(13): CWebApplication->run()
+REQUEST_URI=/thebigrentals/
+in C:\xampp\htdocs\thebigrentals\protected\components\Menus1.php (23)
+in C:\xampp\htdocs\thebigrentals\protected\components\Menus1.php (11)
+in C:\xampp\htdocs\thebigrentals\themes\tbr\views\layouts\navigation.php (6)
+2015/07/22 20:28:58 [error] [php] mysql_fetch_array() expects parameter 1 to be resource, boolean given (C:\xampp\htdocs\thebigrentals\protected\components\Menus1.php:23)
+Stack trace:
+#0 C:\xampp\htdocs\thebigrentals\themes\tbr\views\layouts\navigation.php(6): Menus1->__construct()
+#1 C:\xampp\htdocs\thebigrentals\themes\tbr\views\layouts\main.php(55): require_once()
+#2 C:\xampp\htdocs\thebigrentals\framework\web\CBaseController.php(126): require()
+#3 C:\xampp\htdocs\thebigrentals\framework\web\CBaseController.php(95): DefaultController->renderInternal()
+#4 C:\xampp\htdocs\thebigrentals\framework\web\widgets\CContentDecorator.php(76): DefaultController->renderFile()
+#5 C:\xampp\htdocs\thebigrentals\framework\web\widgets\CContentDecorator.php(54): CContentDecorator->decorate()
+#6 C:\xampp\htdocs\thebigrentals\framework\web\widgets\COutputProcessor.php(44): CContentDecorator->processOutput()
+#7 C:\xampp\htdocs\thebigrentals\framework\web\CBaseController.php(214): CContentDecorator->run()
+#8 C:\xampp\htdocs\thebigrentals\framework\web\CBaseController.php(308): DefaultController->endWidget()
+#9 C:\xampp\htdocs\thebigrentals\themes\tbr\views\layouts\column1.php(4): DefaultController->endContent()
+#10 C:\xampp\htdocs\thebigrentals\framework\web\CBaseController.php(126): require()
+#11 C:\xampp\htdocs\thebigrentals\framework\web\CBaseController.php(95): DefaultController->renderInternal()
+#12 C:\xampp\htdocs\thebigrentals\framework\web\CController.php(784): DefaultController->renderFile()
+#13 C:\xampp\htdocs\thebigrentals\protected\modules\properties\controllers\DefaultController.php(10): DefaultController->render()
+#14 C:\xampp\htdocs\thebigrentals\framework\web\actions\CInlineAction.php(49): DefaultController->actionIndex()
+#15 C:\xampp\htdocs\thebigrentals\framework\web\CController.php(308): CInlineAction->runWithParams()
+#16 C:\xampp\htdocs\thebigrentals\framework\web\CController.php(286): DefaultController->runAction()
+#17 C:\xampp\htdocs\thebigrentals\framework\web\CController.php(265): DefaultController->runActionWithFilters()
+#18 C:\xampp\htdocs\thebigrentals\framework\web\CWebApplication.php(282): DefaultController->run()
+#19 C:\xampp\htdocs\thebigrentals\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#20 C:\xampp\htdocs\thebigrentals\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#21 C:\xampp\htdocs\thebigrentals\index.php(13): CWebApplication->run()
+REQUEST_URI=/thebigrentals/
+in C:\xampp\htdocs\thebigrentals\protected\components\Menus1.php (23)
+in C:\xampp\htdocs\thebigrentals\protected\components\Menus1.php (11)
+in C:\xampp\htdocs\thebigrentals\themes\tbr\views\layouts\navigation.php (6)
+2015/07/22 20:46:56 [error] [php] Undefined variable: new_arr (C:\xampp\htdocs\thebigrentals\protected\components\Menus1.php:26)
+Stack trace:
+#0 C:\xampp\htdocs\thebigrentals\themes\tbr\views\layouts\navigation.php(6): Menus1->__construct()
+#1 C:\xampp\htdocs\thebigrentals\themes\tbr\views\layouts\main.php(55): require_once()
+#2 C:\xampp\htdocs\thebigrentals\framework\web\CBaseController.php(126): require()
+#3 C:\xampp\htdocs\thebigrentals\framework\web\CBaseController.php(95): DefaultController->renderInternal()
+#4 C:\xampp\htdocs\thebigrentals\framework\web\widgets\CContentDecorator.php(76): DefaultController->renderFile()
+#5 C:\xampp\htdocs\thebigrentals\framework\web\widgets\CContentDecorator.php(54): CContentDecorator->decorate()
+#6 C:\xampp\htdocs\thebigrentals\framework\web\widgets\COutputProcessor.php(44): CContentDecorator->processOutput()
+#7 C:\xampp\htdocs\thebigrentals\framework\web\CBaseController.php(214): CContentDecorator->run()
+#8 C:\xampp\htdocs\thebigrentals\framework\web\CBaseController.php(308): DefaultController->endWidget()
+#9 C:\xampp\htdocs\thebigrentals\themes\tbr\views\layouts\column1.php(4): DefaultController->endContent()
+#10 C:\xampp\htdocs\thebigrentals\framework\web\CBaseController.php(126): require()
+#11 C:\xampp\htdocs\thebigrentals\framework\web\CBaseController.php(95): DefaultController->renderInternal()
+#12 C:\xampp\htdocs\thebigrentals\framework\web\CController.php(784): DefaultController->renderFile()
+#13 C:\xampp\htdocs\thebigrentals\protected\modules\properties\controllers\DefaultController.php(10): DefaultController->render()
+#14 C:\xampp\htdocs\thebigrentals\framework\web\actions\CInlineAction.php(49): DefaultController->actionIndex()
+#15 C:\xampp\htdocs\thebigrentals\framework\web\CController.php(308): CInlineAction->runWithParams()
+#16 C:\xampp\htdocs\thebigrentals\framework\web\CController.php(286): DefaultController->runAction()
+#17 C:\xampp\htdocs\thebigrentals\framework\web\CController.php(265): DefaultController->runActionWithFilters()
+#18 C:\xampp\htdocs\thebigrentals\framework\web\CWebApplication.php(282): DefaultController->run()
+#19 C:\xampp\htdocs\thebigrentals\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#20 C:\xampp\htdocs\thebigrentals\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#21 C:\xampp\htdocs\thebigrentals\index.php(13): CWebApplication->run()
+REQUEST_URI=/thebigrentals/
+in C:\xampp\htdocs\thebigrentals\protected\components\Menus1.php (26)
+in C:\xampp\htdocs\thebigrentals\protected\components\Menus1.php (31)
+in C:\xampp\htdocs\thebigrentals\protected\components\Menus1.php (13)
+2015/07/22 20:48:23 [error] [php] Undefined variable: new_arr (C:\xampp\htdocs\thebigrentals\protected\components\Menus1.php:26)
+Stack trace:
+#0 C:\xampp\htdocs\thebigrentals\themes\tbr\views\layouts\navigation.php(6): Menus1->__construct()
+#1 C:\xampp\htdocs\thebigrentals\themes\tbr\views\layouts\main.php(55): require_once()
+#2 C:\xampp\htdocs\thebigrentals\framework\web\CBaseController.php(126): require()
+#3 C:\xampp\htdocs\thebigrentals\framework\web\CBaseController.php(95): DefaultController->renderInternal()
+#4 C:\xampp\htdocs\thebigrentals\framework\web\widgets\CContentDecorator.php(76): DefaultController->renderFile()
+#5 C:\xampp\htdocs\thebigrentals\framework\web\widgets\CContentDecorator.php(54): CContentDecorator->decorate()
+#6 C:\xampp\htdocs\thebigrentals\framework\web\widgets\COutputProcessor.php(44): CContentDecorator->processOutput()
+#7 C:\xampp\htdocs\thebigrentals\framework\web\CBaseController.php(214): CContentDecorator->run()
+#8 C:\xampp\htdocs\thebigrentals\framework\web\CBaseController.php(308): DefaultController->endWidget()
+#9 C:\xampp\htdocs\thebigrentals\themes\tbr\views\layouts\column1.php(4): DefaultController->endContent()
+#10 C:\xampp\htdocs\thebigrentals\framework\web\CBaseController.php(126): require()
+#11 C:\xampp\htdocs\thebigrentals\framework\web\CBaseController.php(95): DefaultController->renderInternal()
+#12 C:\xampp\htdocs\thebigrentals\framework\web\CController.php(784): DefaultController->renderFile()
+#13 C:\xampp\htdocs\thebigrentals\protected\modules\properties\controllers\DefaultController.php(10): DefaultController->render()
+#14 C:\xampp\htdocs\thebigrentals\framework\web\actions\CInlineAction.php(49): DefaultController->actionIndex()
+#15 C:\xampp\htdocs\thebigrentals\framework\web\CController.php(308): CInlineAction->runWithParams()
+#16 C:\xampp\htdocs\thebigrentals\framework\web\CController.php(286): DefaultController->runAction()
+#17 C:\xampp\htdocs\thebigrentals\framework\web\CController.php(265): DefaultController->runActionWithFilters()
+#18 C:\xampp\htdocs\thebigrentals\framework\web\CWebApplication.php(282): DefaultController->run()
+#19 C:\xampp\htdocs\thebigrentals\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#20 C:\xampp\htdocs\thebigrentals\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#21 C:\xampp\htdocs\thebigrentals\index.php(13): CWebApplication->run()
+REQUEST_URI=/thebigrentals/
+in C:\xampp\htdocs\thebigrentals\protected\components\Menus1.php (26)
+in C:\xampp\htdocs\thebigrentals\protected\components\Menus1.php (31)
+in C:\xampp\htdocs\thebigrentals\protected\components\Menus1.php (13)
+2015/07/22 20:48:48 [error] [php] Undefined variable: new_arr (C:\xampp\htdocs\thebigrentals\protected\components\Menus1.php:26)
+Stack trace:
+#0 C:\xampp\htdocs\thebigrentals\themes\tbr\views\layouts\navigation.php(6): Menus1->__construct()
+#1 C:\xampp\htdocs\thebigrentals\themes\tbr\views\layouts\main.php(55): require_once()
+#2 C:\xampp\htdocs\thebigrentals\framework\web\CBaseController.php(126): require()
+#3 C:\xampp\htdocs\thebigrentals\framework\web\CBaseController.php(95): DefaultController->renderInternal()
+#4 C:\xampp\htdocs\thebigrentals\framework\web\widgets\CContentDecorator.php(76): DefaultController->renderFile()
+#5 C:\xampp\htdocs\thebigrentals\framework\web\widgets\CContentDecorator.php(54): CContentDecorator->decorate()
+#6 C:\xampp\htdocs\thebigrentals\framework\web\widgets\COutputProcessor.php(44): CContentDecorator->processOutput()
+#7 C:\xampp\htdocs\thebigrentals\framework\web\CBaseController.php(214): CContentDecorator->run()
+#8 C:\xampp\htdocs\thebigrentals\framework\web\CBaseController.php(308): DefaultController->endWidget()
+#9 C:\xampp\htdocs\thebigrentals\themes\tbr\views\layouts\column1.php(4): DefaultController->endContent()
+#10 C:\xampp\htdocs\thebigrentals\framework\web\CBaseController.php(126): require()
+#11 C:\xampp\htdocs\thebigrentals\framework\web\CBaseController.php(95): DefaultController->renderInternal()
+#12 C:\xampp\htdocs\thebigrentals\framework\web\CController.php(784): DefaultController->renderFile()
+#13 C:\xampp\htdocs\thebigrentals\protected\modules\properties\controllers\DefaultController.php(10): DefaultController->render()
+#14 C:\xampp\htdocs\thebigrentals\framework\web\actions\CInlineAction.php(49): DefaultController->actionIndex()
+#15 C:\xampp\htdocs\thebigrentals\framework\web\CController.php(308): CInlineAction->runWithParams()
+#16 C:\xampp\htdocs\thebigrentals\framework\web\CController.php(286): DefaultController->runAction()
+#17 C:\xampp\htdocs\thebigrentals\framework\web\CController.php(265): DefaultController->runActionWithFilters()
+#18 C:\xampp\htdocs\thebigrentals\framework\web\CWebApplication.php(282): DefaultController->run()
+#19 C:\xampp\htdocs\thebigrentals\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#20 C:\xampp\htdocs\thebigrentals\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#21 C:\xampp\htdocs\thebigrentals\index.php(13): CWebApplication->run()
+REQUEST_URI=/thebigrentals/
+in C:\xampp\htdocs\thebigrentals\protected\components\Menus1.php (26)
+in C:\xampp\htdocs\thebigrentals\protected\components\Menus1.php (31)
+in C:\xampp\htdocs\thebigrentals\protected\components\Menus1.php (13)
+2015/07/22 21:08:17 [error] [php] Undefined variable: cats1 (C:\xampp\htdocs\thebigrentals\themes\tbr\views\layouts\navigation.php:7)
+Stack trace:
+#0 C:\xampp\htdocs\thebigrentals\framework\web\CBaseController.php(95): DefaultController->renderInternal()
+#1 C:\xampp\htdocs\thebigrentals\framework\web\widgets\CContentDecorator.php(76): DefaultController->renderFile()
+#2 C:\xampp\htdocs\thebigrentals\framework\web\widgets\CContentDecorator.php(54): CContentDecorator->decorate()
+#3 C:\xampp\htdocs\thebigrentals\framework\web\widgets\COutputProcessor.php(44): CContentDecorator->processOutput()
+#4 C:\xampp\htdocs\thebigrentals\framework\web\CBaseController.php(214): CContentDecorator->run()
+#5 C:\xampp\htdocs\thebigrentals\framework\web\CBaseController.php(308): DefaultController->endWidget()
+#6 C:\xampp\htdocs\thebigrentals\themes\tbr\views\layouts\column1.php(4): DefaultController->endContent()
+#7 C:\xampp\htdocs\thebigrentals\framework\web\CBaseController.php(126): require()
+#8 C:\xampp\htdocs\thebigrentals\framework\web\CBaseController.php(95): DefaultController->renderInternal()
+#9 C:\xampp\htdocs\thebigrentals\framework\web\CController.php(784): DefaultController->renderFile()
+#10 C:\xampp\htdocs\thebigrentals\protected\modules\properties\controllers\DefaultController.php(10): DefaultController->render()
+#11 C:\xampp\htdocs\thebigrentals\framework\web\actions\CInlineAction.php(49): DefaultController->actionIndex()
+#12 C:\xampp\htdocs\thebigrentals\framework\web\CController.php(308): CInlineAction->runWithParams()
+#13 C:\xampp\htdocs\thebigrentals\framework\web\CController.php(286): DefaultController->runAction()
+#14 C:\xampp\htdocs\thebigrentals\framework\web\CController.php(265): DefaultController->runActionWithFilters()
+#15 C:\xampp\htdocs\thebigrentals\framework\web\CWebApplication.php(282): DefaultController->run()
+#16 C:\xampp\htdocs\thebigrentals\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#17 C:\xampp\htdocs\thebigrentals\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#18 C:\xampp\htdocs\thebigrentals\index.php(13): CWebApplication->run()
+REQUEST_URI=/thebigrentals/
+in C:\xampp\htdocs\thebigrentals\themes\tbr\views\layouts\navigation.php (7)
+in C:\xampp\htdocs\thebigrentals\themes\tbr\views\layouts\main.php (55)
+in C:\xampp\htdocs\thebigrentals\themes\tbr\views\layouts\column1.php (4)
+2015/07/22 21:08:31 [error] [php] Trying to get property of non-object (C:\xampp\htdocs\thebigrentals\themes\tbr\views\layouts\navigation.php:47)
+Stack trace:
+#0 C:\xampp\htdocs\thebigrentals\framework\web\CBaseController.php(95): DefaultController->renderInternal()
+#1 C:\xampp\htdocs\thebigrentals\framework\web\widgets\CContentDecorator.php(76): DefaultController->renderFile()
+#2 C:\xampp\htdocs\thebigrentals\framework\web\widgets\CContentDecorator.php(54): CContentDecorator->decorate()
+#3 C:\xampp\htdocs\thebigrentals\framework\web\widgets\COutputProcessor.php(44): CContentDecorator->processOutput()
+#4 C:\xampp\htdocs\thebigrentals\framework\web\CBaseController.php(214): CContentDecorator->run()
+#5 C:\xampp\htdocs\thebigrentals\framework\web\CBaseController.php(308): DefaultController->endWidget()
+#6 C:\xampp\htdocs\thebigrentals\themes\tbr\views\layouts\column1.php(4): DefaultController->endContent()
+#7 C:\xampp\htdocs\thebigrentals\framework\web\CBaseController.php(126): require()
+#8 C:\xampp\htdocs\thebigrentals\framework\web\CBaseController.php(95): DefaultController->renderInternal()
+#9 C:\xampp\htdocs\thebigrentals\framework\web\CController.php(784): DefaultController->renderFile()
+#10 C:\xampp\htdocs\thebigrentals\protected\modules\properties\controllers\DefaultController.php(10): DefaultController->render()
+#11 C:\xampp\htdocs\thebigrentals\framework\web\actions\CInlineAction.php(49): DefaultController->actionIndex()
+#12 C:\xampp\htdocs\thebigrentals\framework\web\CController.php(308): CInlineAction->runWithParams()
+#13 C:\xampp\htdocs\thebigrentals\framework\web\CController.php(286): DefaultController->runAction()
+#14 C:\xampp\htdocs\thebigrentals\framework\web\CController.php(265): DefaultController->runActionWithFilters()
+#15 C:\xampp\htdocs\thebigrentals\framework\web\CWebApplication.php(282): DefaultController->run()
+#16 C:\xampp\htdocs\thebigrentals\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#17 C:\xampp\htdocs\thebigrentals\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#18 C:\xampp\htdocs\thebigrentals\index.php(13): CWebApplication->run()
+REQUEST_URI=/thebigrentals/
+in C:\xampp\htdocs\thebigrentals\themes\tbr\views\layouts\navigation.php (47)
+in C:\xampp\htdocs\thebigrentals\themes\tbr\views\layouts\main.php (55)
+in C:\xampp\htdocs\thebigrentals\themes\tbr\views\layouts\column1.php (4)
+2015/07/22 21:11:48 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "images/default/property/d766210d-85e5-6ac3-97b7-5598d134d8a5/752023983.jpg".' in C:\xampp\htdocs\thebigrentals\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\thebigrentals\framework\web\CWebApplication.php(141): CWebApplication->runController('images/default/...')
+#1 C:\xampp\htdocs\thebigrentals\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\thebigrentals\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/thebigrentals/images/property/d766210d-85e5-6ac3-97b7-5598d134d8a5/752023983.jpg
+HTTP_REFERER=http://localhost/thebigrentals/
+---
+2015/07/22 21:11:49 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "images/default/property/2b90e3ec-6b62-4ca2-98ad-5572d3d8f755/988218963.jpg".' in C:\xampp\htdocs\thebigrentals\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\thebigrentals\framework\web\CWebApplication.php(141): CWebApplication->runController('images/default/...')
+#1 C:\xampp\htdocs\thebigrentals\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\thebigrentals\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/thebigrentals/images/property/2b90e3ec-6b62-4ca2-98ad-5572d3d8f755/988218963.jpg
+HTTP_REFERER=http://localhost/thebigrentals/
+---
+2015/07/22 21:11:49 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "images/default/property/2b90e3ec-6b62-4ca2-98ad-5572d3d8f755/988218963.jpg".' in C:\xampp\htdocs\thebigrentals\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\thebigrentals\framework\web\CWebApplication.php(141): CWebApplication->runController('images/default/...')
+#1 C:\xampp\htdocs\thebigrentals\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\thebigrentals\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/thebigrentals/images/property/2b90e3ec-6b62-4ca2-98ad-5572d3d8f755/988218963.jpg
+HTTP_REFERER=http://localhost/thebigrentals/
+---
+2015/07/22 21:11:49 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "images/default/property/b2f89abe-d902-907e-c666-55733b703a84/361646452.jpg".' in C:\xampp\htdocs\thebigrentals\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\thebigrentals\framework\web\CWebApplication.php(141): CWebApplication->runController('images/default/...')
+#1 C:\xampp\htdocs\thebigrentals\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\thebigrentals\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/thebigrentals/images/property/b2f89abe-d902-907e-c666-55733b703a84/361646452.jpg
+HTTP_REFERER=http://localhost/thebigrentals/
+---
+2015/07/22 21:12:03 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "wp-accordion.html".' in C:\xampp\htdocs\thebigrentals\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\thebigrentals\framework\web\CWebApplication.php(141): CWebApplication->runController('wp-accordion.ht...')
+#1 C:\xampp\htdocs\thebigrentals\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\thebigrentals\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/thebigrentals/wp-accordion.html
+HTTP_REFERER=http://localhost/thebigrentals/
+---
+2015/07/22 21:12:11 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "images/default/property/d766210d-85e5-6ac3-97b7-5598d134d8a5/752023983.jpg".' in C:\xampp\htdocs\thebigrentals\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\thebigrentals\framework\web\CWebApplication.php(141): CWebApplication->runController('images/default/...')
+#1 C:\xampp\htdocs\thebigrentals\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\thebigrentals\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/thebigrentals/images/property/d766210d-85e5-6ac3-97b7-5598d134d8a5/752023983.jpg
+HTTP_REFERER=http://localhost/thebigrentals/
+---
+2015/07/22 21:12:11 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "images/default/property/b2f89abe-d902-907e-c666-55733b703a84/361646452.jpg".' in C:\xampp\htdocs\thebigrentals\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\thebigrentals\framework\web\CWebApplication.php(141): CWebApplication->runController('images/default/...')
+#1 C:\xampp\htdocs\thebigrentals\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\thebigrentals\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/thebigrentals/images/property/b2f89abe-d902-907e-c666-55733b703a84/361646452.jpg
+HTTP_REFERER=http://localhost/thebigrentals/
+---
+2015/07/22 21:12:11 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "images/default/property/2b90e3ec-6b62-4ca2-98ad-5572d3d8f755/988218963.jpg".' in C:\xampp\htdocs\thebigrentals\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\thebigrentals\framework\web\CWebApplication.php(141): CWebApplication->runController('images/default/...')
+#1 C:\xampp\htdocs\thebigrentals\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\thebigrentals\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/thebigrentals/images/property/2b90e3ec-6b62-4ca2-98ad-5572d3d8f755/988218963.jpg
+HTTP_REFERER=http://localhost/thebigrentals/
+---
+2015/07/22 21:13:58 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "images/default/property/d766210d-85e5-6ac3-97b7-5598d134d8a5/752023983.jpg".' in C:\xampp\htdocs\thebigrentals\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\thebigrentals\framework\web\CWebApplication.php(141): CWebApplication->runController('images/default/...')
+#1 C:\xampp\htdocs\thebigrentals\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\thebigrentals\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/thebigrentals/images/property/d766210d-85e5-6ac3-97b7-5598d134d8a5/752023983.jpg
+HTTP_REFERER=http://localhost/thebigrentals/
+---
+2015/07/22 21:13:58 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "images/default/property/2b90e3ec-6b62-4ca2-98ad-5572d3d8f755/988218963.jpg".' in C:\xampp\htdocs\thebigrentals\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\thebigrentals\framework\web\CWebApplication.php(141): CWebApplication->runController('images/default/...')
+#1 C:\xampp\htdocs\thebigrentals\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\thebigrentals\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/thebigrentals/images/property/2b90e3ec-6b62-4ca2-98ad-5572d3d8f755/988218963.jpg
+HTTP_REFERER=http://localhost/thebigrentals/
+---
+2015/07/22 21:13:58 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "images/default/property/b2f89abe-d902-907e-c666-55733b703a84/361646452.jpg".' in C:\xampp\htdocs\thebigrentals\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\thebigrentals\framework\web\CWebApplication.php(141): CWebApplication->runController('images/default/...')
+#1 C:\xampp\htdocs\thebigrentals\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\thebigrentals\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/thebigrentals/images/property/b2f89abe-d902-907e-c666-55733b703a84/361646452.jpg
+HTTP_REFERER=http://localhost/thebigrentals/
+---
+2015/07/22 21:13:59 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "images/default/property/d766210d-85e5-6ac3-97b7-5598d134d8a5/752023983.jpg".' in C:\xampp\htdocs\thebigrentals\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\thebigrentals\framework\web\CWebApplication.php(141): CWebApplication->runController('images/default/...')
+#1 C:\xampp\htdocs\thebigrentals\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\thebigrentals\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/thebigrentals/images/property/d766210d-85e5-6ac3-97b7-5598d134d8a5/752023983.jpg
+HTTP_REFERER=http://localhost/thebigrentals/
+---
+2015/07/22 21:13:59 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "images/default/property/2b90e3ec-6b62-4ca2-98ad-5572d3d8f755/988218963.jpg".' in C:\xampp\htdocs\thebigrentals\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\thebigrentals\framework\web\CWebApplication.php(141): CWebApplication->runController('images/default/...')
+#1 C:\xampp\htdocs\thebigrentals\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\thebigrentals\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/thebigrentals/images/property/2b90e3ec-6b62-4ca2-98ad-5572d3d8f755/988218963.jpg
+HTTP_REFERER=http://localhost/thebigrentals/
+---
+2015/07/22 21:13:59 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "images/default/property/b2f89abe-d902-907e-c666-55733b703a84/361646452.jpg".' in C:\xampp\htdocs\thebigrentals\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\thebigrentals\framework\web\CWebApplication.php(141): CWebApplication->runController('images/default/...')
+#1 C:\xampp\htdocs\thebigrentals\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\thebigrentals\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/thebigrentals/images/property/b2f89abe-d902-907e-c666-55733b703a84/361646452.jpg
+HTTP_REFERER=http://localhost/thebigrentals/
+---
+2015/07/22 21:14:27 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "images/default/property/d766210d-85e5-6ac3-97b7-5598d134d8a5/752023983.jpg".' in C:\xampp\htdocs\thebigrentals\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\thebigrentals\framework\web\CWebApplication.php(141): CWebApplication->runController('images/default/...')
+#1 C:\xampp\htdocs\thebigrentals\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\thebigrentals\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/thebigrentals/images/property/d766210d-85e5-6ac3-97b7-5598d134d8a5/752023983.jpg
+HTTP_REFERER=http://localhost/thebigrentals/
+---
+2015/07/22 21:14:27 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "images/default/property/2b90e3ec-6b62-4ca2-98ad-5572d3d8f755/988218963.jpg".' in C:\xampp\htdocs\thebigrentals\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\thebigrentals\framework\web\CWebApplication.php(141): CWebApplication->runController('images/default/...')
+#1 C:\xampp\htdocs\thebigrentals\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\thebigrentals\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/thebigrentals/images/property/2b90e3ec-6b62-4ca2-98ad-5572d3d8f755/988218963.jpg
+HTTP_REFERER=http://localhost/thebigrentals/
+---
+2015/07/22 21:14:27 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "images/default/property/b2f89abe-d902-907e-c666-55733b703a84/361646452.jpg".' in C:\xampp\htdocs\thebigrentals\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\thebigrentals\framework\web\CWebApplication.php(141): CWebApplication->runController('images/default/...')
+#1 C:\xampp\htdocs\thebigrentals\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\thebigrentals\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/thebigrentals/images/property/b2f89abe-d902-907e-c666-55733b703a84/361646452.jpg
+HTTP_REFERER=http://localhost/thebigrentals/
+---
+2015/07/22 21:14:27 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "images/default/property/2b90e3ec-6b62-4ca2-98ad-5572d3d8f755/988218963.jpg".' in C:\xampp\htdocs\thebigrentals\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\thebigrentals\framework\web\CWebApplication.php(141): CWebApplication->runController('images/default/...')
+#1 C:\xampp\htdocs\thebigrentals\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\thebigrentals\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/thebigrentals/images/property/2b90e3ec-6b62-4ca2-98ad-5572d3d8f755/988218963.jpg
+HTTP_REFERER=http://localhost/thebigrentals/
+---
+2015/07/23 05:32:41 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "images/default/property/d766210d-85e5-6ac3-97b7-5598d134d8a5/752023983.jpg".' in C:\xampp\htdocs\thebigrentals\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\thebigrentals\framework\web\CWebApplication.php(141): CWebApplication->runController('images/default/...')
+#1 C:\xampp\htdocs\thebigrentals\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\thebigrentals\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/thebigrentals/images/property/d766210d-85e5-6ac3-97b7-5598d134d8a5/752023983.jpg
+HTTP_REFERER=http://localhost/thebigrentals/
+---
+2015/07/23 05:32:41 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "images/default/property/2b90e3ec-6b62-4ca2-98ad-5572d3d8f755/988218963.jpg".' in C:\xampp\htdocs\thebigrentals\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\thebigrentals\framework\web\CWebApplication.php(141): CWebApplication->runController('images/default/...')
+#1 C:\xampp\htdocs\thebigrentals\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\thebigrentals\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/thebigrentals/images/property/2b90e3ec-6b62-4ca2-98ad-5572d3d8f755/988218963.jpg
+HTTP_REFERER=http://localhost/thebigrentals/
+---
+2015/07/23 05:32:51 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "images/default/property/b2f89abe-d902-907e-c666-55733b703a84/361646452.jpg".' in C:\xampp\htdocs\thebigrentals\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\thebigrentals\framework\web\CWebApplication.php(141): CWebApplication->runController('images/default/...')
+#1 C:\xampp\htdocs\thebigrentals\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\thebigrentals\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/thebigrentals/images/property/b2f89abe-d902-907e-c666-55733b703a84/361646452.jpg
+HTTP_REFERER=http://localhost/thebigrentals/
+---
+2015/07/23 05:35:25 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "images/default/property/d766210d-85e5-6ac3-97b7-5598d134d8a5/752023983.jpg".' in C:\xampp\htdocs\thebigrentals\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\thebigrentals\framework\web\CWebApplication.php(141): CWebApplication->runController('images/default/...')
+#1 C:\xampp\htdocs\thebigrentals\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\thebigrentals\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/thebigrentals/images/property/d766210d-85e5-6ac3-97b7-5598d134d8a5/752023983.jpg
+HTTP_REFERER=http://localhost/thebigrentals/
+---
+2015/07/23 05:35:25 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "images/default/property/2b90e3ec-6b62-4ca2-98ad-5572d3d8f755/988218963.jpg".' in C:\xampp\htdocs\thebigrentals\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\thebigrentals\framework\web\CWebApplication.php(141): CWebApplication->runController('images/default/...')
+#1 C:\xampp\htdocs\thebigrentals\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\thebigrentals\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/thebigrentals/images/property/2b90e3ec-6b62-4ca2-98ad-5572d3d8f755/988218963.jpg
+HTTP_REFERER=http://localhost/thebigrentals/
+---
+2015/07/23 05:35:25 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "images/default/property/b2f89abe-d902-907e-c666-55733b703a84/361646452.jpg".' in C:\xampp\htdocs\thebigrentals\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\thebigrentals\framework\web\CWebApplication.php(141): CWebApplication->runController('images/default/...')
+#1 C:\xampp\htdocs\thebigrentals\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\thebigrentals\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/thebigrentals/images/property/b2f89abe-d902-907e-c666-55733b703a84/361646452.jpg
+HTTP_REFERER=http://localhost/thebigrentals/
+---
