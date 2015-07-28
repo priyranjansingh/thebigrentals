@@ -20,5 +20,6 @@ $params = array(
     'register_msg' => 'You have successfully registered your self with us. We have sent you an email to activate your account.',
     'activation_msg' => 'You have successfully activated your account',
     's3_base_url' => 'http://tbrs3.s3.amazonaws.com/',
+    'coupon_type' => array('p' => '%age Value', 'f' => 'Fixed Value')
 );
 ?>

@@ -22,7 +22,9 @@ return array(
 
 	'modules'=>array(
 		// uncomment the following to enable the Gii tool
-		'admin',
+		'admin' => array(
+				'defaultController' => 'login',
+			),
 		'user',
 		'properties',
 		'test',
