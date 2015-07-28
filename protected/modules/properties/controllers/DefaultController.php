@@ -31,6 +31,7 @@ class DefaultController extends Controller {
             ));
         }
     }
+    
 
      public function actionAdd() {
         $this->layout = '//layouts/login_main';
@@ -102,6 +103,89 @@ class DefaultController extends Controller {
         }
         $this->render('add', array('model' => $model,
             'listed' => $listed,
+            'amenities' => $amenities,
+            'categories' => $categories,
+            'currency' => $currency,
+            'user' => $user));
+    }
+    
+      public function actionEdit($property) {
+        $property_model = Property::model()->find(array('condition' => 'slug = "'.$property.'" '));
+        $property_model->date_availability_from = date("Y-m-d",strtotime($property_model->date_availability_from));
+        $property_model->date_availability_to = date("Y-m-d",strtotime($property_model->date_availability_to));
+        $property_amenities_model = PropertyAmenities::model()->findAll(array('condition' => 'property_id = "'.$property_model->id.'" '));
+        $property_price_model = PropertyPrice::model()->findAll(array('condition' => 'property_id = "'.$property_model->id.'" '));
+        $this->layout = '//layouts/login_main';
+        $front_user = isFrontUserLoggedIn();
+        if (!$front_user) {
+            $this->redirect(base_url() . '/user/login');
+        } else {
+            $front_user_id = frontUserId();
+            $user = Users::model()->findByPk($front_user_id);
+            if (!$user->payment_status) {
+                $this->redirect(base_url() . '/user/checkout');
+            }
+        }
+        $model = $property_model;
+        //pre($model->attributes,true);
+        $listed = BaseModel::getAll('Listed');
+        $categories = BaseModel::getAll('Category');
+        $amenities = BaseModel::getAll('AmenitiesFeatures');
+        $currency = BaseModel::getAll('Currency');
+
+        if (isset($_POST['Property'])) {
+            
+            $amenities = $_POST['Property']['amenities'];
+            $property_price = $_POST['Property']['Price'];
+             
+            $model->attributes = $_POST['Property'];
+            
+            if(empty($model->is_featured))
+            {
+                $model->is_featured = 'N';
+            }    
+            
+            $model->main_image = 'abcd';
+            
+            $model->gallery_image = 'xyz';
+           
+            $model->amenities = "13212";
+            
+            if ($model->save()) {
+                PropertyAmenities::model()->deleteAll('property_id = "'.$model->id.'" ');
+                PropertyPrice::model()->deleteAll('property_id = "'.$model->id.'" ');
+                foreach ($amenities as $amenity) {
+                    $pAmenities = new PropertyAmenities;
+                    $pAmenities->property_id = $model->id;
+                    $pAmenities->amenity_id = $amenity;
+                    $pAmenities->save();
+                }
+                if (!empty($property_price)) {
+                    foreach ($property_price['season'] as $key => $val) {
+                        $property_price_model = new PropertyPrice;
+                        $property_price_model->property_id = $model->id;
+                        $property_price_model->season = $property_price['season'][$key];
+                        $property_price_model->currency = $property_price['currency'][$key];
+                        $property_price_model->start_date = $property_price['start_date'][$key];
+                        $property_price_model->end_date = $property_price['end_date'][$key];
+                        $property_price_model->night_price = $property_price['night_price'][$key];
+                        $property_price_model->week_price = $property_price['week_price'][$key];
+                        $property_price_model->month_price = $property_price['month_price'][$key];
+                        $property_price_model->save();
+                    }
+                }
+                $this->redirect(array('step2', 'property' => $model->slug));
+               // $this->redirect(array('view', 'property' => $model->slug));
+            }
+            else
+            {
+               // pre($model->getErrors(),true);
+            }    
+        }
+        $this->render('edit', array('model' => $model,
+            'listed' => $listed,
+            'property_amenities_model' => $property_amenities_model,
+            'property_price_model' => $property_price_model,
             'amenities' => $amenities,
             'categories' => $categories,
             'currency' => $currency,

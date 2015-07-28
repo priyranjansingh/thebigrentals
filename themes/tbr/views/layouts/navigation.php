@@ -1,7 +1,7 @@
 <?php $baseUrl = Yii::app()->baseUrl; ?>
 <?php
 $cats = new Menus();
-$menus = $cats->buildTree();
+$menus = $cats->getMenu();
 ?>
 <header class="header-standard-2">     
     <!-- MAIN NAV -->
@@ -40,24 +40,24 @@ $menus = $cats->buildTree();
                     foreach ($menus as $key => $val) {
                         ?>      
                         <li class="dropdown">
-                            <a href="<?php echo (!empty($val->url)) ? $val->url : "#"; ?>" class="dropdown-toggle" ><?php echo $val->name; ?></a>
+                            <a href="<?php echo (!empty($val['url'])) ? $val['url'] : "#"; ?>" class="dropdown-toggle" ><?php echo $val['name']; ?></a>
                             <?php
-                            if (!empty($val->children)) {
+                            if (!empty($val['children'])) {
                                 ?>
                                 <ul class="dropdown-menu">
                                 <?php
-                                foreach ($val->children as $k => $v) {
+                                foreach ($val['children'] as $k => $v) {
                                     ?>  
-                                        <li class="<?php echo (!empty($v->children)) ? "dropdown-submenu" : ''; ?>">
-                                            <a tabindex="-1" href="<?php echo (!empty($v->url)) ? $v->url : "#"; ?>"><?php echo $v->name ?></a>
+                                        <li class="<?php echo (!empty($v['children'])) ? "dropdown-submenu" : ''; ?>">
+                                            <a tabindex="-1" href="<?php echo (!empty($v['url'])) ? $v['url'] : "#"; ?>"><?php echo $v['name'] ?></a>
                                         <?php
-                                        if (!empty($v->children)) {
+                                        if (!empty($v['children'])) {
                                             ?>
                                                 <ul class="dropdown-menu">
                                                 <?php
-                                                foreach ($v->children as $k1 => $v1) {
+                                                foreach ($v['children'] as $k1 => $v1) {
                                                     ?>     
-                                                        <li><a tabindex="-1" href="wp-accordion.html"><?php echo $v1->name; ?></a></li>
+                                                        <li><a tabindex="-1" href="<?php echo (!empty($v1['url'])) ? $v1['url'] : "#"; ?>"><?php echo $v1['name']; ?></a></li>
                                                         <?php
                                                     }
                                                     ?>

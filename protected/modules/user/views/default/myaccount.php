@@ -252,8 +252,11 @@ endif;
     <?php echo getSubStr($val->description); ?>
                                                     </p>
                                                     <div class="wp-block-footer">
-                                                        <a href="#" class="btn btn-sm btn-base btn-icon">
+                                                        <a href="<?php echo base_url()."/properties/view?property=".$val->slug ?>" class="btn btn-primary btn-sm">
                                                             <span>View More</span>
+                                                        </a>
+                                                        <a href="<?php echo base_url()."/properties/edit?property=".$val->slug ?>" class="btn btn-primary btn-sm" style="width:80px;">
+                                                            <span>Edit</span>
                                                         </a>
                                                     </div>
                                                 </div>

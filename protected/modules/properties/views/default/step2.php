@@ -53,7 +53,8 @@
                                                 ?>    
                                                 <div style='margin:20px;float:left'>
                                                     <img  src="http://tbrs3.s3.amazonaws.com/thumb_<?php echo $val['image']; ?>" >
-                                                    <div><input type='radio' id='<?php echo $val['property']; ?>' value='<?php echo $val['id']; ?>'  class='main'  name='main'>
+                                                    <div>
+                                                        <input <?php echo ($val['type'] == 'm')? "checked":'';   ?> type='radio' id='<?php echo $val['property']; ?>' value='<?php echo $val['id']; ?>'  class='main'  name='main'>
                                                         <span id="<?php echo $val['id']; ?>" class="remove_img" style="margin-left:20px;"><img src="<?php echo base_url(); ?>/images/remove.png" ></span>
                                                     </div>
                                                 </div>
