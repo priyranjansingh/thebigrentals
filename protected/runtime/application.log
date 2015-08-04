@@ -24368,3 +24368,111 @@ Stack trace:
 REQUEST_URI=/thebigrentals/images/property/b2f89abe-d902-907e-c666-55733b703a84/361646452.jpg
 HTTP_REFERER=http://localhost/thebigrentals/
 ---
+2015/07/23 05:38:43 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "images/default/property/d766210d-85e5-6ac3-97b7-5598d134d8a5/752023983.jpg".' in C:\xampp\htdocs\thebigrentals\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\thebigrentals\framework\web\CWebApplication.php(141): CWebApplication->runController('images/default/...')
+#1 C:\xampp\htdocs\thebigrentals\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\thebigrentals\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/thebigrentals/images/property/d766210d-85e5-6ac3-97b7-5598d134d8a5/752023983.jpg
+HTTP_REFERER=http://localhost/thebigrentals/
+---
+2015/07/23 05:38:43 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "images/default/property/2b90e3ec-6b62-4ca2-98ad-5572d3d8f755/988218963.jpg".' in C:\xampp\htdocs\thebigrentals\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\thebigrentals\framework\web\CWebApplication.php(141): CWebApplication->runController('images/default/...')
+#1 C:\xampp\htdocs\thebigrentals\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\thebigrentals\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/thebigrentals/images/property/2b90e3ec-6b62-4ca2-98ad-5572d3d8f755/988218963.jpg
+HTTP_REFERER=http://localhost/thebigrentals/
+---
+2015/07/23 05:38:44 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "images/default/property/b2f89abe-d902-907e-c666-55733b703a84/361646452.jpg".' in C:\xampp\htdocs\thebigrentals\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\thebigrentals\framework\web\CWebApplication.php(141): CWebApplication->runController('images/default/...')
+#1 C:\xampp\htdocs\thebigrentals\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\thebigrentals\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/thebigrentals/images/property/b2f89abe-d902-907e-c666-55733b703a84/361646452.jpg
+HTTP_REFERER=http://localhost/thebigrentals/
+---
+2015/07/23 05:38:44 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "images/default/property/d766210d-85e5-6ac3-97b7-5598d134d8a5/752023983.jpg".' in C:\xampp\htdocs\thebigrentals\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\thebigrentals\framework\web\CWebApplication.php(141): CWebApplication->runController('images/default/...')
+#1 C:\xampp\htdocs\thebigrentals\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\thebigrentals\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/thebigrentals/images/property/d766210d-85e5-6ac3-97b7-5598d134d8a5/752023983.jpg
+HTTP_REFERER=http://localhost/thebigrentals/
+---
+2015/07/23 05:38:44 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "images/default/property/2b90e3ec-6b62-4ca2-98ad-5572d3d8f755/988218963.jpg".' in C:\xampp\htdocs\thebigrentals\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\thebigrentals\framework\web\CWebApplication.php(141): CWebApplication->runController('images/default/...')
+#1 C:\xampp\htdocs\thebigrentals\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\thebigrentals\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/thebigrentals/images/property/2b90e3ec-6b62-4ca2-98ad-5572d3d8f755/988218963.jpg
+HTTP_REFERER=http://localhost/thebigrentals/
+---
+2015/07/23 05:39:19 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "images/default/property/d766210d-85e5-6ac3-97b7-5598d134d8a5/752023983.jpg".' in C:\xampp\htdocs\thebigrentals\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\thebigrentals\framework\web\CWebApplication.php(141): CWebApplication->runController('images/default/...')
+#1 C:\xampp\htdocs\thebigrentals\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\thebigrentals\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/thebigrentals/images/property/d766210d-85e5-6ac3-97b7-5598d134d8a5/752023983.jpg
+HTTP_REFERER=http://localhost/thebigrentals/
+---
+2015/07/23 05:39:19 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "images/default/property/2b90e3ec-6b62-4ca2-98ad-5572d3d8f755/988218963.jpg".' in C:\xampp\htdocs\thebigrentals\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\thebigrentals\framework\web\CWebApplication.php(141): CWebApplication->runController('images/default/...')
+#1 C:\xampp\htdocs\thebigrentals\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\thebigrentals\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/thebigrentals/images/property/2b90e3ec-6b62-4ca2-98ad-5572d3d8f755/988218963.jpg
+HTTP_REFERER=http://localhost/thebigrentals/
+---
+2015/07/23 05:39:19 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "images/default/property/b2f89abe-d902-907e-c666-55733b703a84/361646452.jpg".' in C:\xampp\htdocs\thebigrentals\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\thebigrentals\framework\web\CWebApplication.php(141): CWebApplication->runController('images/default/...')
+#1 C:\xampp\htdocs\thebigrentals\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\thebigrentals\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/thebigrentals/images/property/b2f89abe-d902-907e-c666-55733b703a84/361646452.jpg
+HTTP_REFERER=http://localhost/thebigrentals/
+---
+2015/07/23 05:40:01 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "images/default/property/d766210d-85e5-6ac3-97b7-5598d134d8a5/752023983.jpg".' in C:\xampp\htdocs\thebigrentals\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\thebigrentals\framework\web\CWebApplication.php(141): CWebApplication->runController('images/default/...')
+#1 C:\xampp\htdocs\thebigrentals\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\thebigrentals\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/thebigrentals/images/property/d766210d-85e5-6ac3-97b7-5598d134d8a5/752023983.jpg
+HTTP_REFERER=http://localhost/thebigrentals/
+---
+2015/07/23 05:40:01 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "images/default/property/2b90e3ec-6b62-4ca2-98ad-5572d3d8f755/988218963.jpg".' in C:\xampp\htdocs\thebigrentals\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\thebigrentals\framework\web\CWebApplication.php(141): CWebApplication->runController('images/default/...')
+#1 C:\xampp\htdocs\thebigrentals\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\thebigrentals\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/thebigrentals/images/property/2b90e3ec-6b62-4ca2-98ad-5572d3d8f755/988218963.jpg
+HTTP_REFERER=http://localhost/thebigrentals/
+---
+2015/07/23 05:40:01 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "images/default/property/b2f89abe-d902-907e-c666-55733b703a84/361646452.jpg".' in C:\xampp\htdocs\thebigrentals\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\thebigrentals\framework\web\CWebApplication.php(141): CWebApplication->runController('images/default/...')
+#1 C:\xampp\htdocs\thebigrentals\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\thebigrentals\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/thebigrentals/images/property/b2f89abe-d902-907e-c666-55733b703a84/361646452.jpg
+HTTP_REFERER=http://localhost/thebigrentals/
+---
+2015/07/23 05:40:02 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "images/default/property/d766210d-85e5-6ac3-97b7-5598d134d8a5/752023983.jpg".' in C:\xampp\htdocs\thebigrentals\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\thebigrentals\framework\web\CWebApplication.php(141): CWebApplication->runController('images/default/...')
+#1 C:\xampp\htdocs\thebigrentals\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\thebigrentals\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/thebigrentals/images/property/d766210d-85e5-6ac3-97b7-5598d134d8a5/752023983.jpg
+HTTP_REFERER=http://localhost/thebigrentals/
+---
