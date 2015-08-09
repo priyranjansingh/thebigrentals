@@ -14,10 +14,10 @@ class DefaultController extends Controller {
         $this->layout = '//layouts/login_main';
         $check = Property::model()->validateProperty($property);
         if (!$check) {
-
             echo "Error";
         } else {
             $property = $check;
+            $owner = Users::model()->findByPk($property->created_by);
             $criteria = new CDbCriteria;
             $criteria->condition = "property = '$property->id'";
             $gallery = PropertyGallery::model()->findAll($criteria);
@@ -27,7 +27,8 @@ class DefaultController extends Controller {
                 'property' => $property,
                 'gallery' => $gallery,
                 'amenities' => $amenities,
-                'prices' => $prices
+                'prices' => $prices,
+                'owner' => $owner
             ));
         }
     }
