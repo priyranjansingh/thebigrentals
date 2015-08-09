@@ -84,6 +84,7 @@ class Property extends BaseModel {
         // class name for the relations automatically generated below.
          return array(
             'gallery' => array(self::HAS_MANY, 'PropertyGallery', 'property', 'condition'=>'gallery.type = "m" ',),
+            'unavailable_date' => array(self::HAS_ONE,'AvailabilityCalendar','property_id'), 
         );
     }
 

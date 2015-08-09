@@ -30,3 +30,20 @@ INSERT INTO `top_destination` (`id`, `place`, `image`, `url`, `created_date`, `m
 /* 12-7-2015      */
 
 ALTER TABLE `property` CHANGE `embed_video_id` `embed_video_id` TEXT CHARACTER SET utf8 COLLATE utf8_unicode_ci NULL DEFAULT NULL;
+
+/* 9-8-2015 */
+
+
+CREATE TABLE IF NOT EXISTS `availability_calendar` (
+  `id` char(36) NOT NULL,
+  `property_id` char(36) NOT NULL,
+  `date` text NOT NULL,
+  `created_date` datetime NOT NULL DEFAULT CURRENT_TIMESTAMP,
+  `modified_date` datetime DEFAULT NULL,
+  `created_by` char(36) NOT NULL,
+  `modified_by` char(36) DEFAULT NULL,
+  `status` tinyint(1) NOT NULL,
+  `deleted` tinyint(1) DEFAULT '0',
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+

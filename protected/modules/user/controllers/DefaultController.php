@@ -324,6 +324,7 @@ class DefaultController extends Controller {
         $this->afterRegister = false;
         unset(Yii::app()->session['user_id']);
         unset(Yii::app()->session['user_name']);
+        unset(Yii::app()->session['date_arr']);
         $this->redirect(array("login"));
     }
 
