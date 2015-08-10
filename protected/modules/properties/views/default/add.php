@@ -466,7 +466,7 @@ $(document).ready(function() {
                 },
             });
         },
-        num_next_month: 1,
+        num_next_month: 2,
     });
     $('body').on('click','#basic td',function(){
         if($(this).hasClass("available"))
