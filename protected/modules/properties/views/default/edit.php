@@ -488,7 +488,7 @@ $(document).ready(function() {
                 },
             });
         },
-        num_next_month: 1,
+        num_next_month: 2,
         unavailable: <?php echo (!empty($model->unavailable_date->date))? $model->unavailable_date->date : '[]'; ?>
     });
     $('body').on('click','#basic td',function(){
