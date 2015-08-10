@@ -28486,3 +28486,183 @@ Stack trace:
 REQUEST_URI=/thebigrentals/properties/images/prv/estate/item-3.jpg
 HTTP_REFERER=http://localhost/thebigrentals/properties/view?property=test-property
 ---
+2015/08/09 20:34:36 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "images/default/property/b2f89abe-d902-907e-c666-55733b703a84/361646452.jpg".' in C:\xampp\htdocs\thebigrentals\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\thebigrentals\framework\web\CWebApplication.php(141): CWebApplication->runController('images/default/...')
+#1 C:\xampp\htdocs\thebigrentals\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\thebigrentals\index.php(12): CApplication->run()
+#3 {main}
+REQUEST_URI=/thebigrentals/images/property/b2f89abe-d902-907e-c666-55733b703a84/361646452.jpg
+HTTP_REFERER=http://localhost/thebigrentals/
+---
+2015/08/09 20:34:37 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "images/default/property/2b90e3ec-6b62-4ca2-98ad-5572d3d8f755/988218963.jpg".' in C:\xampp\htdocs\thebigrentals\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\thebigrentals\framework\web\CWebApplication.php(141): CWebApplication->runController('images/default/...')
+#1 C:\xampp\htdocs\thebigrentals\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\thebigrentals\index.php(12): CApplication->run()
+#3 {main}
+REQUEST_URI=/thebigrentals/images/property/2b90e3ec-6b62-4ca2-98ad-5572d3d8f755/988218963.jpg
+HTTP_REFERER=http://localhost/thebigrentals/
+---
+2015/08/09 20:35:14 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "css/default/calendar/font/icomoon.woff".' in C:\xampp\htdocs\thebigrentals\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\thebigrentals\framework\web\CWebApplication.php(141): CWebApplication->runController('css/default/cal...')
+#1 C:\xampp\htdocs\thebigrentals\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\thebigrentals\index.php(12): CApplication->run()
+#3 {main}
+REQUEST_URI=/thebigrentals/css/calendar/font/icomoon.woff?-5wkouh
+HTTP_REFERER=http://localhost/thebigrentals/css/calendar/style.css
+---
+2015/08/09 20:35:14 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "css/default/calendar/font/icomoon.ttf".' in C:\xampp\htdocs\thebigrentals\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\thebigrentals\framework\web\CWebApplication.php(141): CWebApplication->runController('css/default/cal...')
+#1 C:\xampp\htdocs\thebigrentals\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\thebigrentals\index.php(12): CApplication->run()
+#3 {main}
+REQUEST_URI=/thebigrentals/css/calendar/font/icomoon.ttf?-5wkouh
+HTTP_REFERER=http://localhost/thebigrentals/css/calendar/style.css
+---
+2015/08/09 20:35:48 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "css/default/calendar/font/icomoon.woff".' in C:\xampp\htdocs\thebigrentals\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\thebigrentals\framework\web\CWebApplication.php(141): CWebApplication->runController('css/default/cal...')
+#1 C:\xampp\htdocs\thebigrentals\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\thebigrentals\index.php(12): CApplication->run()
+#3 {main}
+REQUEST_URI=/thebigrentals/css/calendar/font/icomoon.woff?-5wkouh
+HTTP_REFERER=http://localhost/thebigrentals/css/calendar/style.css
+---
+2015/08/09 20:35:49 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "css/default/calendar/font/icomoon.ttf".' in C:\xampp\htdocs\thebigrentals\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\thebigrentals\framework\web\CWebApplication.php(141): CWebApplication->runController('css/default/cal...')
+#1 C:\xampp\htdocs\thebigrentals\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\thebigrentals\index.php(12): CApplication->run()
+#3 {main}
+REQUEST_URI=/thebigrentals/css/calendar/font/icomoon.ttf?-5wkouh
+HTTP_REFERER=http://localhost/thebigrentals/css/calendar/style.css
+---
+2015/08/09 20:36:19 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "css/default/calendar/font/icomoon.woff".' in C:\xampp\htdocs\thebigrentals\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\thebigrentals\framework\web\CWebApplication.php(141): CWebApplication->runController('css/default/cal...')
+#1 C:\xampp\htdocs\thebigrentals\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\thebigrentals\index.php(12): CApplication->run()
+#3 {main}
+REQUEST_URI=/thebigrentals/css/calendar/font/icomoon.woff?-5wkouh
+HTTP_REFERER=http://localhost/thebigrentals/css/calendar/style.css
+---
+2015/08/09 20:36:19 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "css/default/calendar/font/icomoon.ttf".' in C:\xampp\htdocs\thebigrentals\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\thebigrentals\framework\web\CWebApplication.php(141): CWebApplication->runController('css/default/cal...')
+#1 C:\xampp\htdocs\thebigrentals\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\thebigrentals\index.php(12): CApplication->run()
+#3 {main}
+REQUEST_URI=/thebigrentals/css/calendar/font/icomoon.ttf?-5wkouh
+HTTP_REFERER=http://localhost/thebigrentals/css/calendar/style.css
+---
+2015/08/09 20:37:55 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "css/default/calendar/font/icomoon.woff".' in C:\xampp\htdocs\thebigrentals\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\thebigrentals\framework\web\CWebApplication.php(141): CWebApplication->runController('css/default/cal...')
+#1 C:\xampp\htdocs\thebigrentals\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\thebigrentals\index.php(12): CApplication->run()
+#3 {main}
+REQUEST_URI=/thebigrentals/css/calendar/font/icomoon.woff?-5wkouh
+HTTP_REFERER=http://localhost/thebigrentals/css/calendar/style.css
+---
+2015/08/09 20:37:55 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "css/default/calendar/font/icomoon.ttf".' in C:\xampp\htdocs\thebigrentals\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\thebigrentals\framework\web\CWebApplication.php(141): CWebApplication->runController('css/default/cal...')
+#1 C:\xampp\htdocs\thebigrentals\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\thebigrentals\index.php(12): CApplication->run()
+#3 {main}
+REQUEST_URI=/thebigrentals/css/calendar/font/icomoon.ttf?-5wkouh
+HTTP_REFERER=http://localhost/thebigrentals/css/calendar/style.css
+---
+2015/08/09 20:41:46 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "css/default/calendar/font/icomoon.woff".' in C:\xampp\htdocs\thebigrentals\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\thebigrentals\framework\web\CWebApplication.php(141): CWebApplication->runController('css/default/cal...')
+#1 C:\xampp\htdocs\thebigrentals\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\thebigrentals\index.php(12): CApplication->run()
+#3 {main}
+REQUEST_URI=/thebigrentals/css/calendar/font/icomoon.woff?-5wkouh
+HTTP_REFERER=http://localhost/thebigrentals/css/calendar/style.css
+---
+2015/08/09 20:41:47 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "css/default/calendar/font/icomoon.ttf".' in C:\xampp\htdocs\thebigrentals\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\thebigrentals\framework\web\CWebApplication.php(141): CWebApplication->runController('css/default/cal...')
+#1 C:\xampp\htdocs\thebigrentals\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\thebigrentals\index.php(12): CApplication->run()
+#3 {main}
+REQUEST_URI=/thebigrentals/css/calendar/font/icomoon.ttf?-5wkouh
+HTTP_REFERER=http://localhost/thebigrentals/css/calendar/style.css
+---
+2015/08/09 20:42:13 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "css/default/calendar/font/icomoon.woff".' in C:\xampp\htdocs\thebigrentals\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\thebigrentals\framework\web\CWebApplication.php(141): CWebApplication->runController('css/default/cal...')
+#1 C:\xampp\htdocs\thebigrentals\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\thebigrentals\index.php(12): CApplication->run()
+#3 {main}
+REQUEST_URI=/thebigrentals/css/calendar/font/icomoon.woff?-5wkouh
+HTTP_REFERER=http://localhost/thebigrentals/css/calendar/style.css
+---
+2015/08/09 20:42:13 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "css/default/calendar/font/icomoon.ttf".' in C:\xampp\htdocs\thebigrentals\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\thebigrentals\framework\web\CWebApplication.php(141): CWebApplication->runController('css/default/cal...')
+#1 C:\xampp\htdocs\thebigrentals\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\thebigrentals\index.php(12): CApplication->run()
+#3 {main}
+REQUEST_URI=/thebigrentals/css/calendar/font/icomoon.ttf?-5wkouh
+HTTP_REFERER=http://localhost/thebigrentals/css/calendar/style.css
+---
+2015/08/09 20:42:38 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "css/default/calendar/font/icomoon.woff".' in C:\xampp\htdocs\thebigrentals\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\thebigrentals\framework\web\CWebApplication.php(141): CWebApplication->runController('css/default/cal...')
+#1 C:\xampp\htdocs\thebigrentals\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\thebigrentals\index.php(12): CApplication->run()
+#3 {main}
+REQUEST_URI=/thebigrentals/css/calendar/font/icomoon.woff?-5wkouh
+HTTP_REFERER=http://localhost/thebigrentals/css/calendar/style.css
+---
+2015/08/09 20:42:38 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "css/default/calendar/font/icomoon.ttf".' in C:\xampp\htdocs\thebigrentals\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\thebigrentals\framework\web\CWebApplication.php(141): CWebApplication->runController('css/default/cal...')
+#1 C:\xampp\htdocs\thebigrentals\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\thebigrentals\index.php(12): CApplication->run()
+#3 {main}
+REQUEST_URI=/thebigrentals/css/calendar/font/icomoon.ttf?-5wkouh
+HTTP_REFERER=http://localhost/thebigrentals/css/calendar/style.css
+---
+2015/08/09 20:51:44 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "css/default/calendar/font/icomoon.woff".' in C:\xampp\htdocs\thebigrentals\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\thebigrentals\framework\web\CWebApplication.php(141): CWebApplication->runController('css/default/cal...')
+#1 C:\xampp\htdocs\thebigrentals\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\thebigrentals\index.php(12): CApplication->run()
+#3 {main}
+REQUEST_URI=/thebigrentals/css/calendar/font/icomoon.woff?-5wkouh
+HTTP_REFERER=http://localhost/thebigrentals/css/calendar/style.css
+---
+2015/08/09 20:51:44 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "css/default/calendar/font/icomoon.ttf".' in C:\xampp\htdocs\thebigrentals\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\thebigrentals\framework\web\CWebApplication.php(141): CWebApplication->runController('css/default/cal...')
+#1 C:\xampp\htdocs\thebigrentals\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\thebigrentals\index.php(12): CApplication->run()
+#3 {main}
+REQUEST_URI=/thebigrentals/css/calendar/font/icomoon.ttf?-5wkouh
+HTTP_REFERER=http://localhost/thebigrentals/css/calendar/style.css
+---
+2015/08/09 20:53:14 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "css/default/calendar/font/icomoon.woff".' in C:\xampp\htdocs\thebigrentals\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\thebigrentals\framework\web\CWebApplication.php(141): CWebApplication->runController('css/default/cal...')
+#1 C:\xampp\htdocs\thebigrentals\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\thebigrentals\index.php(12): CApplication->run()
+#3 {main}
+REQUEST_URI=/thebigrentals/css/calendar/font/icomoon.woff?-5wkouh
+HTTP_REFERER=http://localhost/thebigrentals/css/calendar/style.css
+---
+2015/08/09 20:53:15 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "css/default/calendar/font/icomoon.ttf".' in C:\xampp\htdocs\thebigrentals\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\thebigrentals\framework\web\CWebApplication.php(141): CWebApplication->runController('css/default/cal...')
+#1 C:\xampp\htdocs\thebigrentals\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\thebigrentals\index.php(12): CApplication->run()
+#3 {main}
+REQUEST_URI=/thebigrentals/css/calendar/font/icomoon.ttf?-5wkouh
+HTTP_REFERER=http://localhost/thebigrentals/css/calendar/style.css
+---

@@ -224,6 +224,7 @@
                                     <div class="padding-as25 margin-30 lgray-bg">
                                         <div class="row">
                                             <div class="col-md-4 col-sm-4">
+                                                <div class="prop_label"><?php echo $model->getAttributeLabel('title'); ?></div>   
                                                 <?php echo $form->textField($model, 'title', array('class' => 'form-control', 'placeholder' => 'Property Name')); ?>
                                                 <div class="errorMessage" id="Property_title_em" style="display: none;">Property name cannot be blank.</div>    
                                             </div>
