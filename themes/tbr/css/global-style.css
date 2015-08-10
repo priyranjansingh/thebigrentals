@@ -12325,3 +12325,9 @@ button.Zebra_DatePicker_Icon_Inside         { margin: 0 3px 0 0 }
     width: 70%;
     float: right;
 }
+
+.prop_label
+{
+    font-weight: bold;
+    margin-bottom: 5px;
+}

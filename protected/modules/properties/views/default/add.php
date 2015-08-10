@@ -229,6 +229,7 @@
                                                 <div class="errorMessage" id="Property_title_em" style="display: none;">Property name cannot be blank.</div>    
                                             </div>
                                             <div class="col-md-8 col-sm-8 submit-description">
+                                                  <div class="prop_label"><?php echo $model->getAttributeLabel('description'); ?></div>   
                                                 <?php echo $form->textArea($model, 'description', array('col' => 10, 'row' => 1, 'class' => 'form-control margin-0', 'placeholder' => 'Property Description')); ?>
                                                 <div class="errorMessage" id="Property_description_em" style="display: none;">Property description cannot be blank.</div>  
                                             </div>
@@ -243,16 +244,19 @@
                                         </div>
                                         <div class="row">
                                             <div class="col-md-4 col-sm-4">
+                                                <div class="prop_label"><?php echo $model->getAttributeLabel('category_id'); ?></div>  
                                                 <?php $all_category = CHtml::listData($categories, 'id', 'name'); ?>
                                                 <?php echo $form->dropDownList($model, 'category_id', $all_category, array('class' => 'form-control selectpicker', "empty" => "Property Type",)); ?>
                                                 <div class="errorMessage" id="Property_category_id_em" style="display: none;">Property category cannot be blank.</div>  
 
                                             </div>
                                             <div class="col-md-4 col-sm-4">
+                                                 <div class="prop_label"><?php echo $model->getAttributeLabel('date_availability_from'); ?></div> 
                                                 <?php echo $form->textField($model, 'date_availability_from', array('class' => 'form-control', 'placeholder' => 'Available From')); ?> 
                                                 <div class="errorMessage" id="Property_date_availability_from_em" style="display: none;">Property Availability From cannot be blank.</div>  
                                             </div>
                                             <div class="col-md-4 col-sm-4">
+                                            <div class="prop_label"><?php echo $model->getAttributeLabel('date_availability_to'); ?></div> 
                                                 <?php echo $form->textField($model, 'date_availability_to', array('class' => 'form-control', 'placeholder' => 'Available To')); ?> 
                                                 <div class="errorMessage" id="Property_date_availability_to_em" style="display: none;">Property Availability To cannot be blank.</div>   
                                             </div>
@@ -270,29 +274,35 @@
                                             <div class="col-md-4 col-sm-4">
                                                 <?php echo $form->hiddenField($model, 'latitude', array('size' => 60, 'maxlength' => 100)); ?>
                                                 <?php echo $form->hiddenField($model, 'longitude', array('size' => 60, 'maxlength' => 100)); ?>
+                                                 <div class="prop_label"><?php echo $model->getAttributeLabel('address_line_1'); ?></div> 
                                                 <?php echo $form->textField($model, 'address_line_1', array('class' => 'form-control', 'placeholder' => 'Address Line 1', 'readonly' => 'true')); ?>
                                                 <?php echo $form->error($model, 'address_line_1'); ?>
                                                 <div class="errorMessage" id="Property_address_line_1_em" style="display: none;">Address Line 1  cannot be blank.</div>   
                                             </div>
                                             <div class="col-md-4 col-sm-4">
+                                                  <div class="prop_label"><?php echo $model->getAttributeLabel('address_line_2'); ?></div> 
                                                 <?php echo $form->textField($model, 'address_line_2', array('class' => 'form-control', 'placeholder' => 'Address Line 2')); ?>
                                                 <?php echo $form->error($model, 'address_line_2'); ?>
                                             </div>
                                             <div class="col-md-4 col-sm-4">
+                                                <div class="prop_label"><?php echo $model->getAttributeLabel('city'); ?></div> 
                                                 <?php echo $form->textField($model, 'city', array('class' => 'form-control', 'placeholder' => 'City', 'readonly' => 'true')); ?>
                                                 <div class="errorMessage" id="Property_city_em" style="display: none;">City cannot be blank.</div>   
                                             </div>
                                         </div>
                                         <div class="row">
                                             <div class="col-md-4 col-sm-4">
+                                                 <div class="prop_label"><?php echo $model->getAttributeLabel('state'); ?></div> 
                                                 <?php echo $form->textField($model, 'state', array('class' => 'form-control', 'placeholder' => 'State', 'readonly' => 'true')); ?>
                                                 <div class="errorMessage" id="Property_state_em" style="display: none;">State cannot be blank.</div>   
                                             </div>
                                             <div class="col-md-4 col-sm-4">
+                                                <div class="prop_label"><?php echo $model->getAttributeLabel('country'); ?></div> 
                                                 <?php echo $form->textField($model, 'country', array('class' => 'form-control', 'placeholder' => 'Country', 'readonly' => 'true')); ?>
                                                 <div class="errorMessage" id="Property_country_em" style="display: none;">Country cannot be blank.</div>   
                                             </div>
                                             <div class="col-md-4 col-sm-4">
+                                                <div class="prop_label"><?php echo $model->getAttributeLabel('zip'); ?></div> 
                                                 <?php echo $form->textField($model, 'zip', array('class' => 'form-control', 'placeholder' => 'Zip Code', 'readonly' => 'true')); ?>
                                                 <div class="errorMessage" id="Property_zip_em" style="display: none;">Zip cannot be blank.</div>   
                                             </div>
@@ -316,24 +326,29 @@
                                     <div class="padding-as25 margin-30 lgray-bg">
                                         <div class="row">
                                             <div class="col-md-4 col-sm-4">
+                                                <div class="prop_label"><?php echo $model->getAttributeLabel('rooms'); ?></div> 
                                                 <?php echo $form->textField($model, 'rooms', array('class' => 'form-control', 'placeholder' => 'Number Of Rooms')); ?>
                                                 <div class="errorMessage" id="Property_rooms_em" style="display: none;">Rooms cannot be blank.</div>  
                                             </div>
                                             <div class="col-md-4 col-sm-4 submit-property-type">
+                                                <div class="prop_label"><?php echo $model->getAttributeLabel('bedrooms'); ?></div> 
                                                 <?php echo $form->textField($model, 'bedrooms', array('class' => 'form-control', 'placeholder' => 'Number Of Bedrooms')); ?>
                                                 <div class="errorMessage" id="Property_bedrooms_em" style="display: none;">Bedrooms cannot be blank.</div>  
                                             </div>
                                             <div class="col-md-4 col-sm-4 submit-contract-type">
+                                                <div class="prop_label"><?php echo $model->getAttributeLabel('bathrooms'); ?></div> 
                                                 <?php echo $form->textField($model, 'bathrooms', array('class' => 'form-control', 'placeholder' => 'Number Of Bathrooms')); ?>
                                                 <div class="errorMessage" id="Property_bathrooms_em" style="display: none;">Bathrooms cannot be blank.</div>  
                                             </div>
                                         </div>
                                         <div class="row">
                                             <div class="col-md-4 col-sm-4">
+                                                <div class="prop_label"><?php echo $model->getAttributeLabel('video_from'); ?></div> 
                                                 <?php echo $form->dropDownList($model, 'video_from', getParam('video_from'), array('class' => 'form-control selectpicker', "empty" => "Select Video From")); ?>
                                                 <?php echo $form->error($model, 'video_from'); ?>
                                             </div>
                                             <div class="col-md-8 col-sm-8 submit-description">
+                                                <div class="prop_label"><?php echo $model->getAttributeLabel('embed_video_id'); ?></div> 
                                                 <?php echo $form->textArea($model, 'embed_video_id', array('col' => 10, 'row' => 1, 'class' => 'form-control margin-0', 'placeholder' => 'Enbedded Code for video')); ?>
                                                 <?php echo $form->error($model, 'embed_video_id'); ?>
                                             </div>
