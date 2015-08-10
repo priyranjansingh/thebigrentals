@@ -113,7 +113,9 @@
                             <div class="tabs-framed boxed">
                                 <ul class="tabs clearfix">
                                     <li class="active"><a href="#tab-1" data-toggle="tab">Additional details</a></li>
-                                    <li><a href="#tab-map" data-toggle="tab" data-type="gmap">Map</a></li>
+                                    <li><a href="#tab-map" data-toggle="tab">Map</a></li>
+                                    <li><a href="#tab-available" data-toggle="tab">Property Availability</a></li>
+                                    <li><a href="#tab-owner" data-toggle="tab">Contact Owner</a></li>
                                 </ul>
 
                                 <div class="tab-content">
@@ -177,6 +179,44 @@
                                     <div class="tab-pane fade" id="tab-map">
                                         <div class="tab-body">
                                             <div id="mapCanvas" class="map-canvas no-margin"></div>
+                                        </div>
+                                    </div>
+                                    <div class="tab-pane fade" id="tab-available">
+                                        <div class="tab-body">
+                                        </div>
+                                    </div>
+                                    <div class="tab-pane fade" id="tab-owner">
+                                        <div class="tab-body">
+                                            <div class="owner-profile">
+                                                <div class="owner-left-profile">
+                                                    <div class="owner-image">
+                                                        <?php if (empty($owner->user_image)): ?>
+                                                        <img src="<?php echo base_url(); ?>/assets/images/default_user.png" width="150px" height="200px">
+                                                        <?php
+                                                            else :
+                                                                $fname = $owner->user_image;
+                                                                $furl = Yii::app()->params['s3_base_url'] . $fname;
+                                                                ?>
+                                                        <img src="<?php echo $furl; ?>" width="150px" height="200px">
+                                                            <?php endif; ?>
+                                                    </div>
+                                                    <div class="owner-social">
+                                                        <a href="<?php echo $owner->facebook_url; ?>" target="_blank" class="owner-fb"><i class="fa fa-facebook"></i></a>
+                                                        <a href="<?php echo $owner->skype; ?>" target="_blank" class="owner-skype"><i class="fa fa-skype"></i></a>
+                                                        <a href="<?php echo $owner->twitter_url; ?>" target="_blank" class="owner-twitter"><i class="fa fa-twitter"></i></a>
+                                                        <a href="<?php echo $owner->pinterest_url; ?>" target="_blank" class="owner-pinterest"><i class="fa fa-pinterest"></i></a>
+                                                    </div>        
+                                                </div>
+                                                <div class="owner-right-profile">
+                                                    <div class="owner-desc">
+                                                        Contact Owner With below given description: <br />
+                                                        Call Owner : <i class="fa fa-mobile"></i><?php echo $owner->mobile; ?>,<i class="fa fa-phone"></i><?php echo $owner->mobile; ?>
+                                                    </div>
+                                                    <div class="owner-contact">
+                                                        <button class="btn-warning" id="contact_owner">Contact Owner</button>
+                                                    </div>
+                                                </div>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>

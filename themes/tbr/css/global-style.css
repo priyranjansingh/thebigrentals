@@ -12309,3 +12309,19 @@ button.Zebra_DatePicker_Icon_Disabled       { background-image: url('../images/c
 /* don't set vertical margins! */
 button.Zebra_DatePicker_Icon                { margin: 0 0 0 3px }
 button.Zebra_DatePicker_Icon_Inside         { margin: 0 3px 0 0 }
+
+.owner-profile {
+    padding: 20px;
+    width: 100%;
+    display: table;
+}
+
+.owner-left-profile {
+    width: 30%;
+    float: left;
+}
+
+.owner-right-profile {
+    width: 70%;
+    float: right;
+}
