@@ -12325,3 +12325,128 @@ button.Zebra_DatePicker_Icon_Inside         { margin: 0 3px 0 0 }
     width: 70%;
     float: right;
 }
+
+.prop_label
+{
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.right{float: right;}
+div#toggle-owner-contact {
+    position: fixed;
+    z-index: 999;
+    top: 100px;
+	display: none;
+}
+
+.col-md-12.popup-holder {
+    position: relative;
+}
+
+.pop-up-container {
+    float: left;
+    width: 100%;
+	font-size: 14px;
+}
+
+.col-md-8.pop-up {
+    border: 1px solid #888;
+    padding: 0;
+    background-color: #fff;
+}
+.col-md-8.pop-up div {
+    padding: 4px 10px;
+}
+
+.col-md-12.header {
+    font-size: 20px;
+    background-color: #3498db;
+    color: #fff;
+    padding: 10px 10px;
+}
+
+.col-md-8.pop-up div input[type='text'] {
+    width: 100%;
+    padding: 5px;
+}
+
+.col-md-8.pop-up div select {
+	width: 100%;
+	padding:7px;
+}
+
+.col-md-12.input_check input[type='checkbox'] {
+    width: 4%;
+}
+
+.col-md-8.pop-up div input.small {
+    width: 50%;
+}
+
+.col-md-3.with-label label {
+    width: 22%;
+    font-size: 16px;
+    margin-top: 6px;
+    margin-left: 26%;
+}
+
+.col-md-12.message {
+    margin-left: 10px;
+}
+
+.col-md-12.message textarea {
+    width: 97.8%;
+	height: 100px;
+}
+
+.col-md-12.message.border-bottom {
+    border-bottom: 1px solid #888;
+    width: 95.8%;
+    margin-left: 20px;
+}
+
+ul.inline.benefits-list.text-center {
+    margin: 34px 0;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+}
+
+.inline.benefits-list.text-center li:first-child {
+    box-shadow: none;
+    border-left: 0;
+}
+
+.inline.benefits-list.text-center li {
+    display: inline-block;
+    padding-left: 10px;
+    padding-right: 10px;
+    width: 33.3333333%;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    box-shadow: -1px 0 0 0 rgba(0,0,0,0.1);
+    border-left: 1px solid #fff;
+}
+
+hr.social-links-hr {
+    border-top: 1px solid rgba(0,0,0,.1);
+    margin: 40px 0;
+}
+
+.social-links-container {
+    text-align: center;
+    margin-top: -50px;
+    padding-bottom: 40px;
+}
+
+.social-links-container .social-links {
+    display: inline-block;
+    padding: 0 20px;
+}
+
+iframe#facebook-iframe {
+    height: 20px;
+    width: 92px;
+}
