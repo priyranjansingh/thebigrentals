@@ -90,7 +90,7 @@ font-weight:700;
 .datetimepicker table thead td {
 border:none;
 border-bottom:2px solid #eee;
-min-width:40px;
+min-width:30px;
 }
 
 .datetimepicker table tbody td:hover {

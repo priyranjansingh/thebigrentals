@@ -217,7 +217,7 @@ endif;
 
                             <div class="tab-pane fade" id="tab-3">
                                 <div class="tab-body">
-                                    <h3 class="title title-lg">My wishlist</h3>
+                                    <h3 class="title title-lg">My Properties</h3>
                                     <p class="mb-20"></p>
 
                                     <div class="row">
@@ -253,7 +253,7 @@ endif;
                                                     </p>
                                                     <div class="wp-block-footer">
                                                         <a href="<?php echo base_url()."/properties/view?property=".$val->slug ?>" class="btn btn-primary btn-sm">
-                                                            <span>View More</span>
+                                                            <span>Preview</span>
                                                         </a>
                                                         <a href="<?php echo base_url()."/properties/edit?property=".$val->slug ?>" class="btn btn-primary btn-sm" style="width:80px;">
                                                             <span>Edit</span>

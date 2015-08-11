@@ -95,7 +95,9 @@ $menus = $cats->getMenu();
                                 <?php echo Yii::app()->session['first_name']; ?>
                             </a>
                             <ul class="dropdown-menu">
-                                <li><a href="<?php echo base_url() . "/user/myaccount"; ?>">My Account</a></li>                            
+                                <li><a href="<?php echo base_url() . "/user/myaccount"; ?>">My Account</a></li>
+                                <li><a href="<?php echo base_url() . "/user/myaccount"; ?>">My Properties List</a></li>
+                                <li><a href="<?php echo base_url() . "/properties/add"; ?>">Add New Property</a></li>
                                 <li><a href="<?php echo base_url() . "/user/logout"; ?>">Logout</a></li>                            
                             </ul>
                         </li>
