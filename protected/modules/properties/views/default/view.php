@@ -1,3 +1,7 @@
+<link rel="stylesheet" href="<?php echo base_url(); ?>/css/calendar/style.css">
+<link rel="stylesheet" href="<?php echo base_url(); ?>/css/calendar/dateTimePicker.css">
+<script type="text/javascript" src="<?php echo base_url(); ?>/assets/js/calendar/components/jquery.min.js"></script>
+<script type="text/javascript" src="<?php echo base_url(); ?>/assets/js/calendar/dateTimePicker.js"></script>      
 <div class="pg-opt">
     <div class="container">
         <div class="row">
@@ -23,17 +27,16 @@
                     <div class="row">
                         <div class="col-md-7">
                             <div class="product-gallery">
-                                 <?php  
-                                    if(!empty($property->embed_video_id))
-                                    {  
-                                  ?>      
-                                <div class="primary-image">
-                                     
-                                     <?php    echo $property->embed_video_id; ?>
-                                
-                                </div>
-                                <?php 
-                                    }   
+                                <?php
+                                if (!empty($property->embed_video_id)) {
+                                    ?>      
+                                    <div class="primary-image">
+
+                                        <?php echo $property->embed_video_id; ?>
+
+                                    </div>
+                                    <?php
+                                }
                                 ?>
                                 <div class="primary-image">
                                     <?php
@@ -41,7 +44,7 @@
                                         if ($g->type == "m"):
                                             ?>
                                             <a href="<?php echo base_url(); ?>/images/property/<?php echo $property->id; ?>/<?php echo $g->image; ?>" class="theater" rel="group" hidefocus="true">
-                                                <img src="<?php echo Yii::app()->params['s3_base_url'].$g->image; ?>" class="img-responsive" alt="">
+                                                <img src="<?php echo Yii::app()->params['s3_base_url'] . $g->image; ?>" class="img-responsive" alt="">
                                             </a>
                                             <?php
                                         endif;
@@ -58,7 +61,7 @@
                                         if ($g->type != "m"):
                                             ?>
                                             <a href="<?php echo base_url(); ?>/images/property/<?php echo $property->id; ?>/<?php echo $g->image; ?>" class="theater" rel="group" hidefocus="true">
-                                                <img src="<?php echo Yii::app()->params['s3_base_url']. $g->image; ?>" class="img-responsive" alt="">
+                                                <img src="<?php echo Yii::app()->params['s3_base_url'] . $g->image; ?>" class="img-responsive" alt="">
                                             </a>
                                             <?php
                                         endif;
@@ -100,7 +103,7 @@
                                 </div>
                                 <span class="clearfix"></span> 
                                 <p>
-                                    <?php echo trimString($property->description,500); ?>
+                                    <?php echo trimString($property->description, 500); ?>
                                 </p>
 
                             </div>
@@ -162,7 +165,7 @@
                                             <table class="table table-bordered table-striped table-hover table-responsive">
                                                 <tbody>
                                                     <tr>
-                                                        <td><strong><strong>Address:</strong> <?php echo $property->address_line_1 .' '.$property->address_line_2; ?></strong></td>
+                                                        <td><strong><strong>Address:</strong> <?php echo $property->address_line_1 . ' ' . $property->address_line_2; ?></strong></td>
                                                         <td><strong>City:</strong> <?php echo $property->city; ?></td>
                                                         <td><strong>State:</strong> <?php echo $property->state; ?></td>
                                                     </tr>
@@ -183,6 +186,18 @@
                                     </div>
                                     <div class="tab-pane fade" id="tab-available">
                                         <div class="tab-body">
+                                            <div class="block-heading" id="availability_calendar">
+                                                <h4><span class="heading-icon"><i class="fa fa-caret-right icon-design"></i><i class="fa fa-plus"></i></span>Availability Calendar</h4>
+                                            </div>
+                                            <div class="padding-as25 margin-30 lgray-bg">
+                                                <div class="row">
+                                                    <div class="col-md-12 col-sm-12">
+                                                        <div id="basic" data-toggle="calendar" ></div>
+                                                    </div>
+
+                                                </div>
+
+                                            </div> 
                                         </div>
                                     </div>
                                     <div class="tab-pane fade" id="tab-owner">
@@ -191,14 +206,14 @@
                                                 <div class="owner-left-profile">
                                                     <div class="owner-image">
                                                         <?php if (empty($owner->user_image)): ?>
-                                                        <img src="<?php echo base_url(); ?>/assets/images/default_user.png" width="150px" height="200px">
-                                                        <?php
-                                                            else :
-                                                                $fname = $owner->user_image;
-                                                                $furl = Yii::app()->params['s3_base_url'] . $fname;
-                                                                ?>
-                                                        <img src="<?php echo $furl; ?>" width="150px" height="200px">
-                                                            <?php endif; ?>
+                                                            <img src="<?php echo base_url(); ?>/assets/images/default_user.png" width="150px" height="200px">
+                                                            <?php
+                                                        else :
+                                                            $fname = $owner->user_image;
+                                                            $furl = Yii::app()->params['s3_base_url'] . $fname;
+                                                            ?>
+                                                            <img src="<?php echo $furl; ?>" width="150px" height="200px">
+                                                        <?php endif; ?>
                                                     </div>
                                                     <div class="owner-social">
                                                         <a href="<?php echo $owner->facebook_url; ?>" target="_blank" class="owner-fb"><i class="fa fa-facebook"></i></a>
@@ -413,87 +428,119 @@
     </div>
 </section>
 <div class="row" id="toggle-owner-contact">
-	<div class="col-md-12 popup-holder">
-	<div class="pop-up-container">
-			<div class="col-md-2">&nbsp;</div>
-			<div class="col-md-8 pop-up">
-				<div class="col-md-12 header">
-					Contact The Owner
-					<div class="right">
-						<a href="#" class="close_popup">X</a> 
-					 </div>
-				</div>
-				<div class="col-md-12">
-					Tell the owner when you would like to travel.
-				</div>
-				<div class="col-md-12">
-					<div class="col-md-6">
-						<input type="text" id="arrival" disabled="disabled" placeholder="Arrival" name="arrival_date">
-					</div>
-					<div class="col-md-6">
-						<input type="text" id="departure" disabled="disabled" placeholder="Departure" name="departure_date">
-					</div>
-				</div>
-				<div class="col-md-12 input_check">
-					<input type="checkbox" id="flexible" value="true" name="flexible">My Dates Are Flexible
-				</div>
-				<div class="col-md-12">
-					<div class="col-md-6">
-						<input type="text" id="first_name" placeholder="First Name*" name="first_name">
-						<div class="error"> First Name is Required. </div>
-					</div>
-					<div class="col-md-6">
-						<input type="text" id="last_name" placeholder="Last Name*" name="last_name">
-						<div class="error"> Last Name is Required. </div>						
-					</div>
-				</div>
-				<div class="col-md-12">
-					<div class="col-md-6">
-						<select name="country" id="country">
-							<option value="">Select Country*</option>
-							<option value="">India</option>
-							<option value="">United States</option>
-							<option value="">United Kingdom</option>
-						</select>
-						<div class="error"> Country is Required. </div>						
-					</div>
-					<div class="col-md-6">
-						<input type="text" id="phone" placeholder="Phone Number" name="phone">
-					</div>
-				</div>
-				<div class="col-md-12">
-					<div class="col-md-6">
-						<input type="email" id="email" placeholder="Email Address*" name="email">
-						<div class="error"> Email is Required. </div>
-					</div>
-					<div class="col-md-3 with-label">
-						<label for="adults">Adults</label>
-						<input id="adults" type="text" name="adults" value="1" class="small">
-					</div>
-					<div class="col-md-3 with-label">
-						<label for="childs">Childs</label>
-						<input id="childs" type="text" name="childs" value="0" class="small">
-					</div>
-				</div>
-				<div class="col-md-12 message">
-					<textarea name="message" id="message" placeholder="Message to owner"></textarea>
-				</div>
-				<div class="col-md-12 message border-bottom">
-					By Clicking 'Send Email' you are agreeing to our <a href="#">Terms &amp; Conditions</a>  &amp; <a href="#">Privacy Policy</a>
-				</div>
-				<div class="col-md-12">
-					 <div class="right">
-						<a href="#" class="close_popup">Close</a> 
-						<button id="send_mail" class="btn-warning">Send Mail</button>
-					 </div>
-				</div>
-			</div>
-			<div class="col-md-2">&nbsp;</div>
-	</div>
-</div>
+    <div class="col-md-12 popup-holder">
+        <div class="pop-up-container">
+            <div class="col-md-2">&nbsp;</div>
+            <div class="col-md-8 pop-up">
+                <div class="col-md-12 header">
+                    Contact The Owner
+                    <div class="right">
+                        <a href="#" class="close_popup">X</a> 
+                    </div>
+                </div>
+                <div class="col-md-12">
+                    Tell the owner when you would like to travel.
+                </div>
+                <div class="col-md-12">
+                    <div class="col-md-6">
+                        <input type="text" id="arrival" disabled="disabled" placeholder="Arrival" name="arrival_date">
+                    </div>
+                    <div class="col-md-6">
+                        <input type="text" id="departure" disabled="disabled" placeholder="Departure" name="departure_date">
+                    </div>
+                </div>
+                <div class="col-md-12 input_check">
+                    <input type="checkbox" id="flexible" value="true" name="flexible">My Dates Are Flexible
+                </div>
+                <div class="col-md-12">
+                    <div class="col-md-6">
+                        <input type="text" id="first_name" placeholder="First Name*" name="first_name">
+                        <div class="error"> First Name is Required. </div>
+                    </div>
+                    <div class="col-md-6">
+                        <input type="text" id="last_name" placeholder="Last Name*" name="last_name">
+                        <div class="error"> Last Name is Required. </div>						
+                    </div>
+                </div>
+                <div class="col-md-12">
+                    <div class="col-md-6">
+                        <select name="country" id="country">
+                            <option value="">Select Country*</option>
+                            <option value="">India</option>
+                            <option value="">United States</option>
+                            <option value="">United Kingdom</option>
+                        </select>
+                        <div class="error"> Country is Required. </div>						
+                    </div>
+                    <div class="col-md-6">
+                        <input type="text" id="phone" placeholder="Phone Number" name="phone">
+                    </div>
+                </div>
+                <div class="col-md-12">
+                    <div class="col-md-6">
+                        <input type="email" id="email" placeholder="Email Address*" name="email">
+                        <div class="error"> Email is Required. </div>
+                    </div>
+                    <div class="col-md-3 with-label">
+                        <label for="adults">Adults</label>
+                        <input id="adults" type="text" name="adults" value="1" class="small">
+                    </div>
+                    <div class="col-md-3 with-label">
+                        <label for="childs">Childs</label>
+                        <input id="childs" type="text" name="childs" value="0" class="small">
+                    </div>
+                </div>
+                <div class="col-md-12 message">
+                    <textarea name="message" id="message" placeholder="Message to owner"></textarea>
+                </div>
+                <div class="col-md-12 message border-bottom">
+                    By Clicking 'Send Email' you are agreeing to our <a href="#">Terms &amp; Conditions</a>  &amp; <a href="#">Privacy Policy</a>
+                </div>
+                <div class="col-md-12">
+                    <div class="right">
+                        <a href="#" class="close_popup">Close</a> 
+                        <button id="send_mail" class="btn-warning">Send Mail</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-2">&nbsp;</div>
+        </div>
+    </div>
 </div>
 <script>
     var longitude = <?php echo $property->longitude; ?>;
     var latitude = <?php echo $property->latitude; ?>;
+
+</script>
+<script type="text/javascript">
+$(document).ready(function() {
+    $('#basic').calendar({
+        onSelectDate: function(date, month, year) {
+            var date_string = year+"-"+month+"-"+date;
+            $.ajax({
+                url: base_url + "/properties/StoreDate",
+                type: 'POST',
+                data: {'date': date_string},
+                success: function(data) {
+                },
+            });
+        },
+        num_next_month: 2,
+        unavailable: <?php echo (!empty($property->unavailable_date->date))? $property->unavailable_date->date : '[]'; ?>
+    });
+    $('body').on('click','#basic td',function(){
+        if($(this).hasClass("available"))
+        {
+             $(this).removeClass("available"); 
+             $(this).addClass("unavailable");
+        }   
+        else if($(this).hasClass("unavailable"))
+        {
+             $(this).removeClass("unavailable"); 
+             $(this).addClass("available");
+        }   
+    });
     
+});
+
 </script>
