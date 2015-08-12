@@ -105,7 +105,7 @@ $menus = $cats->getMenu();
 
 
 
-                    <li class="dropdown dropdown-aux animate-click" data-animate-in="animated bounceInUp" data-animate-out="animated fadeOutDown" style="z-index:500;">
+<!--                    <li class="dropdown dropdown-aux animate-click" data-animate-in="animated bounceInUp" data-animate-out="animated fadeOutDown" style="z-index:500;">
                         <a href="#" class="dropdown-form-toggle" data-toggle="dropdown"><i class="fa fa-search"></i></a>
                         <ul class="dropdown-menu dropdown-menu-user animate-wr">
                             <li id="dropdownForm">
@@ -121,7 +121,7 @@ $menus = $cats->getMenu();
                                 </div>
                             </li>
                         </ul>
-                    </li>
+                    </li>-->
                 </ul>
 
             </div><!--/.nav-collapse -->
