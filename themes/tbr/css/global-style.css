@@ -11947,7 +11947,7 @@ input#pac-input {
 }
 
 textarea.form-control {
-  height: 34px !important;
+   height: 34px !important; 
 }
 
 #destinations li {
