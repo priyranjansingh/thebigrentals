@@ -3,8 +3,6 @@ $(document).ready(function() {
         var property_title = $.trim($("#Property_title").val()),
                 property_description = $.trim($("#Property_description").val()),
                 property_category = $.trim($("#Property_category_id").val()),
-                property_availability_from = $("#Property_date_availability_from").val(),
-                property_availability_to = $("#Property_date_availability_to").val(),
                 latitude = $.trim($("#Property_latitude").val()),
                 longitude = $.trim($("#Property_longitude").val()),
                 address_line_1 = $.trim($("#Property_address_line_1").val()),
@@ -59,27 +57,7 @@ $(document).ready(function() {
             error['category_flag'] = true;
         }
 
-        if (property_availability_from == '')
-        {
-            $("#Property_date_availability_from_em").show();
-            error['availability_from_flag'] = false;
-        }
-        else
-        {
-            $("#Property_date_availability_from_em").hide();
-            error['availability_from_flag'] = true;
-        }
 
-        if (property_availability_to == '')
-        {
-            $("#Property_date_availability_to_em").show();
-            error['availability_to_flag'] = false;
-        }
-        else
-        {
-            $("#Property_date_availability_to_em").hide();
-            error['availability_to_flag'] = true;
-        }
         if (latitude == '')
         {
             $("#Property_map_em").show();
