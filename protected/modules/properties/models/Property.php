@@ -61,7 +61,7 @@ class Property extends BaseModel {
      */
     public function rules() {
         return array(
-            array('title, description, country,category_id, state, city, zip, latitude, longitude, rooms, bedrooms, bathrooms', 'required'),
+            array('title, description, country,category_id, state, city, zip, latitude, longitude, rooms, bedrooms, bathrooms,date_availability_from,date_availability_to', 'required'),
             array('enable_google_street_view, year_built, garages, property_status, status, deleted', 'numerical', 'integerOnly' => true),
             array('size, lot_size, garage_size', 'numerical'),
             array('is_featured, id, listed_in, created_by, modified_by,category_id', 'length', 'max' => 36),
@@ -72,7 +72,7 @@ class Property extends BaseModel {
             array('embed_video_id,address_line_1,address_line_2', 'length', 'max' => 256),
             // The following rule is used by search().
             // @todo Please remove those attributes that should not be searched.
-            array('id, title,main_image,gallery_image, slug, description, country, state, city, zip, latitude, longitude, enable_google_street_view, size, size_unit, lot_size, lot_size_unit, rooms, bedrooms, bathrooms, year_built, garages, garage_size, garaze_size_unit, basement, external_constructions, roofing, listed_in, property_status, status, deleted, created_date, created_by, modified_date, modified_by, video_from, embed_video_id,is_featured', 'safe', 'on' => 'search'),
+            array('id, title,main_image,gallery_image, slug, description, country, state, city, zip, latitude, longitude, enable_google_street_view, size, size_unit, lot_size, lot_size_unit, rooms, bedrooms, bathrooms, year_built, garages, garage_size, garaze_size_unit, basement, external_constructions, roofing, date_availability_from,date_availability_to, listed_in, property_status, status, deleted, created_date, created_by, modified_date, modified_by, video_from, embed_video_id,is_featured', 'safe', 'on' => 'search'),
         );
     }
 
@@ -112,6 +112,8 @@ class Property extends BaseModel {
             'slug' => 'Slug',
             'category_id' => 'Property Type',
             'description' => 'Property Description',
+            'date_availability_from' => 'Available From', 
+            'date_availability_to' => 'Available To', 
             'country' => 'Country',
             'state' => 'State',
             'city' => 'City',
@@ -136,6 +138,7 @@ class Property extends BaseModel {
             'basement' => 'Basement',
             'external_constructions' => 'External Constructions',
             'roofing' => 'Roofing',
+            'date_availability' => 'Date Availability',
             'listed_in' => 'Listed In',
             'property_status' => 'Property Status',
             'status' => 'Status',
@@ -195,6 +198,8 @@ class Property extends BaseModel {
         $criteria->compare('basement', $this->basement, true);
         $criteria->compare('external_constructions', $this->external_constructions, true);
         $criteria->compare('roofing', $this->roofing, true);
+        $criteria->compare('date_availability_from', $this->date_availability_from, true);
+        $criteria->compare('date_availability_to', $this->date_availability_to, true);
         $criteria->compare('listed_in', $this->listed_in);
         $criteria->compare('property_status', $this->property_status);
         $criteria->compare('status', $this->status);
