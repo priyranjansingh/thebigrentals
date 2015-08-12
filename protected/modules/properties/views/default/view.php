@@ -412,6 +412,86 @@
         </div>
     </div>
 </section>
+<div class="row" id="toggle-owner-contact">
+	<div class="col-md-12 popup-holder">
+	<div class="pop-up-container">
+			<div class="col-md-2">&nbsp;</div>
+			<div class="col-md-8 pop-up">
+				<div class="col-md-12 header">
+					Contact The Owner
+					<div class="right">
+						<a href="#" class="close_popup">X</a> 
+					 </div>
+				</div>
+				<div class="col-md-12">
+					Tell the owner when you would like to travel.
+				</div>
+				<div class="col-md-12">
+					<div class="col-md-6">
+						<input type="text" id="arrival" disabled="disabled" placeholder="Arrival" name="arrival_date">
+					</div>
+					<div class="col-md-6">
+						<input type="text" id="departure" disabled="disabled" placeholder="Departure" name="departure_date">
+					</div>
+				</div>
+				<div class="col-md-12 input_check">
+					<input type="checkbox" id="flexible" value="true" name="flexible">My Dates Are Flexible
+				</div>
+				<div class="col-md-12">
+					<div class="col-md-6">
+						<input type="text" id="first_name" placeholder="First Name*" name="first_name">
+						<div class="error"> First Name is Required. </div>
+					</div>
+					<div class="col-md-6">
+						<input type="text" id="last_name" placeholder="Last Name*" name="last_name">
+						<div class="error"> Last Name is Required. </div>						
+					</div>
+				</div>
+				<div class="col-md-12">
+					<div class="col-md-6">
+						<select name="country" id="country">
+							<option value="">Select Country*</option>
+							<option value="">India</option>
+							<option value="">United States</option>
+							<option value="">United Kingdom</option>
+						</select>
+						<div class="error"> Country is Required. </div>						
+					</div>
+					<div class="col-md-6">
+						<input type="text" id="phone" placeholder="Phone Number" name="phone">
+					</div>
+				</div>
+				<div class="col-md-12">
+					<div class="col-md-6">
+						<input type="email" id="email" placeholder="Email Address*" name="email">
+						<div class="error"> Email is Required. </div>
+					</div>
+					<div class="col-md-3 with-label">
+						<label for="adults">Adults</label>
+						<input id="adults" type="text" name="adults" value="1" class="small">
+					</div>
+					<div class="col-md-3 with-label">
+						<label for="childs">Childs</label>
+						<input id="childs" type="text" name="childs" value="0" class="small">
+					</div>
+				</div>
+				<div class="col-md-12 message">
+					<textarea name="message" id="message" placeholder="Message to owner"></textarea>
+				</div>
+				<div class="col-md-12 message border-bottom">
+					By Clicking 'Send Email' you are agreeing to our <a href="#">Terms &amp; Conditions</a>  &amp; <a href="#">Privacy Policy</a>
+				</div>
+				<div class="col-md-12">
+					 <div class="right">
+						<a href="#" class="close_popup">Close</a> 
+						<button id="send_mail" class="btn-warning">Send Mail</button>
+					 </div>
+				</div>
+			</div>
+			<div class="col-md-2">&nbsp;</div>
+	</div>
+</div>
+</div>
 <script>
     var longitude = <?php echo $property->longitude; ?>;
     var latitude = <?php echo $property->latitude; ?>;

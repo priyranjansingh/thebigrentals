@@ -1,5 +1,66 @@
 $(document).ready(function() {
-
+	
+	//Contact Owner
+	
+	$("#contact_owner").click(function(){
+		$("#toggle-owner-contact").show();
+	});
+	
+	$(".close_popup").click(function(){
+		$("#toggle-owner-contact").hide();
+	});
+	
+	$("#send_mail").click(function () {
+		var arrival = $("#arrival").val(),
+		    departure = $("#departure").val(),
+		    flexible = $("#flexible").val(),
+		    first_name = $("#first_name").val(),
+		    last_name = $("last_name").val(),
+		    country = $("#country").val(),
+		    email = $("#email").val(),
+		    adults = $("#adults").val(),
+		    childs = $("#childs").val(),
+		    message = $("#message").val(),
+		    error = false;
+		    
+		    if(first_name === "" && last_name === "" && email === "" && country === ""){
+		        $("#first_name").parent().find("div.error").show();
+		        $("#last_name").parent().find("div.error").show();
+		        $("#email").parent().find("div.error").show();
+		        $("#country").parent().find("div.error").show();
+		        error = true;
+		    } else if (first_name !== "" && last_name === "" && email === "" && country === ""){
+		    	$("#first_name").parent().find("div.error").hide();
+		        $("#last_name").parent().find("div.error").show();
+		        $("#email").parent().find("div.error").show();
+		        $("#country").parent().find("div.error").show();
+		        error = true;
+		    } else if (first_name !== "" && last_name !== "" && email === "" && country === ""){
+		    	$("#first_name").parent().find("div.error").hide();
+		        $("#last_name").parent().find("div.error").hide();
+		        $("#email").parent().find("div.error").show();
+		        $("#country").parent().find("div.error").show();
+		        error = true;
+		    } else if (first_name !== "" && last_name !== "" && email !== "" && country === ""){
+		    	$("#first_name").parent().find("div.error").hide();
+		        $("#last_name").parent().find("div.error").hide();
+		        $("#email").parent().find("div.error").hide();
+		        $("#country").parent().find("div.error").show();
+		        error = true;
+		    } else if (first_name !== "" && last_name !== "" && email !== "" && country !== ""){
+		    	$("#first_name").parent().find("div.error").hide();
+		        $("#last_name").parent().find("div.error").hide();
+		        $("#email").parent().find("div.error").hide();
+		        $("#country").parent().find("div.error").hide();
+		        error = true;
+		    }
+		    
+		    if(!error){
+		        alert("Send Ajax Form Validated");
+		    }
+		
+	});
+	
 	// WP Mobile Nav (Second method besides Bootstrap standrd menu) - Populating mobile nav list
 	var navbarContainer = $('.navbar-nav');
 	var linkTextLevel1;
