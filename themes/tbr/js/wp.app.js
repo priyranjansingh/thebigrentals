@@ -2,6 +2,9 @@ $(document).ready(function() {
 	
 	//Contact Owner
 	
+        $('#arrival').Zebra_DatePicker();
+        $('#departure').Zebra_DatePicker();
+        
 	$("#contact_owner").click(function(){
 		$("#toggle-owner-contact").show();
 	});

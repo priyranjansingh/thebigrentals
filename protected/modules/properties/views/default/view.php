@@ -443,10 +443,10 @@
                 </div>
                 <div class="col-md-12">
                     <div class="col-md-6">
-                        <input type="text" id="arrival" disabled="disabled" placeholder="Arrival" name="arrival_date">
+                        <input type="text" id="arrival"  placeholder="Arrival" name="arrival_date">
                     </div>
                     <div class="col-md-6">
-                        <input type="text" id="departure" disabled="disabled" placeholder="Departure" name="departure_date">
+                        <input type="text" id="departure"  placeholder="Departure" name="departure_date">
                     </div>
                 </div>
                 <div class="col-md-12 input_check">
@@ -540,7 +540,7 @@ $(document).ready(function() {
              $(this).addClass("available");
         }   
     });
-    
+        
 });
 
 </script>
