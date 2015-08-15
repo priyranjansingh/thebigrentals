@@ -233,16 +233,22 @@ endif;
                                                             $object_info = get_object_info($val->gallery[0]->image);
                                                             if (!empty($object_info)) {
                                                                 ?>
+                                                        <a class="prop_img" id="<?php echo $val->slug;   ?>" href="#">
                                                                 <img alt="" src="<?php echo Yii::app()->params['s3_base_url'] . $val->gallery[0]->image; ?>" class="img-responsive img-center"> 
+                                                        </a>       
                                                                 <?php
                                                             } else {
                                                                 ?>    
+                                                         <a class="prop_img" id="<?php echo $val->slug;   ?>" href="#">
                                                                 <img alt="" src="<?php echo base_url() . "/assets/images/property_no_img.jpg" ?>" > 
+                                                         </a>       
                                                                 <?Php
                                                             }
                                                         } else {
                                                             ?>
+                                                         <a class="prop_img" id="<?php echo $val->slug;   ?>" href="#">
                                                             <img alt="" src="<?php echo base_url() . "/assets/images/property_no_img.jpg" ?>" > 
+                                                         </a>  
                                                             <?php
                                                         }
                                                         ?>
@@ -276,3 +282,20 @@ endif;
         </div>
     </div>
 </section>
+<script> 
+ $(document).ready(function(){
+  $(".prop_img").click(function(){
+      var slug = $(this).attr("id");
+      alert(slug);
+    $.ajax({
+                url: base_url+"/user/makefeatured",
+                type: 'POST',
+                data: {slug : slug},
+                success: function(data) {
+                  alert(data);
+                }
+            });
+  }); 
+ });   
+</script>    
+    

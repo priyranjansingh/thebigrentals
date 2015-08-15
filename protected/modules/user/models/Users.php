@@ -84,6 +84,7 @@ class Users extends BaseModel {
         return array(
             'role' => array(self::BELONGS_TO, 'Roles', 'role_id'),
             'package' => array(self::BELONGS_TO, 'Package', 'package_id'),
+            'membership' => array(self::HAS_ONE,'Membership','package_id'),
         );
     }
 

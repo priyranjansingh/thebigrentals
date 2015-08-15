@@ -1,6 +1,9 @@
 <?php
+
 Yii::import("application.modules.admin.models.*", true);
 Yii::import("application.modules.properties.models.*", true);
+Yii::import("application.modules.user.models.*", true);
+
 class DefaultController extends Controller {
 
     public $layout = '//layouts/login_main';
@@ -45,11 +48,11 @@ class DefaultController extends Controller {
                     $route = 'resetpassword';
                     $params = array('id' => $user->id);
                     $url = $this->createUrl($route, $params);
-                    $url = $_SERVER['SERVER_NAME'].$url;
+                    $url = $_SERVER['SERVER_NAME'] . $url;
                     $to = $user->email;
                     $subject = 'Change Password Link';
-                    $message = ' <a href="'.$url.'">Click on the link</a>';
-                    mailsend($to, "arommatech@gmail.com",$subject,$message);
+                    $message = ' <a href="' . $url . '">Click on the link</a>';
+                    mailsend($to, "arommatech@gmail.com", $subject, $message);
                     $mail_sent_message = "A Password Reset Link has been sent to your mail. Please check your mail.";
                 }
             }
@@ -70,7 +73,7 @@ class DefaultController extends Controller {
         $this->afterRegister = false;
         $model = new ResetPassword;
         $user = Users::model()->findByPk($id);
-       
+
         if (isset($_POST['ResetPassword'])) {
             $model->attributes = $_POST['ResetPassword'];
             if ($model->validate()) {
@@ -93,7 +96,7 @@ class DefaultController extends Controller {
                     $model->password = UserModule::encrypting($model->password);
                     $model->confirm_password = $model->password;
                     $model->activation_key = create_guid();
-                    
+
                     $role = Roles::model()->findByAttributes(array('role' => 'property owner'));
                     $model->role_id = $role->id;
                     $model->status = 0;
@@ -102,13 +105,13 @@ class DefaultController extends Controller {
                     $route = 'activate';
                     $params = array('activation_key' => $model->activation_key);
                     $url = $this->createUrl($route, $params);
-                    $url = $_SERVER['SERVER_NAME'].$url;
+                    $url = $_SERVER['SERVER_NAME'] . $url;
                     $to = $model->email;
                     $subject = 'Account Activation Link';
                     $message = ' <a href="' . $url . '">Click on the link</a>';
                     mailsend($to, "arommatech@gmail.com", $subject, $message);
                     // $this->afterRegister = true;
-                    $this->redirect(base_url().'/user/success');
+                    $this->redirect(base_url() . '/user/success');
                     // end of mail sending
                     //Yii::app()->session['user_id'] = $model->id;
                     //Yii::app()->session['user_name'] = $model->username;
@@ -157,8 +160,8 @@ class DefaultController extends Controller {
             $this->layout = '//layouts/inner_layout';
             $id = frontUserId();
             $model = Profile::model()->findByPk($id);
-            $membership_model = Membership::model()->find(array('condition' => 'user_id = "'.$model->id.'" '));
-            $property_model = Property::model()->findAll(array('condition' => 'created_by = "'.$id.'" '));
+            $membership_model = Membership::model()->find(array('condition' => 'user_id = "' . $model->id . '" '));
+            $property_model = Property::model()->findAll(array('condition' => 'created_by = "' . $id . '" '));
             $currencies = Currency::model()->findAll();
             $packages = Package::model()->findAll();
             $this->paymentMsg = "";
@@ -172,6 +175,25 @@ class DefaultController extends Controller {
             ));
         } else {
             $this->redirect(base_url());
+        }
+    }
+
+    public function actionMakeFeatured() {
+        $user_id = Yii::app()->session['user_id'];
+        $membership_model = Membership::model()->find(array('condition' => 'user_id = "' . $user_id . '" '));
+        $remaining_featured_listing = $membership_model->remaining_featured_listing;
+        if ($remaining_featured_listing > 0) {
+            $slug = $_POST['slug'];
+            $property_model = Property::model()->find(array('condition' => 'slug = "' . $slug . '" '));
+            $property_model->is_featured = 'Y';
+            $property_model->save();
+            if ($remaining_featured_listing >= 1) {
+                $membership_model->remaining_featured_listing = $remaining_featured_listing - 1;
+            }
+            $membership_model->save();
+            echo "This property has been added to featured listing";
+        } else {
+            echo "Sorry you have used all the featured listing facility";
         }
     }
 
@@ -222,8 +244,8 @@ class DefaultController extends Controller {
                     if ($user->validate()) {
                         $user->save();
                         $this->redirect(array("myaccount"));
-                    } 
-                } 
+                    }
+                }
             }
             $this->render('change_user_password', array('model' => $model, 'user' => $user));
         } else {
