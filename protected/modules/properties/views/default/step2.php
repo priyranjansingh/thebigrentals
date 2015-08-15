@@ -269,7 +269,6 @@
                                                 type: 'POST',
                                                 data: {'p_id': p_id},
                                                 success: function(data) {
-                                                    alert(data);
                                                     if(data=='SUCCESS')
                                                     {    
                                                         window.location.href = base_url+ "/properties/view?property="+slug;
