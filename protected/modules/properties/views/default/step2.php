@@ -268,8 +268,16 @@
                                                 url: base_url + "/properties/PropertySubmit",
                                                 type: 'POST',
                                                 data: {'p_id': p_id},
-                                                success: function() {
-                                                    window.location.href = base_url+ "/properties/view?property="+slug;
+                                                success: function(data) {
+                                                    alert(data);
+                                                    if(data=='SUCCESS')
+                                                    {    
+                                                        window.location.href = base_url+ "/properties/view?property="+slug;
+                                                    }
+                                                    else
+                                                    {
+                                                       alert("Sorry you have used all the property listing facility"); 
+                                                    }    
                                                 },
                                             });
                                                 

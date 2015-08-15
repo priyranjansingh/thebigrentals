@@ -2,6 +2,7 @@
 
 Yii::import("application.modules.user.models.*", true);
 Yii::import("application.modules.admin.models.*", true);
+Yii::import("application.modules.user.models.*", true);
 
 class DefaultController extends Controller {
 
@@ -319,8 +320,23 @@ class DefaultController extends Controller {
     }
 
     public function actionPropertySubmit() {
-        $property_id = $_REQUEST['p_id'];
-        Property::model()->updateAll(array('is_published' => 'Y'), 'id = "' . $property_id . '" ');
+        $user_id = Yii::app()->session['user_id'];
+        $membership_model = Membership::model()->find(array('condition' => 'user_id = "' . $user_id . '" '));
+        $remaining_property_listing =   $membership_model->remaining_listing;
+        if($remaining_property_listing >=1)
+        {    
+             $property_id = $_REQUEST['p_id'];
+             Property::model()->updateAll(array('is_published' => 'Y'), 'id = "' . $property_id . '" ');
+             $membership_model->remaining_listing = $remaining_property_listing - 1;
+             $membership_model->save();
+              echo "SUCCESS";
+              //echo "Your property has been listed successfully";
+        }
+        else
+        {
+             echo "FAILURE";             
+             //echo "Sorry you have used all the property listing facility";
+        }    
     }
 
     public function actionRemoveImage() {
