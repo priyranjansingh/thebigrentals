@@ -81,6 +81,7 @@
                                             <span class="period">per month</span>
                                         </span>
                                         <span class="pull-right">
+                                            <a href="javascript:void(0);" id="add_to_wishlist"><i class="fa fa-plus"><span class="period">Add To Wishlist</span></i></a>
                                             <span class="capacity">
                                                 <i class="fa fa-user"></i>
                                                 <i class="fa fa-user"></i>
@@ -435,11 +436,12 @@
                 <div class="col-md-12 header">
                     Contact The Owner
                     <div class="right">
-                        <a href="#" class="close_popup">X</a> 
+                        <a href="javascript:void(0);" class="close_popup">X</a> 
                     </div>
                 </div>
                 <div class="col-md-12">
                     Tell the owner when you would like to travel.
+                    <div id="msg"></div>
                 </div>
                 <div class="col-md-12">
                     <div class="col-md-6">
@@ -466,9 +468,9 @@
                     <div class="col-md-6">
                         <select name="country" id="country">
                             <option value="">Select Country*</option>
-                            <option value="">India</option>
-                            <option value="">United States</option>
-                            <option value="">United Kingdom</option>
+                            <option value="India">India</option>
+                            <option value="US">United States</option>
+                            <option value="UK">United Kingdom</option>
                         </select>
                         <div class="error"> Country is Required. </div>						
                     </div>
@@ -492,9 +494,10 @@
                 </div>
                 <div class="col-md-12 message">
                     <textarea name="message" id="message" placeholder="Message to owner"></textarea>
+                    <input type="hidden" id="property" value="<?php echo $property->id; ?>" />
                 </div>
                 <div class="col-md-12 message border-bottom">
-                    By Clicking 'Send Email' you are agreeing to our <a href="#">Terms &amp; Conditions</a>  &amp; <a href="#">Privacy Policy</a>
+                    By Clicking 'Send Email' you are agreeing to our <a href="javascript:void(0);">Terms &amp; Conditions</a>  &amp; <a href="javascript:void(0);">Privacy Policy</a>
                 </div>
                 <div class="col-md-12">
                     <div class="right">

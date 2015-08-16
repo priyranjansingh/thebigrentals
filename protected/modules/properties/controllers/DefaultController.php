@@ -7,7 +7,7 @@ Yii::import("application.modules.user.models.*", true);
 class DefaultController extends Controller {
 
     public function actionIndex() {
-        $properties = Property::model()->getLast20Record();
+        $properties = Property::model()->getLast4Record();
         $this->render('index', array('properties' => $properties));
     }
 
@@ -404,6 +404,29 @@ class DefaultController extends Controller {
             }
         }
         echo json_encode($arr, true);
+    }
+
+    public function actionContactowner() {
+        $arrival = $_POST['arrival'];
+        $departure = $_POST['departure'];
+        $flexible = $_POST['flexible'];
+        $first_name = $_POST['first_name'];
+        $last_name = $_POST['last_name'];
+        $country = $_POST['country'];
+        $email = $_POST['email'];
+        $adults = $_POST['adults'];
+        $childs = $_POST['childs'];
+        $message = $_POST['message'];
+        $property = $_POST['property'];
+        
+        $prop = Property::model()->findByPk($property);
+        $owner = Users::model()->findByPk($prop->created_by);
+        $message = ownerEmail($name,$phone,$email,$country,$message,$arrival,$departure);
+        $to = $owner->email;
+        $subject = 'Contact Info For Property: '.$prop->title;
+        
+        mailsend($to, "arommatech@gmail.com", $subject, $message);
+        echo "mail sent";
     }
 
 }
