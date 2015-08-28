@@ -227,6 +227,12 @@ class Property extends BaseModel {
         $result = BaseModel::executeSimpleQuery($sql);
         return $result;
     }
+
+    public function getLast4Record(){
+        $sql = "SELECT p.id,p.title,p.description,p.slug,p.bedrooms,p.bathrooms,p.garages,pc.month_price,pg.image FROM `property` p LEFT JOIN property_price pc ON p.id = pc.property_id LEFT JOIN property_gallery pg ON p.id = pg.property WHERE pg.type = 'm' AND pc.start_date < CURDATE() AND pc.end_date > CURDATE() ORDER BY p.created_date DESC LIMIT 4";
+        $result = BaseModel::executeSimpleQuery($sql);
+        return $result;
+    }
     
     public function validateProperty($property) {
         $result = Property::model()->findByAttributes(array('slug' => $property));

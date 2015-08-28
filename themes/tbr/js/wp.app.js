@@ -2,15 +2,31 @@ $(document).ready(function() {
 	
 	//Contact Owner
 	
-        $('#arrival').Zebra_DatePicker();
-        $('#departure').Zebra_DatePicker();
-        
+    $('#arrival').Zebra_DatePicker({
+	  direction: true,
+	  pair: $('#departure')
+	});
+
+	$('#departure').Zebra_DatePicker({
+	  direction: 1
+	});
+
 	$("#contact_owner").click(function(){
 		$("#toggle-owner-contact").show();
 	});
 	
 	$(".close_popup").click(function(){
 		$("#toggle-owner-contact").hide();
+		$("#arrival").val(""),
+	    $("#departure").val(""),
+	    $("#flexible").val(""),
+	    $("#first_name").val(""),
+	    $("#last_name").val(""),
+	    $("#country").val(""),
+	    $("#email").val(""),
+	    $("#adults").val(""),
+	    $("#childs").val(""),
+	    $("#message").val(""),
 	});
 	
 	$("#send_mail").click(function () {
@@ -18,48 +34,65 @@ $(document).ready(function() {
 		    departure = $("#departure").val(),
 		    flexible = $("#flexible").val(),
 		    first_name = $("#first_name").val(),
-		    last_name = $("last_name").val(),
+		    last_name = $("#last_name").val(),
 		    country = $("#country").val(),
 		    email = $("#email").val(),
 		    adults = $("#adults").val(),
 		    childs = $("#childs").val(),
 		    message = $("#message").val(),
-		    error = false;
+		    property = $("#property").val(),
+		    error = true;
 		    
 		    if(first_name === "" && last_name === "" && email === "" && country === ""){
 		        $("#first_name").parent().find("div.error").show();
 		        $("#last_name").parent().find("div.error").show();
 		        $("#email").parent().find("div.error").show();
 		        $("#country").parent().find("div.error").show();
-		        error = true;
+		        error = false;
 		    } else if (first_name !== "" && last_name === "" && email === "" && country === ""){
 		    	$("#first_name").parent().find("div.error").hide();
 		        $("#last_name").parent().find("div.error").show();
 		        $("#email").parent().find("div.error").show();
 		        $("#country").parent().find("div.error").show();
-		        error = true;
+		        error = false;
 		    } else if (first_name !== "" && last_name !== "" && email === "" && country === ""){
 		    	$("#first_name").parent().find("div.error").hide();
 		        $("#last_name").parent().find("div.error").hide();
 		        $("#email").parent().find("div.error").show();
 		        $("#country").parent().find("div.error").show();
-		        error = true;
+		        error = false;
 		    } else if (first_name !== "" && last_name !== "" && email !== "" && country === ""){
 		    	$("#first_name").parent().find("div.error").hide();
 		        $("#last_name").parent().find("div.error").hide();
 		        $("#email").parent().find("div.error").hide();
 		        $("#country").parent().find("div.error").show();
-		        error = true;
+		        error = false;
 		    } else if (first_name !== "" && last_name !== "" && email !== "" && country !== ""){
 		    	$("#first_name").parent().find("div.error").hide();
 		        $("#last_name").parent().find("div.error").hide();
 		        $("#email").parent().find("div.error").hide();
 		        $("#country").parent().find("div.error").hide();
 		        error = true;
-		    }
-		    
-		    if(!error){
-		        alert("Send Ajax Form Validated");
+		    } 
+		    if(error){
+		    	alert("hello");
+		        $.ajax({
+				  	url: "/thebigrentals/properties/contactowner",
+				  	type: "POST",
+					data: {arrival: arrival,departure: departure,flexible:flexible,first_name,last_name,country: country,email: email,adults:adults,childs:childs,message:message,property: property}
+				}).done(function( data ) {
+				    $("#arrival").val(""),
+				    $("#departure").val(""),
+				    $("#flexible").val(""),
+				    $("#first_name").val(""),
+				    $("#last_name").val(""),
+				    $("#country").val(""),
+				    $("#email").val(""),
+				    $("#adults").val(""),
+				    $("#childs").val(""),
+				    $("#message").val(""),
+				    $("#msg").html("Mail Sent Successfully");
+			  	});
 		    }
 		
 	});
