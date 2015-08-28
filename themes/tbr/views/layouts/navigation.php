@@ -81,7 +81,7 @@ $menus = $cats->getMenu();
 
                     <?php if (!isFrontUserLoggedIn()) { ?>
                         <li class="dropdown">
-                            <a href="http//www.google.com" class="dropdown-toggle" >Login</a>
+                            <a href="#" class="dropdown-toggle" >Login</a>
                             <ul class="dropdown-menu">
                                 <li><a href="<?php echo base_url() . "/user/login"; ?>">Login</a></li>   
                                 <li><a href="<?php echo base_url() . "/user/register"; ?>">Sign Up</a></li>  
