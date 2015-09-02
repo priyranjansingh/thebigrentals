@@ -10,6 +10,13 @@ class DefaultController extends Controller {
         $properties = Property::model()->getLast4Record();
         $this->render('index', array('properties' => $properties));
     }
+    
+    public function actionDestinations($country)
+    {
+        $this->layout = '//layouts/destination_layout';
+        $properties = Property::model()->findAll(array('condition' => 'country = "' .$country. '" '));
+        $this->render('destinations', array('properties' => $properties,'country' => $country ));
+    }        
 
     public function actionView($property) {
         $this->layout = '//layouts/login_main';

@@ -85,6 +85,7 @@ class Property extends BaseModel {
          return array(
             'gallery' => array(self::HAS_MANY, 'PropertyGallery', 'property', 'condition'=>'gallery.type = "m" ',),
             'unavailable_date' => array(self::HAS_ONE,'AvailabilityCalendar','property_id'), 
+            'price' => array(self::HAS_MANY, 'PropertyPrice', 'property_id'),
         );
     }
 
