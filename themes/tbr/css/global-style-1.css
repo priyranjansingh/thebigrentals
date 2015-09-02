@@ -11947,7 +11947,7 @@ input#pac-input {
 }
 
 textarea.form-control {
-  height: 34px !important;
+   height: 34px !important; 
 }
 
 #destinations li {
@@ -12336,7 +12336,7 @@ button.Zebra_DatePicker_Icon_Inside         { margin: 0 3px 0 0 }
 div#toggle-owner-contact {
     position: fixed;
     z-index: 999;
-    top: 50px;
+    top: 100px;
 	display: none;
 }
 
@@ -12449,29 +12449,4 @@ hr.social-links-hr {
 iframe#facebook-iframe {
     height: 20px;
     width: 92px;
-}
-
-div#toggle-owner-contact button.Zebra_DatePicker_Icon.Zebra_DatePicker_Icon_Inside {
-    left: 397px !important;
-    top: 10px !important;
-}
-
-div#toggle-owner-contact .Zebra_DatePicker_Icon_Wrapper {
-    display: block !important;
-}
-.col-md-8.pop-up div input[type='email'] {
-    width: 100%;
-    padding: 5px;
-}
-
-#add_to_wishlist span{
-    font-family: font-family: 'PT Sans', sans-serif;
-}
-#toggle-owner-contact .error {
-    color: #ce1a33;
-    display: none;
-}
-
-#msg {
-    color: green;
 }
