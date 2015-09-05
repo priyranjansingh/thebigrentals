@@ -25,23 +25,23 @@
                                 <div class="wp-block-img">
                                     <a href="<?php echo base_url() . '/properties/view/?property=' . $property['slug']; ?>">
                                         <?php
-                                                        if (!empty($property->gallery)) {
-                                                            $object_info = get_object_info($property->gallery[0]->image);
-                                                            if (!empty($object_info)) {
-                                                                ?>
-                                                                <img alt="" src="<?php echo Yii::app()->params['s3_base_url'] . $property->gallery[0]->image; ?>" class="img-responsive img-center"> 
-                                                                <?php
-                                                            } else {
-                                                                ?>    
-                                                                <img alt="" src="<?php echo base_url() . "/assets/images/property_no_img.jpg" ?>" > 
-                                                                <?Php
-                                                            }
-                                                        } else {
-                                                            ?>
-                                                            <img alt="" src="<?php echo base_url() . "/assets/images/property_no_img.jpg" ?>" > 
-                                                            <?php
-                                                        }
-                                                        ?>
+                                        if (!empty($property->gallery)) {
+                                            $object_info = get_object_info($property->gallery[0]->image);
+                                            if (!empty($object_info)) {
+                                                ?>
+                                                <img alt="" src="<?php echo Yii::app()->params['s3_base_url'] . $property->gallery[0]->image; ?>" class="img-responsive img-center"> 
+                                                <?php
+                                            } else {
+                                                ?>    
+                                                <img alt="" src="<?php echo base_url() . "/assets/images/property_no_img.jpg" ?>" > 
+                                                <?Php
+                                            }
+                                        } else {
+                                            ?>
+                                            <img alt="" src="<?php echo base_url() . "/assets/images/property_no_img.jpg" ?>" > 
+                                            <?php
+                                        }
+                                        ?>
                                     </a>
                                 </div>
                                 <div class="wp-block-content">
@@ -73,6 +73,11 @@
                 <?php
                 $i++;
             endforeach;
+            ?>
+            <?php
+            $this->widget('CLinkPager', array(
+                'pages' => $pages,
+            ))
             ?>
         </div>
     </div>

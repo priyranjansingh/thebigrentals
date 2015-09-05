@@ -10,13 +10,25 @@ class DefaultController extends Controller {
         $properties = Property::model()->getLast4Record();
         $this->render('index', array('properties' => $properties));
     }
-    
-    public function actionDestinations($country)
-    {
+
+    public function actionDestinations($country) {
         $this->layout = '//layouts/destination_layout';
-        $properties = Property::model()->findAll(array('condition' => 'country = "' .$country. '" '));
-        $this->render('destinations', array('properties' => $properties,'country' => $country ));
-    }        
+        $criteria = new CDbCriteria();
+        $criteria->condition='country=:country';
+        $criteria->params=array(':country'=>$country);
+        $count = Property::model()->count($criteria);
+        $pages = new CPagination($count);
+
+        // results per page
+        $pages->pageSize = 10;
+        $pages->applyLimit($criteria);
+        $properties = Property::model()->findAll($criteria);
+
+
+
+        //$properties = Property::model()->findAll(array('condition' => 'country = "' . $country . '" '));
+        $this->render('destinations', array('properties' => $properties, 'country' => $country,'pages' => $pages));
+    }
 
     public function actionView($property) {
         $this->layout = '//layouts/login_main';
@@ -108,12 +120,12 @@ class DefaultController extends Controller {
                     foreach ($session_data as $val) {
                         $unavailable[] = $val;
                     }
-                     $json_string = json_encode($unavailable);
-                     $calendar_model = new AvailabilityCalendar; 
-                     $calendar_model->property_id = $model->id;
-                     $calendar_model->status = 1;
-                     $calendar_model->date = $json_string;
-                     $calendar_model->save();
+                    $json_string = json_encode($unavailable);
+                    $calendar_model = new AvailabilityCalendar;
+                    $calendar_model->property_id = $model->id;
+                    $calendar_model->status = 1;
+                    $calendar_model->date = $json_string;
+                    $calendar_model->save();
                 }
                 // end of saving in the unavailability calendar
                 $this->redirect(array('step2', 'property' => $model->slug));
@@ -148,8 +160,8 @@ class DefaultController extends Controller {
             }
         }
         $model = $property_model;
-        
-        
+
+
         //pre($model->unavailable_date->date,true);
         $listed = BaseModel::getAll('Listed');
         $categories = BaseModel::getAll('Category');
@@ -196,42 +208,38 @@ class DefaultController extends Controller {
                         $property_price_model->save();
                     }
                 }
-                 // for updating in the unavailability calendar
+                // for updating in the unavailability calendar
                 $calendar_model = AvailabilityCalendar::model()->find(array('condition' => 'property_id = "' . $model->id . '" '));
-                if(!empty($calendar_model))
-                {    
-                $session_data = Yii::app()->session['date_arr'];
-                $unavailable = array();
-                if (!empty($session_data)) {
-                    foreach ($session_data as $val) {
-                        $unavailable[] = $val;
+                if (!empty($calendar_model)) {
+                    $session_data = Yii::app()->session['date_arr'];
+                    $unavailable = array();
+                    if (!empty($session_data)) {
+                        foreach ($session_data as $val) {
+                            $unavailable[] = $val;
+                        }
+                        $json_string = json_encode($unavailable);
+                        $calendar_model->date = $json_string;
+                        $calendar_model->save();
                     }
-                     $json_string = json_encode($unavailable);
-                     $calendar_model->date = $json_string;
-                     $calendar_model->save();
-                }
-                }
-                else 
-                {    
-                // end of updating in the unavailability calendar
-                
-                // for saving in the unavailability calendar
-                $session_data = Yii::app()->session['date_arr'];
-                $unavailable = array();
-                if (!empty($session_data)) {
-                    foreach ($session_data as $val) {
-                        $unavailable[] = $val;
+                } else {
+                    // end of updating in the unavailability calendar
+                    // for saving in the unavailability calendar
+                    $session_data = Yii::app()->session['date_arr'];
+                    $unavailable = array();
+                    if (!empty($session_data)) {
+                        foreach ($session_data as $val) {
+                            $unavailable[] = $val;
+                        }
+                        $json_string = json_encode($unavailable);
+                        $calendar_model = new AvailabilityCalendar;
+                        $calendar_model->property_id = $model->id;
+                        $calendar_model->status = 1;
+                        $calendar_model->date = $json_string;
+                        $calendar_model->save();
                     }
-                     $json_string = json_encode($unavailable);
-                     $calendar_model = new AvailabilityCalendar; 
-                     $calendar_model->property_id = $model->id;
-                     $calendar_model->status = 1;
-                     $calendar_model->date = $json_string;
-                     $calendar_model->save();
-                }
                 }
                 // end of saving in the unavailability calendar
-                
+
                 unset(Yii::app()->session['date_arr']);
                 $this->redirect(array('step2', 'property' => $model->slug));
                 // $this->redirect(array('view', 'property' => $model->slug));
@@ -239,9 +247,8 @@ class DefaultController extends Controller {
                 // pre($model->getErrors(),true);
             }
         }
-        if(!empty($model->unavailable_date->date))
-        {    
-           Yii::app()->session['date_arr'] = json_decode($model->unavailable_date->date);
+        if (!empty($model->unavailable_date->date)) {
+            Yii::app()->session['date_arr'] = json_decode($model->unavailable_date->date);
         }
         $this->render('edit', array('model' => $model,
             'listed' => $listed,
@@ -329,21 +336,18 @@ class DefaultController extends Controller {
     public function actionPropertySubmit() {
         $user_id = Yii::app()->session['user_id'];
         $membership_model = Membership::model()->find(array('condition' => 'user_id = "' . $user_id . '" '));
-        $remaining_property_listing =   $membership_model->remaining_listing;
-        if($remaining_property_listing >=1)
-        {    
-             $property_id = $_REQUEST['p_id'];
-             Property::model()->updateAll(array('is_published' => 'Y'), 'id = "' . $property_id . '" ');
-             $membership_model->remaining_listing = $remaining_property_listing - 1;
-             $membership_model->save();
-              echo "SUCCESS";
-              //echo "Your property has been listed successfully";
+        $remaining_property_listing = $membership_model->remaining_listing;
+        if ($remaining_property_listing >= 1) {
+            $property_id = $_REQUEST['p_id'];
+            Property::model()->updateAll(array('is_published' => 'Y'), 'id = "' . $property_id . '" ');
+            $membership_model->remaining_listing = $remaining_property_listing - 1;
+            $membership_model->save();
+            echo "SUCCESS";
+            //echo "Your property has been listed successfully";
+        } else {
+            echo "FAILURE";
+            //echo "Sorry you have used all the property listing facility";
         }
-        else
-        {
-             echo "FAILURE";             
-             //echo "Sorry you have used all the property listing facility";
-        }    
     }
 
     public function actionRemoveImage() {
@@ -425,13 +429,13 @@ class DefaultController extends Controller {
         $childs = $_POST['childs'];
         $message = $_POST['message'];
         $property = $_POST['property'];
-        
+
         $prop = Property::model()->findByPk($property);
         $owner = Users::model()->findByPk($prop->created_by);
-        $message = ownerEmail($name,$phone,$email,$country,$message,$arrival,$departure);
+        $message = ownerEmail($name, $phone, $email, $country, $message, $arrival, $departure);
         $to = $owner->email;
-        $subject = 'Contact Info For Property: '.$prop->title;
-        
+        $subject = 'Contact Info For Property: ' . $prop->title;
+
         mailsend($to, "arommatech@gmail.com", $subject, $message);
         echo "mail sent";
     }

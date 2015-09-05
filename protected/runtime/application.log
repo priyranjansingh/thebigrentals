@@ -6820,3 +6820,190 @@ Stack trace:
 REQUEST_URI=/thebigrentals/images/property/2b90e3ec-6b62-4ca2-98ad-5572d3d8f755/988218963.jpg
 HTTP_REFERER=http://localhost/thebigrentals/
 ---
+2015/09/05 21:21:28 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "images/default/property/b2f89abe-d902-907e-c666-55733b703a84/361646452.jpg".' in C:\xampp\htdocs\thebigrentals\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\thebigrentals\framework\web\CWebApplication.php(141): CWebApplication->runController('images/default/...')
+#1 C:\xampp\htdocs\thebigrentals\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\thebigrentals\index.php(12): CApplication->run()
+#3 {main}
+REQUEST_URI=/thebigrentals/images/property/b2f89abe-d902-907e-c666-55733b703a84/361646452.jpg
+HTTP_REFERER=http://localhost/thebigrentals/
+---
+2015/09/05 21:21:29 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "images/default/property/528b8a15-aa8b-725d-f7fa-55caad0e0fbf/694310089.jpg".' in C:\xampp\htdocs\thebigrentals\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\thebigrentals\framework\web\CWebApplication.php(141): CWebApplication->runController('images/default/...')
+#1 C:\xampp\htdocs\thebigrentals\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\thebigrentals\index.php(12): CApplication->run()
+#3 {main}
+REQUEST_URI=/thebigrentals/images/property/528b8a15-aa8b-725d-f7fa-55caad0e0fbf/694310089.jpg
+HTTP_REFERER=http://localhost/thebigrentals/
+---
+2015/09/05 21:21:29 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "images/default/property/9260926d-5916-9c2c-d1b8-558b68159317/644959436.jpg".' in C:\xampp\htdocs\thebigrentals\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\thebigrentals\framework\web\CWebApplication.php(141): CWebApplication->runController('images/default/...')
+#1 C:\xampp\htdocs\thebigrentals\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\thebigrentals\index.php(12): CApplication->run()
+#3 {main}
+REQUEST_URI=/thebigrentals/images/property/9260926d-5916-9c2c-d1b8-558b68159317/644959436.jpg
+HTTP_REFERER=http://localhost/thebigrentals/
+---
+2015/09/05 21:21:29 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "images/default/property/3596e948-8ce4-9137-2fbd-55caaf011874/487150361.jpg".' in C:\xampp\htdocs\thebigrentals\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\thebigrentals\framework\web\CWebApplication.php(141): CWebApplication->runController('images/default/...')
+#1 C:\xampp\htdocs\thebigrentals\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\thebigrentals\index.php(12): CApplication->run()
+#3 {main}
+REQUEST_URI=/thebigrentals/images/property/3596e948-8ce4-9137-2fbd-55caaf011874/487150361.jpg
+HTTP_REFERER=http://localhost/thebigrentals/
+---
+2015/09/05 21:21:29 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "images/default/property/2b90e3ec-6b62-4ca2-98ad-5572d3d8f755/988218963.jpg".' in C:\xampp\htdocs\thebigrentals\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\thebigrentals\framework\web\CWebApplication.php(141): CWebApplication->runController('images/default/...')
+#1 C:\xampp\htdocs\thebigrentals\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\thebigrentals\index.php(12): CApplication->run()
+#3 {main}
+REQUEST_URI=/thebigrentals/images/property/2b90e3ec-6b62-4ca2-98ad-5572d3d8f755/988218963.jpg
+HTTP_REFERER=http://localhost/thebigrentals/
+---
+2015/09/05 21:21:29 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "images/default/property/989affb7-3487-17d4-1311-55c75c767551/955341140.jpg".' in C:\xampp\htdocs\thebigrentals\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\thebigrentals\framework\web\CWebApplication.php(141): CWebApplication->runController('images/default/...')
+#1 C:\xampp\htdocs\thebigrentals\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\thebigrentals\index.php(12): CApplication->run()
+#3 {main}
+REQUEST_URI=/thebigrentals/images/property/989affb7-3487-17d4-1311-55c75c767551/955341140.jpg
+HTTP_REFERER=http://localhost/thebigrentals/
+---
+2015/09/05 21:21:29 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "images/default/property/528b8a15-aa8b-725d-f7fa-55caad0e0fbf/694310089.jpg".' in C:\xampp\htdocs\thebigrentals\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\thebigrentals\framework\web\CWebApplication.php(141): CWebApplication->runController('images/default/...')
+#1 C:\xampp\htdocs\thebigrentals\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\thebigrentals\index.php(12): CApplication->run()
+#3 {main}
+REQUEST_URI=/thebigrentals/images/property/528b8a15-aa8b-725d-f7fa-55caad0e0fbf/694310089.jpg
+HTTP_REFERER=http://localhost/thebigrentals/
+---
+2015/09/05 21:21:29 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "images/default/property/b2f89abe-d902-907e-c666-55733b703a84/361646452.jpg".' in C:\xampp\htdocs\thebigrentals\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\thebigrentals\framework\web\CWebApplication.php(141): CWebApplication->runController('images/default/...')
+#1 C:\xampp\htdocs\thebigrentals\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\thebigrentals\index.php(12): CApplication->run()
+#3 {main}
+REQUEST_URI=/thebigrentals/images/property/b2f89abe-d902-907e-c666-55733b703a84/361646452.jpg
+HTTP_REFERER=http://localhost/thebigrentals/
+---
+2015/09/05 21:21:29 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "images/default/property/3596e948-8ce4-9137-2fbd-55caaf011874/487150361.jpg".' in C:\xampp\htdocs\thebigrentals\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\thebigrentals\framework\web\CWebApplication.php(141): CWebApplication->runController('images/default/...')
+#1 C:\xampp\htdocs\thebigrentals\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\thebigrentals\index.php(12): CApplication->run()
+#3 {main}
+REQUEST_URI=/thebigrentals/images/property/3596e948-8ce4-9137-2fbd-55caaf011874/487150361.jpg
+HTTP_REFERER=http://localhost/thebigrentals/
+---
+2015/09/05 21:21:29 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "images/default/property/989affb7-3487-17d4-1311-55c75c767551/955341140.jpg".' in C:\xampp\htdocs\thebigrentals\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\thebigrentals\framework\web\CWebApplication.php(141): CWebApplication->runController('images/default/...')
+#1 C:\xampp\htdocs\thebigrentals\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\thebigrentals\index.php(12): CApplication->run()
+#3 {main}
+REQUEST_URI=/thebigrentals/images/property/989affb7-3487-17d4-1311-55c75c767551/955341140.jpg
+HTTP_REFERER=http://localhost/thebigrentals/
+---
+2015/09/05 21:21:29 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "images/default/property/9260926d-5916-9c2c-d1b8-558b68159317/644959436.jpg".' in C:\xampp\htdocs\thebigrentals\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\thebigrentals\framework\web\CWebApplication.php(141): CWebApplication->runController('images/default/...')
+#1 C:\xampp\htdocs\thebigrentals\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\thebigrentals\index.php(12): CApplication->run()
+#3 {main}
+REQUEST_URI=/thebigrentals/images/property/9260926d-5916-9c2c-d1b8-558b68159317/644959436.jpg
+HTTP_REFERER=http://localhost/thebigrentals/
+---
+2015/09/05 21:21:29 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "images/default/property/2b90e3ec-6b62-4ca2-98ad-5572d3d8f755/988218963.jpg".' in C:\xampp\htdocs\thebigrentals\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\thebigrentals\framework\web\CWebApplication.php(141): CWebApplication->runController('images/default/...')
+#1 C:\xampp\htdocs\thebigrentals\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\thebigrentals\index.php(12): CApplication->run()
+#3 {main}
+REQUEST_URI=/thebigrentals/images/property/2b90e3ec-6b62-4ca2-98ad-5572d3d8f755/988218963.jpg
+HTTP_REFERER=http://localhost/thebigrentals/
+---
+2015/09/05 22:09:04 [error] [php] Undefined variable: pages (C:\xampp\htdocs\thebigrentals\protected\modules\properties\views\default\destinations.php:79)
+Stack trace:
+#0 C:\xampp\htdocs\thebigrentals\framework\web\CController.php(869): DefaultController->renderFile()
+#1 C:\xampp\htdocs\thebigrentals\framework\web\CController.php(782): DefaultController->renderPartial()
+#2 C:\xampp\htdocs\thebigrentals\protected\modules\properties\controllers\DefaultController.php(30): DefaultController->render()
+#3 unknown(0): DefaultController->actionDestinations()
+#4 C:\xampp\htdocs\thebigrentals\framework\web\actions\CAction.php(109): ReflectionMethod->invokeArgs()
+#5 C:\xampp\htdocs\thebigrentals\framework\web\actions\CInlineAction.php(47): CInlineAction->runWithParamsInternal()
+#6 C:\xampp\htdocs\thebigrentals\framework\web\CController.php(308): CInlineAction->runWithParams()
+#7 C:\xampp\htdocs\thebigrentals\framework\web\CController.php(286): DefaultController->runAction()
+#8 C:\xampp\htdocs\thebigrentals\framework\web\CController.php(265): DefaultController->runActionWithFilters()
+#9 C:\xampp\htdocs\thebigrentals\framework\web\CWebApplication.php(282): DefaultController->run()
+#10 C:\xampp\htdocs\thebigrentals\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#11 C:\xampp\htdocs\thebigrentals\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#12 C:\xampp\htdocs\thebigrentals\index.php(12): CWebApplication->run()
+REQUEST_URI=/thebigrentals/properties/destinations/country/india
+in C:\xampp\htdocs\thebigrentals\protected\modules\properties\views\default\destinations.php (79)
+in C:\xampp\htdocs\thebigrentals\protected\modules\properties\controllers\DefaultController.php (30)
+in C:\xampp\htdocs\thebigrentals\index.php (12)
+2015/09/05 23:07:44 [error] [system.db.CDbCommand] CDbCommand::fetchColumn() failed: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'india' in 'where clause'. The SQL statement executed was: SELECT COUNT(*) FROM `property` `t` WHERE country=india.
+in C:\xampp\htdocs\thebigrentals\protected\modules\properties\controllers\DefaultController.php (20)
+in C:\xampp\htdocs\thebigrentals\index.php (12)
+2015/09/05 23:07:44 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand failed to execute the SQL statement: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'india' in 'where clause'. The SQL statement executed was: SELECT COUNT(*) FROM `property` `t` WHERE country=india' in C:\xampp\htdocs\thebigrentals\framework\db\CDbCommand.php:543
+Stack trace:
+#0 C:\xampp\htdocs\thebigrentals\framework\db\CDbCommand.php(433): CDbCommand->queryInternal('fetchColumn', 0, Array)
+#1 C:\xampp\htdocs\thebigrentals\framework\db\ar\CActiveRecord.php(1606): CDbCommand->queryScalar()
+#2 C:\xampp\htdocs\thebigrentals\protected\modules\properties\controllers\DefaultController.php(20): CActiveRecord->count(Object(CDbCriteria))
+#3 [internal function]: DefaultController->actionDestinations('india')
+#4 C:\xampp\htdocs\thebigrentals\framework\web\actions\CAction.php(109): ReflectionMethod->invokeArgs(Object(DefaultController), Array)
+#5 C:\xampp\htdocs\thebigrentals\framework\web\actions\CInlineAction.php(47): CAction->runWithParamsInternal(Object(DefaultController), Object(ReflectionMethod), Array)
+#6 C:\xampp\htdocs\thebigrentals\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#7 C:\xampp\htdocs\thebigrentals\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#8 C:\xampp\htdocs\thebigrentals\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#9 C:\xampp\htdocs\thebigrentals\framework\web\CWebApplication.php(282): CController->run('destinations')
+#10 C:\xampp\htdocs\thebigrentals\framework\web\CWebApplication.php(141): CWebApplication->runController('properties/defa...')
+#11 C:\xampp\htdocs\thebigrentals\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#12 C:\xampp\htdocs\thebigrentals\index.php(12): CApplication->run()
+#13 {main}
+REQUEST_URI=/thebigrentals/properties/destinations/country/india
+HTTP_REFERER=http://localhost/thebigrentals/properties/destinations/country/india
+---
+2015/09/05 23:12:20 [error] [php] Array to string conversion (C:\xampp\htdocs\thebigrentals\framework\db\schema\CDbCommandBuilder.php:484)
+Stack trace:
+#0 C:\xampp\htdocs\thebigrentals\protected\modules\properties\controllers\DefaultController.php(20): Property->count()
+#1 unknown(0): DefaultController->actionDestinations()
+#2 C:\xampp\htdocs\thebigrentals\framework\web\actions\CAction.php(109): ReflectionMethod->invokeArgs()
+#3 C:\xampp\htdocs\thebigrentals\framework\web\actions\CInlineAction.php(47): CInlineAction->runWithParamsInternal()
+#4 C:\xampp\htdocs\thebigrentals\framework\web\CController.php(308): CInlineAction->runWithParams()
+#5 C:\xampp\htdocs\thebigrentals\framework\web\CController.php(286): DefaultController->runAction()
+#6 C:\xampp\htdocs\thebigrentals\framework\web\CController.php(265): DefaultController->runActionWithFilters()
+#7 C:\xampp\htdocs\thebigrentals\framework\web\CWebApplication.php(282): DefaultController->run()
+#8 C:\xampp\htdocs\thebigrentals\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#9 C:\xampp\htdocs\thebigrentals\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#10 C:\xampp\htdocs\thebigrentals\index.php(12): CWebApplication->run()
+REQUEST_URI=/thebigrentals/properties/destinations/country/india
+in C:\xampp\htdocs\thebigrentals\protected\modules\properties\controllers\DefaultController.php (20)
+in C:\xampp\htdocs\thebigrentals\index.php (12)
+2015/09/05 23:13:02 [error] [system.db.CDbCommand] CDbCommand::fetchColumn() failed: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'india' in 'where clause'. The SQL statement executed was: SELECT COUNT(*) FROM `property` `t` WHERE country = india.
+in C:\xampp\htdocs\thebigrentals\protected\modules\properties\controllers\DefaultController.php (20)
+in C:\xampp\htdocs\thebigrentals\index.php (12)
+2015/09/05 23:13:02 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand failed to execute the SQL statement: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'india' in 'where clause'. The SQL statement executed was: SELECT COUNT(*) FROM `property` `t` WHERE country = india' in C:\xampp\htdocs\thebigrentals\framework\db\CDbCommand.php:543
+Stack trace:
+#0 C:\xampp\htdocs\thebigrentals\framework\db\CDbCommand.php(433): CDbCommand->queryInternal('fetchColumn', 0, Array)
+#1 C:\xampp\htdocs\thebigrentals\framework\db\ar\CActiveRecord.php(1606): CDbCommand->queryScalar()
+#2 C:\xampp\htdocs\thebigrentals\protected\modules\properties\controllers\DefaultController.php(20): CActiveRecord->count(Object(CDbCriteria))
+#3 [internal function]: DefaultController->actionDestinations('india')
+#4 C:\xampp\htdocs\thebigrentals\framework\web\actions\CAction.php(109): ReflectionMethod->invokeArgs(Object(DefaultController), Array)
+#5 C:\xampp\htdocs\thebigrentals\framework\web\actions\CInlineAction.php(47): CAction->runWithParamsInternal(Object(DefaultController), Object(ReflectionMethod), Array)
+#6 C:\xampp\htdocs\thebigrentals\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#7 C:\xampp\htdocs\thebigrentals\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#8 C:\xampp\htdocs\thebigrentals\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#9 C:\xampp\htdocs\thebigrentals\framework\web\CWebApplication.php(282): CController->run('destinations')
+#10 C:\xampp\htdocs\thebigrentals\framework\web\CWebApplication.php(141): CWebApplication->runController('properties/defa...')
+#11 C:\xampp\htdocs\thebigrentals\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#12 C:\xampp\htdocs\thebigrentals\index.php(12): CApplication->run()
+#13 {main}
+REQUEST_URI=/thebigrentals/properties/destinations/country/india
+HTTP_REFERER=http://localhost/thebigrentals/properties/destinations/country/india
+---
